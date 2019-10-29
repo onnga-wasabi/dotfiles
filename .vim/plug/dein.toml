@@ -1,0 +1,170 @@
+# ファイラ
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+hook_add = '''
+set hidden
+nmap <C-j> [denite]
+
+nnoremap <silent> [denite]<C-p> :<C-u>Denite file/rec<CR> " Current direcotry files
+nnoremap <silent> [denite]<C-b> :<C-u>Denite buffer<CR> " Buffer files
+nnoremap <silent> [denite]<C-o> :<C-u>Denite outline<CR> " Outline
+nnoremap <silent> [denite]<C-n> :<C-u>Denite command_history<CR> " Command history
+nnoremap <silent> [denite]<C-d> :<C-u>call denite#start([{'name': 'file/rec', 'args': ['~/dotfiles']}])<CR> " Seach dotfiles
+nnoremap <silent> [denite]<C-w> :<C-u>call denite#start([{'name': 'file/rec', 'args': ['~/workspace']}])<CR> " Seach dotfiles
+
+" 上下移動を<C-N>, <C-P>
+call denite#custom#map('normal', '<C-N>', '<denite:move_to_next_line>')
+call denite#custom#map('normal', '<C-P>', '<denite:move_to_previous_line>')
+call denite#custom#map('insert', '<C-N>', '<denite:move_to_next_line>')
+call denite#custom#map('insert', '<C-P>', '<denite:move_to_previous_line>')
+
+" 横割りオープンを`<C-o>`
+call denite#custom#map('insert', '<C-o>', '<denite:do_action:hsplit>')
+call denite#custom#option('default', 'prompt', '>>')
+call denite#custom#source('file/rec', 'matchers', ['matcher_fuzzy','matcher_ignore_globs'])
+call denite#custom#filter('matcher_ignore_globs', 'ignore_globs', [
+  \ '.git/', '.ropeproject/', '__pycache__/',
+  \ 'venv/', 'images/', '*.min.*', 'img/', 'fonts/',
+  \ '*.png', '*.npz', '*.bbl', '*.pdf', '*.toc', '*.gz',
+  \ '*.dvi', '*.aux', '*.log', '*.fls', '*.docx', '*.fdb_latexmk',
+  \ '*.blg', '*.eps', '*.venv/*', '*.zprezto/*',
+  \ '*squashfs-root/*',
+  \ ])
+if executable('rg')
+  call denite#custom#var('file/rec', 'command',
+    \ ['rg', '-uu', '--files', '--glob', '!.git'])
+  call denite#custom#var('grep', 'command', ['rg'])
+endif
+
+autocmd FileType denite call s:denite_my_settings()
+function! s:denite_my_settings() abort
+  nnoremap <silent><buffer><expr> i denite#do_map('open_filter_buffer')
+  nnoremap <silent><buffer><expr> q denite#do_map('quit')
+  nnoremap <silent><buffer><expr> p denite#do_map('do_action', 'preview')
+  nnoremap <silent><buffer><expr> <CR> denite#do_map('do_action')
+  nnoremap <silent><buffer><expr> <Space> denite#do_map('toggle_select').'j'
+endfunction
+
+" Change denite default options
+call denite#custom#option('default', {'split': 'floating'})
+
+augroup transparent-windows
+  autocmd!
+  autocmd FileType denite set winblend=10
+  autocmd FileType denite-filter set winblend=10
+augroup END
+'''
+
+[[plugins]]
+repo = 'Shougo/defx.nvim'
+hook_add='''
+autocmd FileType defx call s:defx_my_settings()
+  function! s:defx_my_settings() abort
+    noremap <silent><buffer><expr> <CR> defx#do_action('open')
+    nnoremap <silent><buffer><expr> c defx#do_action('copy')
+    nnoremap <silent><buffer><expr> m defx#do_action('move')
+    nnoremap <silent><buffer><expr> p defx#do_action('paste')
+    nnoremap <silent><buffer><expr> l defx#do_action('open')
+    nnoremap <silent><buffer><expr> E defx#do_action('open', 'vsplit')
+    nnoremap <silent><buffer><expr> P defx#do_action('open', 'pedit')
+    nnoremap <silent><buffer><expr> K defx#do_action('new_directory')
+    nnoremap <silent><buffer><expr> N defx#do_action('new_file')
+    nnoremap <silent><buffer><expr> d defx#do_action('remove')
+    nnoremap <silent><buffer><expr> r defx#do_action('rename')
+    nnoremap <silent><buffer><expr> x defx#do_action('execute_system')
+    nnoremap <silent><buffer><expr> yy defx#do_action('yank_path')
+    nnoremap <silent><buffer><expr> . defx#do_action('toggle_ignored_files')
+    nnoremap <silent><buffer><expr> h defx#do_action('cd', ['..'])
+    nnoremap <silent><buffer><expr> ~ defx#do_action('cd')
+    nnoremap <silent><buffer><expr> q defx#do_action('quit')
+    nnoremap <silent><buffer><expr> <Space> defx#do_action('toggle_select') . 'j'
+    nnoremap <silent><buffer><expr> * defx#do_action('toggle_select_all')
+    nnoremap <silent><buffer><expr> j line('.') == line('$') ? 'gg' : 'j'
+    nnoremap <silent><buffer><expr> k line('.') == 1 ? 'G' : 'k'
+    nnoremap <silent><buffer><expr> <C-l> defx#do_action('redraw')
+    nnoremap <silent><buffer><expr> <C-g> defx#do_action('print')
+    nnoremap <silent><buffer><expr> cd defx#do_action('change_vim_cwd')
+    endfunction
+'''
+
+# 制御系
+[[plugins]]
+repo = 'kana/vim-submode'
+hook_add='''
+call submode#enter_with('bufmove', 'n', '', 's>', '<C-w>>')
+call submode#enter_with('bufmove', 'n', '', 's<', '<C-w><')
+call submode#enter_with('bufmove', 'n', '', 's+', '<C-w>+')
+call submode#enter_with('bufmove', 'n', '', 's-', '<C-w>-')
+call submode#map('bufmove', 'n', '', '>', '<C-w>>')
+call submode#map('bufmove', 'n', '', '<', '<C-w><')
+call submode#map('bufmove', 'n', '', '+', '<C-w>+')
+call submode#map('bufmove', 'n', '', '-', '<C-w>-')
+'''
+
+# 入力系
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+build = './install.sh nightly'
+
+# 閉じカッコ
+[[plugins]]
+repo = 'cohama/lexima.vim'
+
+[[plugins]]
+repo = 'w0rp/ale'
+hook_add='''
+let g:ale_sign_column_always = 1
+let g:ale_fixers = {
+  \'python':['autopep8'],
+  \'c':['clang-format'],
+  \'cpp':['clang-format'],
+  \'scala':['scalastyle'],
+  \'go':['gofmt'],
+  \'tex':['latexindent'],
+\}
+let g:ale_use_global_executables = 1
+nmap <S-f> <Plug>(ale_fix)"
+let g:ale_python_flake8_args = '--max-line-length=150'
+let g:ale_python_autopep8_args = '--max-line-length=150'
+'''
+
+[[plugins]]
+repo = 'mattn/sonictemplate-vim'
+hook_add ='''
+let g:sonictemplate_vim_template_dir = [
+  \ '~/.cache/templates'
+\]
+'''
+
+# 表示系
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+hook_add = '''
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme = 'deus'
+'''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+[[plugins]]
+repo = 'flazz/vim-colorschemes'
+
+# dein.toml のhook_addをいい感じにする
+[[plugins]] # カーソル位置のコンテキストのftを判定するライブラリ
+repo = 'Shougo/context_filetype.vim'
+
+[[plugins]] # カーソル位置のコンテキストに合わせてftを切り替える
+repo = 'osyo-manga/vim-precious'
+depends = ['context_filetype.vim']
+
+# git
+[[plugins]]
+repo = "airblade/vim-gitgutter"
+
+[[plugins]]
+repo = "tpope/vim-fugitive"
+
+[[plugins]]
+repo = 'PietroPate/vim-tex-conceal'
