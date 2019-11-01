@@ -30,3 +30,8 @@ export PIPENV_VENV_IN_PROJECT=1
 export PATH=${HOME}/local/bin:${PATH}
 export LD_LIBRARY_PATH=${HOME}/local/lib:${LD_LIBRARY_PATH}
 export TERM=screen-256color
+
+if [ -e ${HOME}/.zsh_local.sh ]
+then
+  source ${HOME}/.zsh_local.sh
+fi
