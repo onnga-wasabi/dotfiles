@@ -6,6 +6,7 @@ install_powerline_fonts () {
     git clone -q https://github.com/powerline/fonts.git --depth=1
     cd fonts
     ./install.sh
+    cd ${HOME}
     echo "Installed!"
   else
     echo "Already installed!"
@@ -73,10 +74,11 @@ install_zprezto () {
     echo "Already installed!"
   fi
 
-  ln -sf ${DOTPATH}/.zsh/.z* ${HOME}/ && echo "symlink created ${HOME}/.z* -> ${DOTPATH}/.zsh/.z*"
+  ln -sf ${DOTPATH}/.zshrc ${HOME}/.zshrc && echo "symlink created ${HOME}/.zshrc -> ${DOTPATH}/.zshrc"
+  ln -sf ${DOTPATH}/.zpreztorc ${HOME}/.zpreztorc && echo "symlink created ${HOME}/.zpreztorc -> ${DOTPATH}/.zpreztorc"
   ln -sf ${DOTPATH}/.zsh/prezto/prompt_agnoster_setup ${HOME}/.zprezto/modules/prompt/functions/prompt_agnoster_setup && \
     echo "symlink created ${HOME}/.zsh/prezto/modules/prompt/functions/prompt_agnoster_setup"
-    echo "-> ${DOTPATH}/.zprezto/modules/prompt/functions/prompt/functions/prompt_agnoster_setup"
+    echo "-> ${DOTPATH}/.zprezto/prompt_agnoster_setup"
 }
 
 install_dein() {
@@ -89,8 +91,55 @@ install_dein() {
     mkdir -p ${HOME}/.cache/dein/plugs
     ln -s ${DOTPATH}/.vim/plug/dein.toml ${HOME}/.cache/dein/plugs/dein.toml
     ln -s ${DOTPATH}/.vim/plug/lazy_dein.toml ${HOME}/.cache/dein/plugs/lazy_dein.toml
+    cd ${HOME}
     echo "Installed!"
   else
     echo "Already installed!"
   fi
 }
+
+install_tmux () {
+  echo "Installing tmux..."
+  if [ ! `which tmux` == "${HOME}/local/bin/tmux" ]
+  then
+    install_libevent
+    install_ncurses
+    cd $(mktemp -d)
+    VERSION="2.8"
+    wget -q https://github.com/tmux/tmux/releases/download/${VERSION}/tmux-${VERSION}.tar.gz -O tmux.tar.gz
+    mkdir tmux && tar -xzf tmux.tar.gz -C tmux --strip-components 1
+    cd tmux
+    PKG_CONFIG_PATH=${HOME}/local/lib/pkgconfig ./configure --prefix=${HOME}/local > /dev/null
+    make > /dev/null
+    make install > /dev/null
+    cd ${HOME}
+    echo "Installed!"
+  else
+    echo "Already installed!"
+  fi
+}
+
+install_libevent () {
+    echo "Preparing libevent..."
+    cd $(mktemp -d)
+    VERSION="2.1.11-stable"
+    wget -q https://github.com/libevent/libevent/releases/download/release-${VERSION}/libevent-${VERSION}.tar.gz -O libevent.tar.gz
+    mkdir libevent && tar -xzf libevent.tar.gz -C libevent --strip-components 1
+    cd libevent
+    ./configure --prefix=${HOME}/local > /dev/null
+    make > /dev/null
+    make install > /dev/null
+}
+
+install_ncurses () {
+    echo "Preparing ncurses..."
+    cd $(mktemp -d)
+    VERSION="6.1"
+    wget -q ftp://ftp.invisible-island.net/ncurses/ncurses-${VERSION}.tar.gz -O ncurses.tar.gz
+    mkdir ncurses && tar -xzf ncurses.tar.gz -C ncurses --strip-components 1
+    cd ncurses
+    ./configure --prefix=${HOME}/local > /dev/null
+    make > /dev/null
+    make install > /dev/null
+}
+install_tmux
