@@ -24,7 +24,6 @@ else
 endif
 " }}}
 
-" let g:python3_host_prog=system('echo -n $(which python3)')
 " dein {{{
 if &compatible
   set nocompatible
@@ -76,7 +75,6 @@ set autoindent
 set cursorline
 set showmatch
 set pumheight=10
-set termguicolors    " ターミナルでも True Color を使えるようにする。
 set pumblend=30 " 透過度
 let g:tex_conceal='' " マルチバイトをいい感じにする機能を停止-みにくい
 
@@ -91,7 +89,6 @@ augroup END
 " mapping {{{
 let mapleader = "\<Space>"
 let maplocalleader = "\<Space>" " 
-
 
 inoremap <C-c> <ESC>
 nnoremap j gj
@@ -168,3 +165,8 @@ augroup END
 set guicursor=
 autocmd OptionSet guicursor noautocmd set guicursor=
 
+if exists('+termguicolors')
+  set termguicolors
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+endif

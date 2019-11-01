@@ -1,7 +1,7 @@
 install_ubuntu_utils () {
   echo "Installing ubuntu utils..."
   INIT_REQUIRED_FLAG=0
-  for package in curl wget git tig tmux
+  for package in curl wget git tig
   do
     if [ -z `which ${package}` ]
     then
@@ -14,7 +14,7 @@ install_ubuntu_utils () {
     sudo apt-get update -qq > /dev/null
     sudo apt-get install -qq -y locales > /dev/null
     sudo locale-gen en_US.UTF-8 > /dev/null
-    sudo apt-get install -qq -y curl wget git tig tmux > /dev/null
+    sudo apt-get install -qq -y curl wget git tig > /dev/null
     echo "Installed!"
   else
     echo "Already initialized!"
@@ -51,15 +51,17 @@ install_pyenv_requirements () {
 
 install_neovim () {
   echo "Installing neovim..."
-  if [ ! -e ${DOTPATH}/bin/squashfs-root ]
+  if [ ! -e ${HOME}/local/bin/nvim ]
   then
     cd $(mktemp -d)
     wget --quiet https://github.com/neovim/neovim/releases/download/v0.4.2/nvim.appimage
     chmod u+x nvim.appimage
     ./nvim.appimage --appimage-extract > /dev/null
-    cp -r ./squashfs-root ${DOTPATH}/bin/
+    cp -r ./squashfs-root ${HOME}/local/bin/
+    ln -s ${HOME}/local/bin/squashfs-root/usr/bin/nvim ${HOME}/local/bin/nvim
     mkdir -p ${HOME}/.config/nvim
     ln -s ${DOTPATH}/.init.vim ${HOME}/.config/nvim/init.vim
+    cd ${HOME}
     echo "Installed!"
   else
     echo "Already installed!"

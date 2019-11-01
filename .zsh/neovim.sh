@@ -1,1 +1,1 @@
-alias vim="squashfs-root/usr/bin/nvim"
+alias vim="nvim"

@@ -26,3 +26,12 @@ export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=36;01:cd=33;01:su=31;40;07:sg
 
 # PIPENV
 export PIPENV_VENV_IN_PROJECT=1
+
+export PATH=${HOME}/local/bin:${PATH}
+export LD_LIBRARY_PATH=${HOME}/local/lib:${LD_LIBRARY_PATH}
+export TERM=screen-256color
+
+if [ -e ${HOME}/.zsh_local.sh ]
+then
+  source ${HOME}/.zsh_local.sh
+fi
