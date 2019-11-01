@@ -113,6 +113,7 @@ install_tmux () {
     make > /dev/null
     make install > /dev/null
     cd ${HOME}
+    git clone -q https://github.com/erikw/tmux-powerline.git
     echo "Installed!"
   else
     echo "Already installed!"

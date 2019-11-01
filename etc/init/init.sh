@@ -15,6 +15,7 @@ then
   install_powerline_fonts
   install_pyenv_requirements
   install_pyenv
+  install_tmux
   install_nvm
   install_dein
   install_neovim

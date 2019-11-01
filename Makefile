@@ -15,7 +15,6 @@ deploy:
 	@echo "crating symlinks"
 	${DOTPATH}/bin/createsymlinks.sh
 
-
 init:
 	@DOTPATH=$(DOTPATH) bash $(DOTPATH)/etc/init/init.sh
 
