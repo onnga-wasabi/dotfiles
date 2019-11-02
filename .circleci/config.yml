@@ -3,9 +3,10 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: onngawasabi/dotfiles:1.0
+      - image: onngawasabi/dotfiles:1.1
+    working_directory: ~/dotfiles
     steps:
-      - checkout  # check out the code in the project directory
-      - run: echo "hello world"   # run the `echo` command
-      - run: pwd
-      - run: ls
+      - checkout
+      - run: make init
+      - run: make deploy
+      - run: zsh etc/test.sh
