@@ -106,7 +106,7 @@ install_dein() {
 
 install_tmux () {
   echo "Installing tmux..."
-  if [ ! `which tmux` == "${HOME}/local/bin/tmux" ]
+  if [ ! `which tmux` = "${HOME}/local/bin/tmux" ]
   then
     install_libevent
     install_ncurses
