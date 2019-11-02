@@ -21,5 +21,4 @@ then
   install_tmux
 fi
 
-exec zsh
 echo Completed.
