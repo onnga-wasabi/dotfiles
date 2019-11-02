@@ -1,6 +1,37 @@
+install_zprezto () {
+  echo "Installing zprezto..."
+  if [ ! -e ${HOME}/.zlogin ]
+  then
+    git clone -q --recursive https://github.com/sorin-ionescu/prezto.git ${HOME}/.zprezto
+    for rcfile in ${HOME}/.zprezto/runcoms/*
+    do
+      rcfile_name=`basename ${rcfile}`
+      if [ ${rcfile_name} != "README.md" ]
+      then
+        ln -s $rcfile ${HOME}/.${rcfile_name}
+      fi
+    done
+    echo "Installed!"
+  else
+    echo "Already installed!"
+  fi
+
+  ln -sf ${DOTPATH}/.zshrc ${HOME}/.zshrc && echo "symlink created ${HOME}/.zshrc -> ${DOTPATH}/.zshrc"
+  ln -sf ${DOTPATH}/.zpreztorc ${HOME}/.zpreztorc && echo "symlink created ${HOME}/.zpreztorc -> ${DOTPATH}/.zpreztorc"
+  ln -sf ${DOTPATH}/.zsh/prezto/prompt_agnoster_setup ${HOME}/.zprezto/modules/prompt/functions/prompt_agnoster_setup && \
+    echo "symlink created ${HOME}/.zsh/prezto/modules/prompt/functions/prompt_agnoster_setup"
+    echo "-> ${DOTPATH}/.zprezto/prompt_agnoster_setup"
+}
+
 install_powerline_fonts () {
   echo "Installing powerline fonts..."
-  if [ -z `which zsh` ]
+  if [ `uname` = "Darwin" ]
+  then
+    font_dir="$HOME/Library/Fonts"
+  else
+    font_dir="$HOME/.local/share/fonts"
+  fi
+  if [ ! -e ${font_dir} ]
   then
     cd $(mktemp -d)
     git clone -q https://github.com/powerline/fonts.git --depth=1
@@ -54,31 +85,6 @@ install_nvm () {
   else
     echo "Already installed!"
   fi
-}
-
-install_zprezto () {
-  echo "Installing zprezto..."
-  if [ ! -e ${HOME}/.zlogin ]
-  then
-    git clone -q --recursive https://github.com/sorin-ionescu/prezto.git ${HOME}/.zprezto
-    for rcfile in ${HOME}/.zprezto/runcoms/*
-    do
-      rcfile_name=`basename ${rcfile}`
-      if [ ${rcfile_name} != "README.md" ]
-      then
-        ln -s $rcfile ${HOME}/.${rcfile_name}
-      fi
-    done
-    echo "Installed!"
-  else
-    echo "Already installed!"
-  fi
-
-  ln -sf ${DOTPATH}/.zshrc ${HOME}/.zshrc && echo "symlink created ${HOME}/.zshrc -> ${DOTPATH}/.zshrc"
-  ln -sf ${DOTPATH}/.zpreztorc ${HOME}/.zpreztorc && echo "symlink created ${HOME}/.zpreztorc -> ${DOTPATH}/.zpreztorc"
-  ln -sf ${DOTPATH}/.zsh/prezto/prompt_agnoster_setup ${HOME}/.zprezto/modules/prompt/functions/prompt_agnoster_setup && \
-    echo "symlink created ${HOME}/.zsh/prezto/modules/prompt/functions/prompt_agnoster_setup"
-    echo "-> ${DOTPATH}/.zprezto/prompt_agnoster_setup"
 }
 
 install_dein() {
@@ -143,4 +149,3 @@ install_ncurses () {
     make > /dev/null
     make install > /dev/null
 }
-install_tmux
