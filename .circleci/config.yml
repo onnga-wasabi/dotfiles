@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: onngawasbi/dotfiles:1.0
+      - image: onngawasabi/dotfiles:1.0
     working_directory: ~/dotfiles
     steps:
       - checkout  # check out the code in the project directory
