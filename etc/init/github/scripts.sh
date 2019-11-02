@@ -107,7 +107,7 @@ install_dein() {
 install_tmux () {
   echo "Installing tmux..."
   VERSION="2.8"
-  if [ `which tmux` != "${HOME}/local/bin/tmux" ]
+  if [ "`which tmux`" != "${HOME}/local/bin/tmux" ]
   then
     install_libevent
     install_ncurses
