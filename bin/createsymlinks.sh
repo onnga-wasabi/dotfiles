@@ -7,8 +7,8 @@ do
   [[ "$f" == "${DOTPATH}/.zsh" ]] && continue
   [[ "$f" == "${DOTPATH}/.vim" ]] && continue
   [[ "$f" == "${DOTPATH}/.init.vim" ]] && continue
+  [[ "$f" == "${DOTPATH}/.circleci" ]] && continue
 
-  echo "$f"
   ln -sf $f ${HOME}/
 done
 

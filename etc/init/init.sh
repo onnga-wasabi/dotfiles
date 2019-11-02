@@ -5,6 +5,10 @@ export DOTPATH="${HOME}/dotfiles"
 source ${DOTPATH}/etc/init/ubuntu/scripts.sh
 source ${DOTPATH}/etc/init/github/scripts.sh
 
+mkdir -p ${HOME}/local/bin
+mkdir -p ${HOME}/local/share
+mkdir -p ${HOME}/local/lib
+
 if [ "`uname | grep Linux`" ]
 then
   echo Setting up for Linux platform...
@@ -15,11 +19,10 @@ then
   install_powerline_fonts
   install_pyenv_requirements
   install_pyenv
-  install_tmux
   install_nvm
   install_dein
   install_neovim
+  install_tmux
 fi
 
-exec zsh
 echo Completed.
