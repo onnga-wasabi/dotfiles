@@ -106,12 +106,12 @@ install_dein() {
 
 install_tmux () {
   echo "Installing tmux..."
-  if [ ! `which tmux` = "${HOME}/local/bin/tmux" ]
+  VERSION="2.8"
+  if [ `tmux -V` != "tmux ${VERSION}" ]
   then
     install_libevent
     install_ncurses
     cd $(mktemp -d)
-    VERSION="2.8"
     wget -q https://github.com/tmux/tmux/releases/download/${VERSION}/tmux-${VERSION}.tar.gz -O tmux.tar.gz
     mkdir tmux && tar -xzf tmux.tar.gz -C tmux --strip-components 1
     cd tmux
