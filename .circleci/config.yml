@@ -9,4 +9,4 @@ jobs:
       - checkout
       - run: make init
       - run: make deploy
-      - run: zsh etc/test.sh
+      - run: zsh ./etc/test.sh

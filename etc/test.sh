@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+source ${HOME}/.zshrc
+
 is_exits () {
   if [ -e $1 ]
   then
