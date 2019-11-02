@@ -112,7 +112,7 @@ install_tmux () {
     install_libevent
     install_ncurses
     cd $(mktemp -d)
-    wget -q https://github.com/tmux/tmux/releases/download/${TMUX_VERSION}/tmux-$TMUX_VERSION}.tar.gz -O tmux.tar.gz
+    wget -q https://github.com/tmux/tmux/releases/download/${TMUX_VERSION}/tmux-${TMUX_VERSION}.tar.gz -O tmux.tar.gz
     mkdir tmux && tar -xzf tmux.tar.gz -C tmux --strip-components 1
     cd tmux
     PKG_CONFIG_PATH=${HOME}/local/lib/pkgconfig ./configure --prefix=${HOME}/local > /dev/null
