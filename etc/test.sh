@@ -26,7 +26,7 @@ assert () {
   echo $1
   if [ $1 = $2 ]
   then
-    echo "OK: $1 eq. $2."
+    echo "OK: $1 is $2."
   else
     echo "NG: $1 is not $2."
     exit 1

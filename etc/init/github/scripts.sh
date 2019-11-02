@@ -106,13 +106,13 @@ install_dein() {
 
 install_tmux () {
   echo "Installing tmux..."
-  VERSION="2.8"
+  TMUX_VERSION="2.8"
   if [ "`which tmux`" != "${HOME}/local/bin/tmux" ]
   then
     install_libevent
     install_ncurses
     cd $(mktemp -d)
-    wget -q https://github.com/tmux/tmux/releases/download/${VERSION}/tmux-${VERSION}.tar.gz -O tmux.tar.gz
+    wget -q https://github.com/tmux/tmux/releases/download/${TMUX_VERSION}/tmux-$TMUX_VERSION}.tar.gz -O tmux.tar.gz
     mkdir tmux && tar -xzf tmux.tar.gz -C tmux --strip-components 1
     cd tmux
     PKG_CONFIG_PATH=${HOME}/local/lib/pkgconfig ./configure --prefix=${HOME}/local > /dev/null
@@ -129,8 +129,8 @@ install_tmux () {
 install_libevent () {
     echo "Preparing libevent..."
     cd $(mktemp -d)
-    VERSION="2.1.11-stable"
-    wget -q https://github.com/libevent/libevent/releases/download/release-${VERSION}/libevent-${VERSION}.tar.gz -O libevent.tar.gz
+    LIBEVENT_VERSION="2.1.11-stable"
+    wget -q https://github.com/libevent/libevent/releases/download/release-${LIBEVENT_VERSION}/libevent-${LIBEVENT_VERSION}.tar.gz -O libevent.tar.gz
     mkdir libevent && tar -xzf libevent.tar.gz -C libevent --strip-components 1
     cd libevent
     ./configure --prefix=${HOME}/local > /dev/null
@@ -141,8 +141,8 @@ install_libevent () {
 install_ncurses () {
     echo "Preparing ncurses..."
     cd $(mktemp -d)
-    VERSION="6.1"
-    wget -q ftp://ftp.invisible-island.net/ncurses/ncurses-${VERSION}.tar.gz -O ncurses.tar.gz
+    NCURSES_VERSION="6.1"
+    wget -q ftp://ftp.invisible-island.net/ncurses/ncurses-${NCURSES_VERSION}.tar.gz -O ncurses.tar.gz
     mkdir ncurses && tar -xzf ncurses.tar.gz -C ncurses --strip-components 1
     cd ncurses
     ./configure --prefix=${HOME}/local > /dev/null
