@@ -1,0 +1,14 @@
+[[plugins]]
+repo = 'Shougo/context_filetype.vim'
+on_event = 'BufEnter'
+
+[[plugins]]
+repo = 'osyo-manga/vim-precious'
+on_source = 'context_filetype.vim'
+
+[[plugins]]
+repo = 'wellle/context.vim'
+on_event = 'BufEnter'
+hook_add = '''
+let g:context_enabled = 1
+'''

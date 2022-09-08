@@ -1,0 +1,61 @@
+[[plugins]]
+repo = 'previm/previm'
+on_ft = ['markdown']
+hook_add = '''
+let g:previm_open_cmd = 'open -a /Applications/Google\ Chrome.app'
+'''
+
+[[plugins]]
+repo = 'junegunn/vim-easy-align'
+on_source = 'previm/previm'
+hook_add = '''
+'''
+
+[[plugins]]
+repo = 'junegunn/fzf'
+
+[[plugins]]
+repo = 'nvim-treesitter/nvim-treesitter'
+
+[[plugins]]
+repo = 'kevinhwang91/nvim-bqf'
+on_ft = ['qf']
+depends = ['fzf', 'nvim-treesitter']
+hook_source = '''
+lua << EOF
+require('bqf').setup({
+  auto_enable = true,
+  auto_resize_height = true, -- highly recommended enable
+  preview = {
+      win_height = 20,
+      win_vheight = 20,
+      delay_syntax = 80,
+      border_chars = {'┃', '┃', '━', '━', '┏', '┓', '┗', '┛', '█'},
+      should_preview_cb = function(bufnr, qwinid)
+          local ret = true
+          local bufname = vim.api.nvim_buf_get_name(bufnr)
+          local fsize = vim.fn.getfsize(bufname)
+          if fsize > 100 * 1024 then
+              -- skip file size greater than 100k
+              ret = false
+          elseif bufname:match('^fugitive://') then
+              -- skip fugitive buffer
+              ret = false
+          end
+          return ret
+      end
+  },
+  func_map = {
+    openc = '<CR>',
+    vplit = '<C-v>',
+    ptogglemode = 'zp',
+  },
+})
+EOF
+
+augroup quickfixmap
+  autocmd!
+  autocmd Filetype qf nnoremap <buffer> <CR> <CR>zz<C-w>b<Cmd>:q<CR>
+  autocmd Filetype qf nnoremap <buffer> , <Cmd>:q<CR>
+augroup END
+'''

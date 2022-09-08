@@ -1,0 +1,1 @@
+`git clone --recursive git@github.com:onnga-wasabi/dotfiles.git ${HOME}/dotfiles`

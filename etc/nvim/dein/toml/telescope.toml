@@ -1,0 +1,43 @@
+[[plugins]]
+repo = 'nvim-telescope/telescope.nvim'
+depends = ['plenary.nvim']
+on_event = 'BufEnter'
+hook_source = '''
+lua << EOF
+require('telescope').setup{
+  -- refer to https://github.com/nvim-telescope/telescope.nvim/issues/522
+  defaults = {
+    initial_mode = "insert",
+    file_ignore_patterns = {
+      "node_modules/*",
+      "submodules/*",
+      "*.git/.*",
+      "*.jpg",
+      "*.jpeg",
+      "*.png",
+      "*.zip",
+      "*.tar",
+      "*.tar.gz",
+    },
+  },
+}
+EOF
+
+nnoremap <Space>p <cmd>Telescope find_files hidden=true<cr>
+nnoremap <Space>d <cmd>Telescope find_files cwd=~/dotfiles<cr>
+
+nnoremap <Space>b <cmd>Telescope buffers<cr>
+nnoremap <Space>h <cmd>Telescope help_tags<cr>
+'''
+
+[[plugins]]
+repo = 'nvim-telescope/telescope-file-browser.nvim'
+depends = ['telescope.nvim']
+on_source = 'telescope.nvim'
+hook_source = '''
+lua << EOF
+require("telescope").load_extension "file_browser"
+EOF
+" start in folder browser: files=false
+nnoremap <Space>f <Cmd>lua require("telescope").extensions.file_browser.file_browser({files=false})<CR>
+'''

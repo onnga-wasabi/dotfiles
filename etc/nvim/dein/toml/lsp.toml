@@ -1,0 +1,173 @@
+# Lsp
+[[plugins]]
+repo = 'neovim/nvim-lspconfig'
+on_event = 'BufEnter'
+hook_source = '''
+lua << EOF
+require('mason').setup()
+require('mason-lspconfig').setup()
+require('lspconfig').pyright.setup({})
+require('lspconfig').vimls.setup({})
+require('lspconfig').gopls.setup({})
+require('lspconfig').terraformls.setup({
+  cmd = {'terraform-ls', 'serve'}
+})
+require('lspconfig').clangd.setup({})
+EOF
+
+nnoremap gD <Cmd>lua vim.lsp.buf.declaration()<CR>
+nnoremap gd <Cmd>lua vim.lsp.buf.definition()<CR>
+nnoremap gh <Cmd>lua vim.lsp.buf.hover()<CR>
+nnoremap gi <Cmd>lua vim.lsp.buf.implementation()<CR>
+nnoremap gr <Cmd>lua vim.lsp.buf.references()<CR>
+nnoremap gR <Cmd>lua vim.lsp.buf.rename()<CR>
+'''
+
+[[plugins]]
+repo = 'williamboman/mason.nvim'
+on_source = 'nvim-lspconfig'
+
+[[plugins]]
+repo = 'williamboman/mason-lspconfig.nvim'
+on_source = 'nvim-lspconfig'
+
+[[plugins]]
+repo = 'hashivim/vim-terraform'
+on_source = 'nvim-lspconfig'
+
+[[plugins]]
+repo = 'jose-elias-alvarez/null-ls.nvim'
+on_source = 'nvim-lspconfig'
+hook_source = '''
+lua << EOF
+local null_ls = require("null-ls")
+local formatting = null_ls.builtins.formatting
+local diagnostics = null_ls.builtins.diagnostics
+
+local sources = {
+  formatting.terraform_fmt,
+  formatting.scalafmt,
+  formatting.isort,
+  formatting.black.with{
+    extra_args = {"--line-length=150"},
+  },
+  diagnostics.flake8.with{
+    extra_args = {"--max-line-length=150" },
+  },
+  --diagnostics.mypy,
+}
+
+local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
+null_ls.setup({
+  sources = sources,
+  -- refer to https://github.com/jose-elias-alvarez/null-ls.nvim/wiki/Formatting-on-save
+  -- you can reuse a shared lspconfig on_attach callback here
+  on_attach = function(client, bufnr)
+      if client.supports_method("textDocument/formatting") then
+          vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
+          vim.api.nvim_create_autocmd("BufWritePre", {
+              group = augroup,
+              buffer = bufnr,
+              callback = function()
+                  -- on 0.8, you should use vim.lsp.buf.format({ bufnr = bufnr }) instead
+                  vim.lsp.buf.formatting_sync()
+              end,
+          })
+      end
+  end,
+})
+EOF
+
+" Iterm2 を使う場合はprofiles -> keys -> Ecs+
+nnoremap <A-F> <Cmd>:lua vim.lsp.buf.formatting()<CR>
+augroup sql_fromatting
+  autocmd!
+  autocmd FileType sql nnoremap <buffer><A-F> <Cmd>:w<CR>:!sqlfluff fix % --dialect bigquery -f<CR><CR>
+augroup END
+'''
+
+[[plugins]]
+repo = 'nvim-lua/plenary.nvim'
+depends = 'null-ls.nvim'
+on_source = 'null-ls.nvim'
+
+[[plugins]]
+repo = 'scalameta/nvim-metals' #https://creators-note.chatwork.com/entry/2022/03/28/083000
+depends = 'plenary.nvim'
+on_source = 'null-ls.nvim'
+hook_source = '''
+"https://github.com/scalameta/nvim-metals/discussions/39
+lua << EOF
+-------------------------------------------------------------------------------
+-- These are example settings to use with nvim-metals and the nvim built-in
+-- LSP. Be sure to thoroughly read the `:help nvim-metals` docs to get an
+-- idea of what everything does. Again, these are meant to serve as an example,
+-- if you just copy pasta them, then should work,  but hopefully after time
+-- goes on you'll cater them to your own liking especially since some of the stuff
+-- in here is just an example, not what you probably want your setup to be.
+--
+-- Unfamiliar with Lua and Neovim?
+--  - Check out https://github.com/nanotee/nvim-lua-guide
+--
+-- The below configuration also makes use of the following plugins besides
+-- nvim-metals, and therefore is a bit opinionated:
+--
+-- - https://github.com/hrsh7th/nvim-cmp
+--   - hrsh7th/cmp-nvim-lsp for lsp completion sources
+--   - hrsh7th/cmp-vsnip for snippet sources
+--   - hrsh7th/vim-vsnip for snippet sources
+--
+-- - https://github.com/wbthomason/packer.nvim for package management
+-- - https://github.com/mfussenegger/nvim-dap (for debugging)
+-------------------------------------------------------------------------------
+local api = vim.api
+local cmd = vim.cmd
+
+local function map(mode, lhs, rhs, opts)
+  local options = { noremap = true }
+  if opts then
+    options = vim.tbl_extend("force", options, opts)
+  end
+  api.nvim_set_keymap(mode, lhs, rhs, options)
+end
+
+----------------------------------
+-- LSP Setup ---------------------
+----------------------------------
+local metals_config = require("metals").bare_config()
+
+-- Example of settings
+metals_config.settings = {
+  showImplicitArguments = true,
+  excludedPackages = { "akka.actor.typed.javadsl", "com.github.swagger.akka.javadsl" },
+  showInferredType = true,
+}
+
+metals_config.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+  vim.lsp.diagnostic.on_publish_diagnostics, {
+    virtual_text = {
+      prefix = '',
+    }
+  }
+)
+
+-- https://github.com/neovim/neovim/issues/14952
+-- null-ls でscalafmt Formatting したいのでmetalsのフォーマット切る
+metals_config.on_attach = function(client, bufnr)
+  client.resolved_capabilities.document_formatting = false
+end
+
+-- Autocmd that will actually be in charging of starting the whole thing
+local nvim_metals_group = api.nvim_create_augroup("nvim-metals", { clear = true })
+api.nvim_create_autocmd("FileType", {
+  -- NOTE: You may or may not want java included here. You will need it if you
+  -- want basic Java support but it may also conflict if you are using
+  -- something like nvim-jdtls which also works on a java filetype autocmd.
+  pattern = { "scala", "sbt", "java" },
+  callback = function()
+    require("metals").initialize_or_attach(metals_config)
+  end,
+  group = nvim_metals_group,
+})
+EOF
+'''

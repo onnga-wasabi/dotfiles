@@ -1,0 +1,67 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'vim-denops/denops.vim'
+
+[[plugins]]
+repo = 'navarasu/onedark.nvim'
+
+[[plugins]]
+repo = 'cocopon/iceberg.vim'
+
+[[plugins]]
+repo = 'projekt0n/github-nvim-theme'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+hook_add = '''
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+
+" powerline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+
+let g:airline_symbols.branch = ''
+let g:airline_symbols.colnr = ' :'
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ' '
+let g:airline_symbols.maxlinenr = ''
+let g:airline_symbols.dirty='⚡'
+
+" Tab
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ''
+let g:airline#extensions#tabline#left_alt_sep = ''
+let g:airline#extensions#tabline#right_sep = ''
+let g:airline#extensions#tabline#right_alt_sep = ''
+'''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+hook_add = '''
+let g:airline_theme = 'iceberg'
+'''
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+hook_add = '''
+nnoremap gs <Cmd>Gdiffsplit<CR><C-w>l
+'''
+
+[[plugins]]
+repo = 'simeji/winresizer'
+hook_add = '''
+" windowサイズを簡単に変えるためのプラグイン
+let g:winresizer_start_key = '<C-e>'
+" If you want to cancel and quit window resize mode by `z` (keycode 122)
+"let g:winresizer_keycode_cancel = 122
+" To expand your window size toward upper using upper arrow (instead of k)
+"let g:winresizer_keycode_up = "\<UP>"
+" To expand your window size toward lower using down arrow (instead of j)
+"let g:winresizer_keycode_down = "\<DOWN>"
+'''

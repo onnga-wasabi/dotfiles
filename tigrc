@@ -1,0 +1,33 @@
+# Colors
+color default          white  default
+color cursor           white  cyan
+color status           white  default
+color title-focus      white  blue
+
+# Main
+bind main H !git rebase -i %(commit)
+bind main P !?git pull origin %(branch) 
+bind main q ?@<quit
+
+# Refs
+bind refs c !@git checkout %(branch) 
+bind refs b !@git branch "%(prompt Enter branch name: )"
+bind refs p !?gh pr create -B %(branch) -w
+bind refs v !@?gh pr view --web %(branch) 
+bind refs P !?git push origin %(branch)
+
+# Branch
+bind branch d !@?git branch -D %(branch)
+
+# Status
+bind status D !@?rm %(file)
+bind status d !@?git checkout %(file)
+
+# Diff
+bind diff    H !@git rebase -i %(commit)
+
+
+# Global
+set refresh-mode = auto
+set refresh-mode = periodic
+set refresh-interval = 1

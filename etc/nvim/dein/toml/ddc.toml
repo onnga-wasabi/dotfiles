@@ -1,0 +1,112 @@
+# Completion
+[[plugins]]
+repo = 'Shougo/ddc.vim'
+on_event = 'InsertEnter'
+hook_source = '''
+" Customize global settings
+" Use around source.
+" https://github.com/Shougo/ddc-around
+call ddc#custom#patch_global('sources', ['nvim-lsp'])
+
+" Use matcher_head and sorter_rank.
+" https://github.com/Shougo/ddc-matcher_head
+" https://github.com/Shougo/ddc-sorter_rank
+call ddc#custom#patch_global(
+  \ 'sourceOptions', {
+    \ '_': {
+      \ 'matchers': ['matcher_head'],
+      \ 'sorters': ['sorter_rank']
+    \ },
+    \ 'around': {'mark': 'A'},
+    \ 'path': {'mark': 'P'},
+    \ 'nvim-lsp': {
+      \ 'mark': 'LSP',
+      \ 'forceCompletionPattern': '\.\w*|:\w*|->\w*',
+    \ },
+  \ },
+\ )
+
+call ddc#custom#patch_global(
+  \ 'sourceParams', {
+      \ 'around': {'maxSize': 500},
+    \},
+\ )
+
+" Overwrite
+call ddc#custom#patch_global('completionMenu', 'pum.vim')
+call pum#set_option({
+  \ 'border': "double",
+\ })
+call ddc#custom#patch_global('sourceOptions', {
+  \ '_': {
+    \ 'matchers': ['matcher_fuzzy'],
+    \ 'sorters': ['sorter_fuzzy'],
+    \ 'converters': ['converter_fuzzy'],
+  \ }
+\ })
+
+
+" Mappings.
+inoremap <C-n> <Cmd>call pum#map#select_relative(+1)<CR>
+inoremap <C-p> <Cmd>call pum#map#select_relative(-1)<CR>
+inoremap <C-y> <Cmd>call pum#map#confirm()<CR>
+inoremap <C-e> <Cmd>call pum#map#cancel()<CR>
+
+" Use ddc.
+call ddc#enable()
+call popup_preview#enable()
+'''
+
+[[plugins]]
+repo = 'Shougo/ddc-around'
+on_source = 'ddc.vim'
+
+[[plugins]]
+repo = 'Shougo/ddc-matcher_head'
+on_source = 'ddc.vim'
+
+[[plugins]]
+repo = 'Shougo/ddc-sorter_rank'
+on_source = 'ddc.vim'
+
+[[plugins]]
+repo = 'Shougo/ddc-nvim-lsp'
+on_source = 'ddc.vim'
+
+[[plugins]]
+repo = 'Shougo/pum.vim'
+on_source = 'ddc.vim'
+
+[[plugins]]
+repo = 'tani/ddc-fuzzy'
+on_source = 'ddc.vim'
+
+[[plugins]]
+repo = 'matsui54/denops-popup-preview.vim'
+on_source = 'ddc.vim'
+hook_source = '''
+call popup_preview#enable()
+'''
+
+[[plugins]]
+repo = 'hrsh7th/vim-vsnip'
+on_source = 'ddc.vim'
+
+[[plugins]]
+repo = 'hrsh7th/vim-vsnip-integ'
+depends = ['vim-vsnip']
+on_source = 'ddc.vim'
+hook_add = '''
+autocmd User PumCompleteDone call vsnip_integ#on_complete_done(g:pum#completed_item)
+'''
+
+[[plugins]]
+repo = 'matsui54/denops-signature_help'
+depends = ['denops-popup-preview.vim']
+on_source = 'ddc.vim'
+hook_add = '''
+call signature_help#enable()
+
+" if you use with vim-lsp, disable vim-lsp's signature help feature
+let g:lsp_signature_help_enabled = 0
+'''
