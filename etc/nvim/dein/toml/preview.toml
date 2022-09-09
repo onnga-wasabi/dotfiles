@@ -55,7 +55,7 @@ EOF
 
 augroup quickfixmap
   autocmd!
-  autocmd Filetype qf nnoremap <buffer> <CR> <CR>zz<C-w>b<Cmd>:q<CR>
-  autocmd Filetype qf nnoremap <buffer> , <Cmd>:q<CR>
+  autocmd Filetype qf nnoremap <buffer> <CR> <CR>zz<Cmd>:cclose<CR>
+  autocmd Filetype qf nnoremap <buffer> , <Cmd>:cclose<CR>
 augroup END
 '''
