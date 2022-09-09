@@ -6,13 +6,44 @@ hook_source = '''
 lua << EOF
 require('mason').setup()
 require('mason-lspconfig').setup()
-require('lspconfig').pyright.setup({})
-require('lspconfig').vimls.setup({})
-require('lspconfig').gopls.setup({})
-require('lspconfig').terraformls.setup({
+
+local lspconfig = require('lspconfig')
+lspconfig.pyright.setup({})
+lspconfig.vimls.setup({})
+lspconfig.gopls.setup({})
+lspconfig.terraformls.setup({
   cmd = {'terraform-ls', 'serve'}
 })
-require('lspconfig').clangd.setup({})
+lspconfig.clangd.setup({})
+lspconfig.sqlls.setup({})
+
+
+
+use {
+  "neovim/nvim-lspconfig",
+  config = function()
+    local lspconfig = require'lspconfig'
+    -- See :h lspconfig-adding-servers
+    local configs = require'lspconfig.configs'
+    if not configs.bqls then
+      configs.bqls = {
+        default_config = {
+          cmd = {'bq-language-server', '--stdio'},
+          filetypes = {'sql', 'bigquery'},
+          root_dir = function(fname) return
+            lspconfig.util.find_git_ancestor(fname)
+            or vim.fn.fnamemodify(fname, ':h')
+          end,
+          settings = {bqExtensionVSCode = {
+            diagnostic = {forVSCode = false}
+          }},
+        },
+      }
+    end
+    lspconfig.bqls.setup{}
+  end,
+}
+
 EOF
 
 nnoremap gD <Cmd>lua vim.lsp.buf.declaration()<CR>
@@ -82,7 +113,7 @@ EOF
 nnoremap <A-F> <Cmd>:lua vim.lsp.buf.formatting()<CR>
 augroup sql_fromatting
   autocmd!
-  autocmd FileType sql nnoremap <buffer><A-F> <Cmd>:w<CR>:!sqlfluff fix % --dialect bigquery -f<CR><CR>
+  autocmd FileType sql nnoremap <buffer><A-F> <Cmd>:w<CR>::!npx prettier --write %<CR><CR>
 augroup END
 '''
 

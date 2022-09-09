@@ -104,7 +104,8 @@ endfunction
 
 
 " mappings {{{
-inoremap <C-c> <ESC>
+inoremap <C-c> <Esc>
+let g:omni_sql_no_default_maps = 1 " sql のデフォルトが邪魔してくる
 
 nnoremap se <Cmd>e ++enc=sjis<CR>
 nnoremap su <Cmd>e ++enc=utf-8<CR>

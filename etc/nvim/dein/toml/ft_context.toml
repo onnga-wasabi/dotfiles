@@ -10,5 +10,5 @@ on_source = 'context_filetype.vim'
 repo = 'wellle/context.vim'
 on_event = 'BufEnter'
 hook_add = '''
-let g:context_enabled = 1
+let g:context_enabled = 0
 '''
