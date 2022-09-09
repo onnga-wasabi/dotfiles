@@ -138,4 +138,3 @@ nnoremap <Space>y gg<S-v><S-g>y
 " とマッピングすれば
 " d' とタイプして 'this is text' => '' ができる
 " }}}
-

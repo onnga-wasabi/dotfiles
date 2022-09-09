@@ -41,3 +41,38 @@ EOF
 " start in folder browser: files=false
 nnoremap <Space>f <Cmd>lua require("telescope").extensions.file_browser.file_browser({files=false})<CR>
 '''
+
+
+[[plugins]]
+repo = 'akinsho/nvim-toggleterm.lua'
+depends = ['telescope.nvim']
+on_source = 'telescope.nvim'
+hook_source = '''
+lua << EOF
+require("toggleterm").setup()
+EOF
+'''
+
+[[plugins]]
+repo = 'onnga-wasabi/telescope-makefile'
+depends = ['telescope.nvim', 'nvim-toggleterm.lua']
+on_source = 'telescope.nvim'
+hook_source = '''
+lua << EOF
+require('telescope').load_extension('make')
+require('telescope-makefile').setup({
+  toggle_term = {
+    cmd = 'make',
+    direction = 'float',
+    close_on_exit = false,
+  },
+})
+EOF
+nnoremap <C-m> <Cmd>Telescope make<CR>
+
+augroup close_toggleterm
+  autocmd!
+  autocmd FileType toggleterm tnoremap <buffer>, <Cmd>:q<CR>
+  autocmd FileType toggleterm nnoremap <buffer>, <Cmd>:q<CR>
+augroup END
+'''
