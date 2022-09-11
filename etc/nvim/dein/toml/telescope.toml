@@ -9,15 +9,17 @@ require('telescope').setup{
   defaults = {
     initial_mode = "insert",
     file_ignore_patterns = {
-      "node_modules/*",
-      "submodules/*",
-      "*.git/.*",
-      "*.jpg",
-      "*.jpeg",
-      "*.png",
-      "*.zip",
-      "*.tar",
-      "*.tar.gz",
+      "node_modules/",
+      "submodules/",
+      ".git/",
+      "%.tmp/*",
+      "%.jpg",
+      "%.jpeg",
+      "%.png",
+      "%.zip",
+      "%.tar",
+      "%.tar.gz",
+      ".tmp/"
     },
   },
 }
@@ -68,7 +70,7 @@ require('telescope-makefile').setup({
   },
 })
 EOF
-nnoremap <C-m> <Cmd>Telescope make<CR>
+nnoremap <Space>m <Cmd>Telescope make<CR>
 
 augroup close_toggleterm
   autocmd!

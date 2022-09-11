@@ -8,14 +8,29 @@ require('mason').setup()
 require('mason-lspconfig').setup()
 
 local lspconfig = require('lspconfig')
+local util = require('lspconfig/util')
+
 lspconfig.pyright.setup({})
 lspconfig.vimls.setup({})
-lspconfig.gopls.setup({})
+lspconfig.gopls.setup({
+  cmd = {"gopls", "serve"},
+  filetypes = {"go", "gomod"},
+  root_dir = util.root_pattern("go.work", "go.mod", ".git"),
+  settings = {
+    gopls = {
+      analyses = {
+        unusedparams = true,
+      },
+      staticcheck = true,
+    },
+  },
+})
 lspconfig.terraformls.setup({
   cmd = {'terraform-ls', 'serve'}
 })
 lspconfig.clangd.setup({})
 lspconfig.sqlls.setup({})
+lspconfig.yamlls.setup({})
 EOF
 
 nnoremap gD <Cmd>lua vim.lsp.buf.declaration()<CR>
@@ -56,6 +71,10 @@ local sources = {
   },
   diagnostics.flake8.with{
     extra_args = {"--max-line-length=150" },
+  },
+  formatting.yamlfmt,
+  diagnostics.yamllint.with{
+    extra_args = {"--no-warnings"}
   },
   --diagnostics.mypy,
 }
