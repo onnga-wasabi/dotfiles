@@ -65,3 +65,11 @@ let g:winresizer_start_key = '<C-e>'
 " To expand your window size toward lower using down arrow (instead of j)
 "let g:winresizer_keycode_down = "\<DOWN>"
 '''
+
+[[plugins]]
+repo = 'delphinus/emcl.nvim'
+hook_source = '''
+lua << EOF
+require("emcl").setup({})
+EOF
+'''

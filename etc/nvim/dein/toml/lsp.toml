@@ -31,6 +31,8 @@ lspconfig.terraformls.setup({
 lspconfig.clangd.setup({})
 lspconfig.sqlls.setup({})
 lspconfig.yamlls.setup({})
+lspconfig.opencl_ls.setup({})
+lspconfig.texlab.setup({})
 EOF
 
 nnoremap gD <Cmd>lua vim.lsp.buf.declaration()<CR>
