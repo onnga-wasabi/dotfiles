@@ -38,6 +38,7 @@ filetype plugin indent on
 syntax enable
 " }}}
 
+set updatetime=400
 
 " graphix {{{
 set nu
@@ -131,13 +132,6 @@ nnoremap <C-w>n <Nop>
 nnoremap <Space>r <Cmd>source ~/.vimrc<CR>
 nnoremap <Space>v <Cmd>e ~/.vimrc<CR>
 nnoremap <Space>y gg<S-v><S-g>y
-" nnoremap zi <Cmd>set foldmethod=manual<CR>
-
-" onoremap is nani?
-" 例えば di' の操作で 'this is text' => '' としたいときに
-" onoremap ' i'
-" とマッピングすれば
-" d' とタイプして 'this is text' => '' ができる
 " }}}
 
 

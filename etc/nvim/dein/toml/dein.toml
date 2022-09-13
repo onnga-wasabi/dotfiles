@@ -54,16 +54,16 @@ nnoremap gs <Cmd>Gdiffsplit<CR><C-w>l
 '''
 
 [[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+[[plugins]]
 repo = 'simeji/winresizer'
 hook_add = '''
 " windowサイズを簡単に変えるためのプラグイン
 let g:winresizer_start_key = '<C-e>'
+
 " If you want to cancel and quit window resize mode by `z` (keycode 122)
 "let g:winresizer_keycode_cancel = 122
-" To expand your window size toward upper using upper arrow (instead of k)
-"let g:winresizer_keycode_up = "\<UP>"
-" To expand your window size toward lower using down arrow (instead of j)
-"let g:winresizer_keycode_down = "\<DOWN>"
 '''
 
 [[plugins]]
