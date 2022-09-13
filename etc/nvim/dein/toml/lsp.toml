@@ -77,9 +77,6 @@ local sources = {
   diagnostics.yamllint.with{
     extra_args = {"--no-warnings"}
   },
-  diagnostics.taplo.with{
-    extra_args = {"--no-warnings"}
-  },
   --diagnostics.mypy,
 }
 
@@ -111,11 +108,6 @@ augroup sql_fromatting
   autocmd FileType sql nnoremap <buffer><A-F> <Cmd>:w<CR>::!npx prettier --write %<CR><CR>
 augroup END
 '''
-
-[[plugins]]
-repo = 'nvim-lua/plenary.nvim'
-depends = 'null-ls.nvim'
-on_source = 'null-ls.nvim'
 
 [[plugins]]
 repo = 'scalameta/nvim-metals' #https://creators-note.chatwork.com/entry/2022/03/28/083000

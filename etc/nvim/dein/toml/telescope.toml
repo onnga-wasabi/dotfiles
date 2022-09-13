@@ -1,6 +1,6 @@
 [[plugins]]
 repo = 'nvim-telescope/telescope.nvim'
-depends = ['plenary.nvim']
+depends = 'plenary.nvim'
 on_event = 'BufEnter'
 hook_source = '''
 lua << EOF
@@ -47,7 +47,6 @@ nnoremap <Space>f <Cmd>lua require("telescope").extensions.file_browser.file_bro
 
 [[plugins]]
 repo = 'akinsho/nvim-toggleterm.lua'
-depends = ['telescope.nvim']
 on_source = 'telescope.nvim'
 hook_source = '''
 lua << EOF

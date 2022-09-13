@@ -67,6 +67,9 @@ let g:winresizer_start_key = '<C-e>'
 '''
 
 [[plugins]]
+repo = 'nvim-lua/plenary.nvim'
+
+[[plugins]]
 repo = 'delphinus/emcl.nvim'
 hook_source = '''
 lua << EOF
