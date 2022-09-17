@@ -48,7 +48,7 @@ set termguicolors " ターミナルでも True Color を使えるようにする
 set list "tab space 表示
 set signcolumn=yes "nu左のスペース
 let g:tex_conceal='' " マルチバイトをいい感じにする機能を停止-みにくい
-colorscheme onedark
+colorscheme nord
 "}}}
 
 " indentation {{{

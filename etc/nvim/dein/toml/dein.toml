@@ -11,6 +11,10 @@ repo = 'navarasu/onedark.nvim'
 repo = 'cocopon/iceberg.vim'
 
 [[plugins]]
+repo = 'arcticicestudio/nord-vim'
+
+
+[[plugins]]
 repo = 'projekt0n/github-nvim-theme'
 
 [[plugins]]
@@ -44,7 +48,7 @@ let g:airline#extensions#tabline#right_alt_sep = ''
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
 hook_add = '''
-let g:airline_theme = 'iceberg'
+let g:airline_theme = 'nord'
 '''
 
 [[plugins]]
