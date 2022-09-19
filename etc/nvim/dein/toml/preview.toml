@@ -1,13 +1,13 @@
 [[plugins]]
-repo = 'previm/previm'
-on_ft = ['markdown']
-hook_add = '''
-let g:previm_open_cmd = 'open -a /Applications/Google\ Chrome.app'
-'''
-
-[[plugins]]
 repo = 'junegunn/vim-easy-align'
-on_source = 'previm/previm'
+on_ft = ['markdown']
+hook_source = '''
+augroup easyalignmd
+  autocmd!
+  autocmd Filetype markdown xnoremap <buffer>ga <Plug>(EasyAlign)
+  autocmd Filetype markdown nnoremap <buffer>ga <Plug>(EasyAlign)
+augroup END
+'''
 
 [[plugins]]
 repo = 'junegunn/fzf'
