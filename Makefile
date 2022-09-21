@@ -4,6 +4,10 @@ DOTPATH := `git rev-parse --show-toplevel`
 etc/brew/Brewfile:
 	cd etc/brew; brew bundle dump -f
 
+.PHONY: brew/cleanup
+brew/cleanup:
+	cd etc/brew; brew bundle cleanup -f
+
 update: etc/brew/Brewfile
 	-git add . && git commit -m "update" && git push origin main
 
