@@ -46,12 +46,6 @@ let g:airline#extensions#tabline#right_alt_sep = ''
 '''
 
 [[plugins]]
-repo = 'vim-airline/vim-airline-themes'
-hook_add = '''
-let g:airline_theme = 'nord'
-'''
-
-[[plugins]]
 repo = 'tpope/vim-fugitive'
 hook_add = '''
 nnoremap gs <Cmd>Gdiffsplit<CR><C-w>l

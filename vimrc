@@ -35,9 +35,9 @@ endif
 
 filetype plugin indent on
 syntax enable
-" }}}
-
 set updatetime=400
+colorscheme nord
+" }}}
 
 " graphix {{{
 set nu
@@ -48,7 +48,6 @@ set termguicolors " ターミナルでも True Color を使えるようにする
 set list "tab space 表示
 set signcolumn=yes "nu左のスペース
 let g:tex_conceal='' " マルチバイトをいい感じにする機能を停止-みにくい
-colorscheme nord
 "}}}
 
 " indentation {{{
@@ -145,3 +144,5 @@ autocmd BufRead * if expand('%') != '' && &buftype !~ 'nofile' | silent! loadvie
 " Don't save options.
 set viewoptions-=options
 " }}}
+
+
