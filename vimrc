@@ -16,6 +16,7 @@ if dein#load_state(s:dein_dir)
   let s:tls_toml      = g:rc_dir . '/telescope.toml'
   let s:lsp_toml      = g:rc_dir . '/lsp.toml'
   let s:preview_toml  = g:rc_dir . '/preview.toml'
+  let s:tree_toml     = g:rc_dir . '/file_tree.toml'
 
   call dein#load_toml(s:dein_toml, {'lazy': 0})
   call dein#load_toml(s:ftc_toml, {'lazy': 1})
@@ -23,6 +24,7 @@ if dein#load_state(s:dein_dir)
   call dein#load_toml(s:ddc_toml, {'lazy': 1})
   call dein#load_toml(s:tls_toml, {'lazy': 1})
   call dein#load_toml(s:preview_toml, {'lazy': 1})
+  call dein#load_toml(s:tree_toml, {'lazy': 1})
 
   call dein#end()
   call dein#save_state()

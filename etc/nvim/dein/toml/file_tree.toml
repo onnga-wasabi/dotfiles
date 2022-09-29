@@ -1,0 +1,38 @@
+[[plugins]]
+repo = 'kyazdani42/nvim-web-devicons'
+on_event = 'BufEnter'
+
+[[plugins]]
+repo = 'kyazdani42/nvim-tree.lua'
+on_event = 'BufEnter'
+hook_source = '''
+lua << EOF
+-- examples for your init.lua
+
+-- disable netrw at the very start of your init.lua (strongly advised)
+vim.g.loaded = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- setup with some options
+require("nvim-tree").setup({
+  sort_by = "case_sensitive",
+  view = {
+    adaptive_size = true,
+    width = 50,
+    mappings = {
+      list = {
+        { key = "u", action = "dir_up" },
+      },
+    },
+  },
+  renderer = {
+    group_empty = true,
+  },
+  filters = {
+    dotfiles = true,
+  },
+})
+EOF
+
+nnoremap <A-b> <Cmd>NvimTreeToggle<CR>
+'''
