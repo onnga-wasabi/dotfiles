@@ -15,6 +15,7 @@ link_rc_files () {
     gitignore_global
     latexmkrc
     default-python-packages
+    tigrc
   "
 
   for rc_file in ${RC_FILES}
