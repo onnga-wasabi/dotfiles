@@ -1,4 +1,18 @@
 [[plugins]]
+repo = 'ellisonleao/glow.nvim'
+on_ft = ['markdown']
+hook_source = '''
+lua << EOF
+require('glow').setup({
+  border = "shadow", -- floating window border config
+  style = "dark", -- filled automatically with your current editor background, you can override using glow json style
+  pager = true,
+  width = 200,
+})
+EOF
+'''
+
+[[plugins]]
 repo = 'junegunn/vim-easy-align'
 on_ft = ['markdown']
 hook_source = '''
