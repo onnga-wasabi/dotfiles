@@ -41,6 +41,7 @@ CROSS="\u2718"
 LIGHTNING="\u26a1"
 GEAR="\u2699"
 APPLE="\ue711"
+UBUNTU="\uf31b"
 
 # Begin a segment
 # Takes two arguments, background and foreground. Both can be omitted,
@@ -126,7 +127,11 @@ prompt_status() {
 	if [[ -n "$symbols" ]]; then
 		prompt_segment 8 $PRIMARY_FG " $symbols "
 	else
-		prompt_segment 8 $PRIMARY_FG " $APPLE "
+    logo=${APPLE}
+    if [[ "$(uname)" == "Linux" ]]; then
+      logo=${UBUNTU}
+    fi
+		prompt_segment 8 $PRIMARY_FG " ${logo} "
 	fi
 }
 
@@ -142,12 +147,7 @@ prompt_virtualenv() {
 prompt_shellenv() {
 	color=white
 	prompt_segment $color 8
-	if [[ "$(uname -m)" == arm64 ]]; then
-		arch=arm64
-	elif [[ "$(uname -m)" == x86_64 ]]; then
-		arch=rosetta
-	fi
-	print -Pn " $arch "
+	print -Pn " $(uname -m) "
 }
 prompt_sorin() {
 	color=white
