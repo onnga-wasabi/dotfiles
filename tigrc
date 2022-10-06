@@ -1,8 +1,8 @@
 # Colors
 color default          white  default
-color cursor           white  cyan
-color status           white  default
-color title-focus      white  blue
+color cursor           black  cyan bold
+color status           white  default bold
+color title-focus      black  blue bold
 
 # Main
 bind main H !git rebase -i %(commit)
