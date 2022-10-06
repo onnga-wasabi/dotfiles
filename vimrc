@@ -38,7 +38,7 @@ endif
 filetype plugin indent on
 syntax enable
 set updatetime=400
-colorscheme nord
+colorscheme onedark
 " }}}
 
 " graphix {{{

@@ -13,7 +13,6 @@ repo = 'cocopon/iceberg.vim'
 [[plugins]]
 repo = 'arcticicestudio/nord-vim'
 
-
 [[plugins]]
 repo = 'projekt0n/github-nvim-theme'
 
@@ -25,10 +24,10 @@ if !exists('g:airline_symbols')
 endif
 
 " powerline symbols
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
+"let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ' '
+"let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ' '
 
 let g:airline_symbols.branch = ''
 let g:airline_symbols.colnr = ' :'
@@ -39,11 +38,14 @@ let g:airline_symbols.dirty='⚡'
 
 " Tab
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ''
-let g:airline#extensions#tabline#left_alt_sep = ''
-let g:airline#extensions#tabline#right_sep = ''
-let g:airline#extensions#tabline#right_alt_sep = ''
+"let g:airline#extensions#tabline#left_sep = ''
+let g:airline#extensions#tabline#left_alt_sep = ' '
+"let g:airline#extensions#tabline#right_sep = ''
+let g:airline#extensions#tabline#right_alt_sep = ' '
 '''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
 
 [[plugins]]
 repo = 'tpope/vim-fugitive'
