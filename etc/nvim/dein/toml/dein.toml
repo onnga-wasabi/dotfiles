@@ -9,6 +9,9 @@ repo = 'navarasu/onedark.nvim'
 
 [[plugins]]
 repo = 'cocopon/iceberg.vim'
+hook_add = '''
+let g:airline_theme='iceberg'        "I assume you already had this line
+'''
 
 [[plugins]]
 repo = 'arcticicestudio/nord-vim'
@@ -45,7 +48,7 @@ let g:airline#extensions#tabline#right_alt_sep = ' '
 '''
 
 [[plugins]]
-repo = 'vim-airline/vim-airline'
+repo = 'vim-airline/vim-airline-themes'
 
 [[plugins]]
 repo = 'tpope/vim-fugitive'
@@ -55,6 +58,17 @@ nnoremap gs <Cmd>Gdiffsplit<CR><C-w>l
 
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
+
+[[plugins]]
+repo = 'rbgrouleff/bclose.vim'
+
+[[plugins]]
+repo = 'iberianpig/tig-explorer.vim'
+depends = ['rbgrouleff/bclose.vim']
+hook_add = '''
+" open tig with Project root path
+nnoremap <Space>t :TigOpenProjectRootDir<CR><C-\><C-n>:set nonumber<CR>i
+'''
 
 [[plugins]]
 repo = 'simeji/winresizer'
