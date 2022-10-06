@@ -50,7 +50,10 @@ repo = 'akinsho/nvim-toggleterm.lua'
 on_source = 'telescope.nvim'
 hook_source = '''
 lua << EOF
-require("toggleterm").setup()
+require("toggleterm").setup({
+  close_on_exit = true, -- close the terminal window when the process exits
+}
+)
 EOF
 '''
 
