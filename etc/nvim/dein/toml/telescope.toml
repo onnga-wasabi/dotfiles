@@ -68,7 +68,7 @@ require('telescope-makefile').setup({
   toggle_term = {
     cmd = 'make',
     direction = 'float',
-    close_on_exit = false,
+    close_on_exit = true,
   },
 })
 EOF
