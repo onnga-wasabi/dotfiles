@@ -25,10 +25,6 @@ export LDFLAGS="-L$(brew --prefix llvm)/lib"
 export CFLAGS="-I$(brew --prefix llvm)/include"
 export CPPFLAGS="-I$(brew --prefix llvm)/include"
 
-# xcode
-export CFLAGS="$CFLAGS -I$(xcrun --show-sdk-path)/usr/include"
-export SDKROOT="$(xcrun --sdk macosx --show-sdk-path)"
-
 autoload -Uz compinit
 compinit
 
