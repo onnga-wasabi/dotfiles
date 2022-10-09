@@ -21,4 +21,4 @@ grpcurl 1.8.7
 kubectl 1.24.4
 cloudsql-proxy 1.31.2
 postgres 12.12
-lazydocker 0.18.1
+coursier 2.1.0-M7

@@ -10,8 +10,12 @@ install_asdf_vms () {
   ENABLE_PLUGINS=(`cat ${DOTPATH}/tool-versions | cut -d ' ' -f 1`)
   for plugin in "${ENABLE_PLUGINS[@]}"
   do
-    echo "Plugin add ${plugin}"
-    asdf plugin add ${plugin}
+    github_url=""
+    if [ "${plugin}" == "coursier" ]; then
+      github_url="https://github.com/onnga-wasabi/asdf-coursier"
+    fi
+    echo "Plugin add ${plugin} ${github_url}"
+    asdf plugin add ${plugin} ${github_url}
   done
 
   echo "Installing asdf VMs..."
