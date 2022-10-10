@@ -3,7 +3,7 @@ gcloud 378.0.0
 terraform 1.1.7
 java corretto-11.0.16.9.1
 sbt 1.6.2
-neovim 0.8.0
+neovim 0.7.2
 golang 1.18.6
 act 0.2.26
 saml2aws 2.34.0
