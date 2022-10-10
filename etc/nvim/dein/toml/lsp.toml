@@ -32,6 +32,7 @@ lspconfig.sqlls.setup({})
 lspconfig.yamlls.setup({})
 lspconfig.opencl_ls.setup({})
 lspconfig.texlab.setup({})
+lspconfig.terraformls.setup({})
 EOF
 
 nnoremap gD <Cmd>lua vim.lsp.buf.declaration()<CR>
@@ -64,7 +65,6 @@ local formatting = null_ls.builtins.formatting
 local diagnostics = null_ls.builtins.diagnostics
 
 local sources = {
-  formatting.terraform_fmt,
   formatting.scalafmt,
   formatting.isort,
   formatting.black.with{

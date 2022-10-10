@@ -12,3 +12,16 @@ on_event = 'BufEnter'
 hook_add = '''
 let g:context_enabled = 0
 '''
+
+[[plugins]]
+repo = 'lukas-reineke/indent-blankline.nvim'
+on_event = 'BufEnter'
+hook_source = '''
+lua << EOF
+vim.opt.list = true
+require("indent_blankline").setup {
+    show_current_context = true,
+    show_current_context_start = true,
+}
+EOF
+'''

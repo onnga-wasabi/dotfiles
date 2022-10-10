@@ -30,6 +30,7 @@ nnoremap <Space>d <cmd>Telescope find_files cwd=~/dotfiles<cr>
 
 nnoremap <Space>b <cmd>Telescope buffers<cr>
 nnoremap <Space>h <cmd>Telescope help_tags<cr>
+nnoremap <Space>g <cmd>Telescope live_grep<cr>
 '''
 
 [[plugins]]
