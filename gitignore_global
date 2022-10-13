@@ -1,3 +1,9 @@
 .secrets
 .DS_Store
 .swp
+
+# for metals, refs: https://scalameta.org/metals/docs/editors/vim/#files-and-directories-to-include-in-your-gitignore
+.metals/
+.bloop/
+.ammonite/
+metals.sbt

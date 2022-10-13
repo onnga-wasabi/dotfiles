@@ -31,6 +31,14 @@ nnoremap <Space>d <cmd>Telescope find_files cwd=~/dotfiles<cr>
 nnoremap <Space>b <cmd>Telescope buffers<cr>
 nnoremap <Space>h <cmd>Telescope help_tags<cr>
 nnoremap <Space>g <cmd>Telescope live_grep<cr>
+
+" Lsp
+nnoremap gd <Cmd>lua require'telescope.builtin'.lsp_definitions()<CR>
+nnoremap gi <Cmd>lua require'telescope.builtin'.lsp_implementations()<CR>
+nnoremap gr <Cmd>lua require'telescope.builtin'.lsp_references()<CR>
+
+" Trouble
+nnoremap gxd <Cmd>lua require'telescope.builtin'.diagnostics	()<CR>
 '''
 
 [[plugins]]
