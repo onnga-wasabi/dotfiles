@@ -99,3 +99,6 @@ if [ -f '${HOME}/.local/share/gcloud/google-cloud-sdk/path.zsh.inc' ]; then . '$
 
 # The next line enables shell command completion for gcloud.
 if [ -f '${HOME}/.local/share/gcloud/google-cloud-sdk/completion.zsh.inc' ]; then . '${HOME}/.local/share/gcloud/google-cloud-sdk/completion.zsh.inc'; fi
+
+# kubectl completion
+source <(kubectl completion zsh)"
