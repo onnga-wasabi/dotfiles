@@ -101,4 +101,4 @@ if [ -f '${HOME}/.local/share/gcloud/google-cloud-sdk/path.zsh.inc' ]; then . '$
 if [ -f '${HOME}/.local/share/gcloud/google-cloud-sdk/completion.zsh.inc' ]; then . '${HOME}/.local/share/gcloud/google-cloud-sdk/completion.zsh.inc'; fi
 
 # kubectl completion
-source <(kubectl completion zsh)"
+source <(kubectl completion zsh)
