@@ -22,3 +22,4 @@ kubectl 1.24.4
 cloudsql-proxy 1.31.2
 postgres 12.12
 coursier 2.1.0-M7
+yq 4.28.1
