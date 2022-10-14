@@ -145,9 +145,12 @@ prompt_virtualenv() {
 }
 
 prompt_shellenv() {
-	color=white
-	prompt_segment $color 8
-	print -Pn " $(uname -m) "
+  arch_name=$(uname -m)
+  if [[ "$(uname)" == "Linux" ]]; then
+    prompt_segment 102 white " ${arch_name} "
+  else
+    prompt_segment white 8 " ${arch_name} "
+  fi
 }
 prompt_sorin() {
 	color=white
