@@ -93,3 +93,6 @@ lua << EOF
 require("emcl").setup({})
 EOF
 '''
+
+[[plugins]]
+repo = 'tpope/vim-surround'

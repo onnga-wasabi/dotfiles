@@ -138,6 +138,10 @@ nnoremap <Space>y gg<S-v><S-g>y
 
 
 " Foldings {{{
+" with treesitter
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
+
 set foldcolumn=3
 set foldlevel=2
 set foldmethod=manual
@@ -148,5 +152,4 @@ autocmd BufRead * if expand('%') != '' && &buftype !~ 'nofile' | silent! loadvie
 " Don't save options.
 set viewoptions-=options
 " }}}
-
 
