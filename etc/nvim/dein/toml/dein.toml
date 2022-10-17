@@ -60,6 +60,9 @@ nnoremap gs <Cmd>Gdiffsplit<CR><C-w>l
 repo = 'airblade/vim-gitgutter'
 
 [[plugins]]
+repo = 'akinsho/git-conflict.nvim'
+
+[[plugins]]
 repo = 'rbgrouleff/bclose.vim'
 
 [[plugins]]

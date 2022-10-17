@@ -89,3 +89,15 @@ augroup close_toggleterm
   autocmd FileType toggleterm nnoremap <buffer>, <Cmd>:q<CR>
 augroup END
 '''
+
+[[plugins]]
+repo = 'kkharji/sqlite.lua'
+on_source = 'telescope.nvim'
+
+[[plugins]]
+repo = 'nvim-telescope/telescope-frecency.nvim'
+depends = ['telescope.nvim']
+on_source = 'telescope.nvim'
+hook_source = '''
+nnoremap <Space>z <Cmd>lua require('telescope').extensions.frecency.frecency({ workspace = 'CWD' })<CR>
+'''
