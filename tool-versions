@@ -24,3 +24,5 @@ postgres 12.12
 coursier 2.1.0-M7
 yq 4.28.1
 lazydocker 0.19.0
+kubectx 0.9.4
+kube-score 1.14.0

@@ -96,7 +96,11 @@ export FZF_TMUX_OPTS="-p 80%"
 
 
 # kubectl completion
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 source <(kubectl completion zsh)
+alias k=kubectl
+alias kc=kubectx
+alias kn=kubens
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f "${HOME}/.local/share/gcloud/google-cloud-sdk/path.zsh.inc" ]; then . "${HOME}/.local/share/gcloud/google-cloud-sdk/path.zsh.inc"; fi
