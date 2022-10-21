@@ -70,7 +70,7 @@ set matchtime=1
 set keywordprg=:help
 set noswapfile
 set hidden " allow to change buffer w/o saveing
-set clipboard+=unnamed "vim -> system clip board
+set clipboard+=unnamed "vim -> system clipboard
 " }}}
 
 " functions {{{
