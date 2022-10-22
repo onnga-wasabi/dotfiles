@@ -59,6 +59,8 @@ zstyle ':completion:*' menu select
 ## terraform
 export GODEBUG=asyncpreemptoff=1
 
+## Golang
+export PATH="$PATH:$(go env GOPATH)/bin"
 
 # load local rc files
 LOCAL_RC_FILE=${HOME}/.zshrc_local
