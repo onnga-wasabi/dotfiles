@@ -38,6 +38,7 @@ lspconfig.volar.setup({
   filetypes = {'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json'}
 })
 lspconfig.bufls.setup{}
+lspconfig.html.setup({})
 EOF
 
 nnoremap gD <Cmd>lua vim.lsp.buf.declaration()<CR>
