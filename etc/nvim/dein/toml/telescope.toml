@@ -64,7 +64,8 @@ require("toggleterm").setup({
 }
 )
 EOF
-nnoremap <Space><S-t> <Cmd>ToggleTerm direction=float<CR>
+nnoremap <A-`> <Cmd>ToggleTerm direction=float<CR>
+tnoremap <A-`> <Cmd>ToggleTerm direction=float<CR>
 '''
 
 [[plugins]]

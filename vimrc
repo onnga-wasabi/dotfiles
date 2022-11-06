@@ -148,7 +148,9 @@ set foldmethod=manual
 " refer to: https://vim-jp.org/vim-users-jp/2009/10/08/Hack-84.html
 " Save fold settings.
 autocmd BufWritePost * if expand('%') != '' && &buftype !~ 'nofile' | mkview | endif
+autocmd BufWinLeave * if expand('%') != '' && &buftype !~ 'nofile' | mkview | endif
 autocmd BufRead * if expand('%') != '' && &buftype !~ 'nofile' | silent! loadview | endif " silent! じゃないと view 作ってないファイルでエラーが supress されない
+autocmd BufWinEnter * if expand('%') != '' && &buftype !~ 'nofile' | silent! loadview | endif
 " Don't save options.
 set viewoptions-=options
 " }}}
