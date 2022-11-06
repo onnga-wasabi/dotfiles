@@ -55,7 +55,7 @@ let g:terminal_color_2 = '#0f764d' " green
 let g:terminal_color_3 = '#d8af5f' " yellow
 let g:terminal_color_4 = '#208fff' " blue
 let g:terminal_color_5 = '#c61b6f' " magenta
-let g:terminal_color_6 = '#20736a' " cyan
+let g:terminal_color_6 = '#69f6e7' " cyan
 let g:terminal_color_7 = '#fafaf0' " white
 let g:terminal_color_8 = '#032029' " black(bright)
 let g:terminal_color_9 = '#d75f87' " red(bright)
@@ -64,7 +64,7 @@ let g:terminal_color_11 = '#ffd787' " yellow(bright)
 let g:terminal_color_12 = '#add4fb' " blue(bright)
 let g:terminal_color_13 = '#ffafaf' " megenta(bright)
 let g:terminal_color_14 = '#87d7d7' " cyan(bright)
-let g:terminal_color_15 = '#e4e4e4' " white(bright)
+let g:terminal_color_15 = '#fafaf0' " white(bright)
 
 set list "tab space 表示
 set signcolumn=yes "nu左のスペース
