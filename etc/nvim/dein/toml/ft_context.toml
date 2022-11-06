@@ -24,3 +24,12 @@ require("indent_blankline").setup {
 }
 EOF
 '''
+
+[[plugins]]
+repo = 'norcalli/nvim-colorizer.lua'
+on_event = 'BufEnter'
+hook_source = '''
+lua << EOF
+require'colorizer'.setup()
+EOF
+'''

@@ -49,6 +49,23 @@ set cursorline
 set nowrap
 set background=dark
 set termguicolors " ターミナルでも True Color を使えるようにする。
+let g:terminal_color_0 = '#000000' " black
+let g:terminal_color_1 = '#d11b24' " red
+let g:terminal_color_2 = '#0f764d' " green
+let g:terminal_color_3 = '#d8af5f' " yellow
+let g:terminal_color_4 = '#208fff' " blue
+let g:terminal_color_5 = '#c61b6f' " magenta
+let g:terminal_color_6 = '#20736a' " cyan
+let g:terminal_color_7 = '#fafaf0' " white
+let g:terminal_color_8 = '#032029' " black(bright)
+let g:terminal_color_9 = '#d75f87' " red(bright)
+let g:terminal_color_10 = '#87af87' " green(bright)
+let g:terminal_color_11 = '#ffd787' " yellow(bright)
+let g:terminal_color_12 = '#add4fb' " blue(bright)
+let g:terminal_color_13 = '#ffafaf' " megenta(bright)
+let g:terminal_color_14 = '#87d7d7' " cyan(bright)
+let g:terminal_color_15 = '#e4e4e4' " white(bright)
+
 set list "tab space 表示
 set signcolumn=yes "nu左のスペース
 let g:tex_conceal='' " マルチバイトをいい感じにする機能を停止-みにくい
