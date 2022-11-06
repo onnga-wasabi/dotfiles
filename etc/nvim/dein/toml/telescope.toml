@@ -38,7 +38,7 @@ nnoremap gi <Cmd>lua require'telescope.builtin'.lsp_implementations()<CR>
 nnoremap gr <Cmd>lua require'telescope.builtin'.lsp_references()<CR>
 
 " Trouble
-nnoremap gxd <Cmd>lua require'telescope.builtin'.diagnostics({bufnr=0})<CR>
+nnoremap gxx <Cmd>lua require'telescope.builtin'.diagnostics()<CR>
 '''
 
 [[plugins]]
@@ -64,6 +64,7 @@ require("toggleterm").setup({
 }
 )
 EOF
+nnoremap <Space><S-t> <Cmd>ToggleTerm direction=float<CR>
 '''
 
 [[plugins]]

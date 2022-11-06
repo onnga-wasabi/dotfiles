@@ -70,7 +70,9 @@ repo = 'iberianpig/tig-explorer.vim'
 depends = ['rbgrouleff/bclose.vim']
 hook_add = '''
 " open tig with Project root path
-nnoremap <Space>t :TigOpenProjectRootDir<CR><C-\><C-n>:set nonumber<CR>i
+nnoremap <Space>T :on<CR>:TigOpenCurrentFile<CR><C-\><C-n>:set nonumber<CR>i
+nnoremap <Space>t :on<CR>:TigOpenProjectRootDir<CR><C-\><C-n>:set nonumber<CR>i
+let g:tig_explorer_use_builtin_term=0
 '''
 
 [[plugins]]

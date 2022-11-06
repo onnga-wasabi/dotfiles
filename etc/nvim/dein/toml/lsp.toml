@@ -35,11 +35,15 @@ lspconfig.opencl_ls.setup({})
 lspconfig.texlab.setup({})
 lspconfig.terraformls.setup({})
 lspconfig.volar.setup({
-  filetypes = {'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json'}
+  filetypes = {'javascript', 'javascriptreact', 'vue'},
 })
 lspconfig.bufls.setup{}
 lspconfig.html.setup({})
 lspconfig.jdtls.setup({})
+lspconfig.tsserver.setup {
+  filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+  cmd = { "typescript-language-server", "--stdio" }
+}
 EOF
 
 nnoremap gD <Cmd>lua vim.lsp.buf.declaration()<CR>
@@ -285,11 +289,8 @@ lua << EOF
 EOF
 
 
-nnoremap gxx <cmd>TroubleToggle<cr>
+nnoremap gxd <Cmd>TroubleToggle document_diagnostics<CR>
 nnoremap gxw <cmd>TroubleToggle workspace_diagnostics<cr>
 nnoremap gxq <cmd>TroubleToggle quickfix<cr>
-nnoremap gxl <cmd>TroubleToggle loclist<cr>
-
-" Telescope で
-" nnoremap gxd <cmd>TroubleToggle document_diagnostics<cr>
+noremap gxl <cmd>TroubleToggle loclist<cr>
 '''

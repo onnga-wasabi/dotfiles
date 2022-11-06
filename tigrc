@@ -5,16 +5,21 @@ color status           white  default bold
 color title-focus      black  blue bold
 
 # Main
-bind main H !git rebase -i %(commit)
-bind main P !?git pull origin %(branch) 
+bind main H ?git rebase -i %(commit)
+bind main P !?git pull origin %(branch)
 bind main q ?@<quit
 
+# Log
+bind log H ?git rebase -i %(commit)
+
 # Refs
-bind refs c !@git checkout %(branch) 
+bind refs c !@git checkout %(branch)
 bind refs b !@git branch "%(prompt Enter branch name: )"
 bind refs p !?gh pr create -B %(branch) -w
-bind refs v !@?gh pr view --web %(branch) 
+bind refs v !@?gh pr view --web %(branch)
 bind refs P !?git push origin %(branch)
+bind refs r ?git rebase %(branch)
+bind refs U !git pull origin %(branch)
 
 # Branch
 bind branch d !@?git branch -D %(branch)
@@ -22,10 +27,14 @@ bind branch d !@?git branch -D %(branch)
 # Status
 bind status D !@?rm %(file)
 bind status d !@?git checkout %(file)
+bind status S !@git stash save "%(prompt Enter stash name: )"
 
 # Diff
-bind diff    H !@git rebase -i %(commit)
+bind diff    H ?git rebase -i %(commit)
+bind diff    Y ?git stash pop %(stash)
 
+# Stash
+bind stash   Y ?git stash pop %(stash)
 
 # Global
 set refresh-mode = auto
