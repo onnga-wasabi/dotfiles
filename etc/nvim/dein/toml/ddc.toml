@@ -7,6 +7,7 @@ hook_source = '''
 " Use around source.
 " https://github.com/Shougo/ddc-around
 call ddc#custom#patch_global('sources', ['nvim-lsp'])
+call ddc#custom#patch_global('ui', 'pum')
 
 " Use matcher_head and sorter_rank.
 " https://github.com/Shougo/ddc-matcher_head
@@ -56,6 +57,10 @@ inoremap <C-e> <Cmd>call pum#map#cancel()<CR>
 call ddc#enable()
 call popup_preview#enable()
 '''
+
+[[plugins]]
+repo = 'Shougo/ddc-ui-pum'
+on_source = 'ddc.vim'
 
 [[plugins]]
 repo = 'Shougo/ddc-around'
