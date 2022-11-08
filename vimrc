@@ -51,7 +51,7 @@ set background=dark
 set termguicolors " ターミナルでも True Color を使えるようにする。
 let g:terminal_color_0 = '#000000' " black
 let g:terminal_color_1 = '#d11b24' " red
-let g:terminal_color_2 = '#0f764d' " green
+let g:terminal_color_2 = '#738A04' " green
 let g:terminal_color_3 = '#d8af5f' " yellow
 let g:terminal_color_4 = '#208fff' " blue
 let g:terminal_color_5 = '#c61b6f' " magenta
