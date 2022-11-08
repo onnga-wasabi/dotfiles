@@ -44,6 +44,8 @@ lspconfig.tsserver.setup {
   filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
   cmd = { "typescript-language-server", "--stdio" }
 }
+lspconfig.kotlin_language_server.setup({})
+lspconfig.groovyls.setup({})
 EOF
 
 nnoremap gD <Cmd>lua vim.lsp.buf.declaration()<CR>
@@ -149,6 +151,8 @@ require('mason-tool-installer').setup {
     'terraform-ls',
     'vue-language-server',
     'jdtls', -- java
+    'kotlin-language-server',
+    'groovy-language-server',
   },
 
   -- if set to true this will check each tool for updates. If updates
