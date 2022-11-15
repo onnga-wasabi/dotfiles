@@ -146,6 +146,8 @@ nnoremap <C-s> <C-i>
 nnoremap <C-w>v <C-w>v<CR><C-w>l
 nnoremap ss <Cmd>split<CR>
 nnoremap <C-w>n <Nop>
+nnoremap <C-c> <Cmd>noh<CR>
+nnoremap <C-p> <Cmd>echo expand("%")<CR>
 
 " shortcuts
 nnoremap <Space>r <Cmd>source ~/.vimrc<CR>

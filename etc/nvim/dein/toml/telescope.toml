@@ -86,12 +86,6 @@ require('telescope-makefile').setup({
 })
 EOF
 nnoremap <Space>m <Cmd>Telescope make<CR>
-
-augroup close_toggleterm
-  autocmd!
-  autocmd FileType toggleterm tnoremap <buffer>, <Cmd>:q<CR>
-  autocmd FileType toggleterm nnoremap <buffer>, <Cmd>:q<CR>
-augroup END
 '''
 
 [[plugins]]

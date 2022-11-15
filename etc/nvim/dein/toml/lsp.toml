@@ -36,14 +36,19 @@ lspconfig.texlab.setup({})
 lspconfig.terraformls.setup({})
 lspconfig.volar.setup({
   filetypes = {'javascript', 'javascriptreact', 'vue'},
+  init_options = {
+    languageFeatures = {
+      diagnostics = false,
+    },
+  },
 })
 lspconfig.bufls.setup{}
 lspconfig.html.setup({})
 lspconfig.jdtls.setup({})
-lspconfig.tsserver.setup {
-  filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
-  cmd = { "typescript-language-server", "--stdio" }
-}
+-- lspconfig.tsserver.setup {
+--   filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+--   cmd = { "typescript-language-server", "--stdio" }
+-- }
 lspconfig.kotlin_language_server.setup({})
 lspconfig.groovyls.setup({})
 EOF
@@ -95,6 +100,9 @@ local sources = {
   formatting.yamlfmt,
   formatting.buf,
   formatting.goimports,
+  formatting.prettier.with {
+    extra_args = {"--no-semi", "--double-quote", "--jsx-double-quote"}
+  },
 
   diagnostics.flake8.with{
     extra_args = {"--max-line-length=150" },
