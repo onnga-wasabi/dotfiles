@@ -21,7 +21,9 @@ require('telescope').setup{
       "%.tar.gz",
       ".tmp/",
       "%.gradle/",
-      "%.metals/"
+      "%.metals/",
+      "%.class",
+      "%.jar",
     },
   },
 }
