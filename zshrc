@@ -42,7 +42,10 @@ alias sed="gsed"
 alias realpath='(){ls --no-icons $1(:a)}'
 alias loadenv='(){set -a; source $1; set +a;}'
 alias vim=nvim
-
+alias go=richgo
+alias k=kubectl
+alias kc=kubectx
+alias kn=kubens
 
 # asdf
 export ASDF_HASHICORP_OVERWRITE_ARCH=amd64
@@ -102,9 +105,6 @@ export FZF_TMUX_OPTS="-p 80%"
 # kubectl completion
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 source <(kubectl completion zsh)
-alias k=kubectl
-alias kc=kubectx
-alias kn=kubens
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f "${HOME}/.local/share/gcloud/google-cloud-sdk/path.zsh.inc" ]; then . "${HOME}/.local/share/gcloud/google-cloud-sdk/path.zsh.inc"; fi
