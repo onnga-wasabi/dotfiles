@@ -98,3 +98,18 @@ EOF
 
 [[plugins]]
 repo = 'tpope/vim-surround'
+
+
+[[plugins]]
+repo = 'phaazon/hop.nvim'
+on_event = 'BufEnter'
+hook_add = '''
+lua << EOF
+require'hop'.setup()
+EOF
+
+nnoremap <silent> <S-F><S-F> :HopWord<CR>
+nnoremap <silent> <S-F><S-L> :HopLine<CR>
+vnoremap <silent> <S-F><S-F> :HopWord<CR>
+vnoremap <silent> <S-F><S-L> :HopLine<CR>
+'''

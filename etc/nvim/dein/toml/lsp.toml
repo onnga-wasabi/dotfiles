@@ -45,10 +45,10 @@ lspconfig.volar.setup({
 lspconfig.bufls.setup{}
 lspconfig.html.setup({})
 lspconfig.jdtls.setup({})
--- lspconfig.tsserver.setup {
---   filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
---   cmd = { "typescript-language-server", "--stdio" }
--- }
+lspconfig.tsserver.setup {
+  filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+  cmd = { "typescript-language-server", "--stdio" }
+}
 lspconfig.kotlin_language_server.setup({})
 lspconfig.groovyls.setup({})
 EOF
@@ -161,6 +161,7 @@ require('mason-tool-installer').setup {
     'jdtls', -- java
     'kotlin-language-server',
     'groovy-language-server',
+    'typescript-language-server',
   },
 
   -- if set to true this will check each tool for updates. If updates
