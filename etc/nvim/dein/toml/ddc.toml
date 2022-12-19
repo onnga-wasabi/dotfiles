@@ -46,6 +46,15 @@ call ddc#custom#patch_global('sourceOptions', {
   \ }
 \ })
 
+" For dadbod
+call ddc#custom#patch_filetype(['sql', 'mysql', 'plsql'], 'sources', 'dadbod-completion')
+call ddc#custom#patch_filetype(['sql', 'mysql', 'plsql'], 'sourceOptions', {
+\ 'dadbod-completion': {
+\   'mark': 'DB',
+\   'isVolatile': v:true,
+\ },
+\ })
+
 
 " Mappings.
 inoremap <C-n> <Cmd>call pum#map#select_relative(+1)<CR>
@@ -114,4 +123,20 @@ call signature_help#enable()
 
 " if you use with vim-lsp, disable vim-lsp's signature help feature
 let g:lsp_signature_help_enabled = 0
+'''
+
+[[plugins]]
+repo = 'kristijanhusak/vim-dadbod-completion'
+on_source = 'ddc.vim'
+hook_add = '''
+" Source is automatically added, you just need to include it in the chain complete list
+let g:completion_chain_complete_list = {
+    \   'sql': [
+    \    {'complete_items': ['vim-dadbod-completion']},
+    \   ],
+    \ }
+" Make sure `substring` is part of this list. Other items are optional for this completion source
+let g:completion_matching_strategy_list = ['exact', 'substring']
+" Useful if there's a lot of camel case items
+let g:completion_matching_ignore_case = 1
 '''

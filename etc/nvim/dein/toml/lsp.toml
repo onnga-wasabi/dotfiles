@@ -51,6 +51,7 @@ lspconfig.tsserver.setup {
 }
 lspconfig.kotlin_language_server.setup({})
 lspconfig.groovyls.setup({})
+lspconfig.sqls.setup({})
 EOF
 
 nnoremap gD <Cmd>lua vim.lsp.buf.declaration()<CR>
@@ -306,4 +307,24 @@ nnoremap gxd <Cmd>TroubleToggle document_diagnostics<CR>
 nnoremap gxw <cmd>TroubleToggle workspace_diagnostics<cr>
 nnoremap gxq <cmd>TroubleToggle quickfix<cr>
 noremap gxl <cmd>TroubleToggle loclist<cr>
+'''
+
+[[plugins]]
+repo = 'tpope/vim-dadbod'
+on_event = 'BufEnter'
+hook_source = '''
+'''
+
+[[plugins]]
+repo = 'kristijanhusak/vim-dadbod-ui'
+on_source = 'vim-dadbod'
+hook_source = '''
+let g:db_ui_execute_on_save=0
+let g:db_ui_hide_schemas = ['pg_catalog', 'pg_toast_temp.*', 'pg_toast', 'information_schema']
+
+let g:dbs = {
+\  'local': 'postgres://postgres:secret@127.0.0.1:5432/postgres'
+\ }
+
+nnoremap <C-j> <Plug>(DBUI_ExecuteQuery)
 '''
