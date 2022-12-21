@@ -113,7 +113,7 @@ function! EBufdelete()
   endif
 
   if buflisted(l:currentBufNum)
-    execute "silent bwipeout".l:currentBufNum
+    execute "silent bd".l:currentBufNum
     " bwipeoutに失敗した場合はウインドウ上のバッファを復元
     if bufloaded(l:currentBufNum) != 0
       execute "buffer " . l:currentBufNum
