@@ -42,6 +42,7 @@ alias sed="gsed"
 alias realpath='(){ls --no-icons $1(:a)}'
 alias loadenv='(){set -a; source $1; set +a;}'
 alias vim=nvim
+alias vimdiff='nvim -d'
 alias go=richgo
 alias k=kubectl
 alias kc=kubectx

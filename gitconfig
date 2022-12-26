@@ -14,3 +14,7 @@ email = yuuto.onnga.23@gmail.com
 	defaultBranch = main
 [pull]
 	rebase = true
+[mergetool]
+	keepBackup = false
+[merge]
+	tool = vimdiff

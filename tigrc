@@ -4,10 +4,15 @@ color cursor           white  green bold
 color status           white  default bold
 color title-focus      white  blue bold
 
+# General
+bind generic g none
+bind generic G none
+
 # Main
 bind main H ?git rebase -i %(commit)
 bind main P !?git pull origin %(branch)
 bind main q ?@<quit
+bind main c ?git checkout %(commit)
 
 # Log
 bind log H ?git rebase -i %(commit)
