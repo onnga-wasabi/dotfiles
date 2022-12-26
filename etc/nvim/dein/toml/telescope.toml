@@ -24,6 +24,7 @@ require('telescope').setup{
       "%.metals/",
       "%.class",
       "%.jar",
+      "%.csv",
     },
   },
 }
@@ -31,6 +32,9 @@ EOF
 
 nnoremap <Space>p <cmd>Telescope find_files hidden=true<cr>
 nnoremap <Space>d <cmd>Telescope find_files cwd=~/dotfiles<cr>
+nnoremap <Space>s <cmd>lua require('telescope.builtin').lsp_document_symbols()<cr>
+
+
 
 nnoremap <Space>b <cmd>Telescope buffers<cr>
 nnoremap <Space>h <cmd>Telescope help_tags<cr>
