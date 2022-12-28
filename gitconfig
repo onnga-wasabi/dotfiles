@@ -4,9 +4,7 @@
 name = onnga-wasabi
 email = yuuto.onnga.23@gmail.com
 [diff]
-    tool = default-difftool
-[difftool "default-difftool"]
-    cmd = code --wait --diff $LOCAL $REMOTE
+    tool = vimdiff
 [core]
 	editor = nvim
 	excludesFile = ~/.gitignore_global

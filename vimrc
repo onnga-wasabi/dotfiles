@@ -17,7 +17,7 @@ if dein#load_state(s:dein_dir)
   let s:lsp_toml      = g:rc_dir . '/lsp.toml'
   let s:preview_toml  = g:rc_dir . '/preview.toml'
   let s:tree_toml     = g:rc_dir . '/file_tree.toml'
-  let s:notice_toml     = g:rc_dir . '/notice.toml'
+  let s:notice_toml   = g:rc_dir . '/notice.toml'
 
   call dein#load_toml(s:dein_toml, {'lazy': 0})
   call dein#load_toml(s:ftc_toml, {'lazy': 1})
