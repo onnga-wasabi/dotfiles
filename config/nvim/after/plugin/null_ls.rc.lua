@@ -46,7 +46,21 @@ local sources = {
 
 	-- lua
 	formatting.stylua,
-	-- diagnostics.luacheck,
+	diagnostics.luacheck.with({
+		extra_args = {
+			"--formatter",
+			"plain",
+			"--codes",
+			"--ranges",
+			"--globals",
+			"vim",
+			"--ignore",
+			"411",
+			"--filename",
+			"$FILENAME",
+			"-",
+		},
+	}),
 }
 
 local options = {

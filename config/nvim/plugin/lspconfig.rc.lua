@@ -1,4 +1,3 @@
----@diagnostic disable: redefined-local
 -- mason
 local ok, mason = pcall(require, "mason")
 if ok then
@@ -92,7 +91,7 @@ lspconfig.sumneko_lua.setup({
 			},
 			diagnostics = {
 				-- Get the language server to recognize the `vim` global
-				globals = { "vim" },
+				enable = false,
 			},
 			workspace = {
 				-- Make the server aware of Neovim runtime files

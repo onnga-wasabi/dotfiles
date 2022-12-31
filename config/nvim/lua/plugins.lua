@@ -40,7 +40,7 @@ return require("packer").startup(function(use)
 
 	-- git
 	use({ "akinsho/git-conflict.nvim" })
-	use({ "iberianpig/tig-explorer.vim", requires = { "rbgrouleff/bclose.vim", opt = true } })
+	use({ "iberianpig/tig-explorer.vim", requires = { "rbgrouleff/bclose.vim" } })
 	use({ "tpope/vim-fugitive" })
 	use({ "airblade/vim-gitgutter" })
 
