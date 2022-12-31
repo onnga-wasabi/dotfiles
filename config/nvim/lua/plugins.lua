@@ -72,7 +72,7 @@ return require("packer").startup(function(use)
 	-- terminal
 	use({ "akinsho/nvim-toggleterm.lua" })
 
-	-- filetree
+	-- file tree
 	use({ "kyazdani42/nvim-tree.lua" })
 	use({ "sidebar-nvim/sidebar.nvim" })
 
