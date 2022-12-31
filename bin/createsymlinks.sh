@@ -25,8 +25,8 @@ link_rc_files () {
   done
 
   # Nvim
-  ln -sf ${DOTPATH}/etc/nvim/ ${HOME}/.config/
-  echo "symlink created ${DOTPATH}/etc/nvim/ -> ${HOME}/.config/nvim"
+  ln -sf ${DOTPATH}/config/nvim/ ${HOME}/.config/
+  echo "symlink created ${DOTPATH}/config/nvim/ -> ${HOME}/.config/nvim"
   echo
 
   # iTerm 2
