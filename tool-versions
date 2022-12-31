@@ -12,7 +12,7 @@ ripgrep 13.0.0
 jq 1.6
 awscli 2.5.2
 terragrunt 0.37.1
-nodejs lts
+nodejs 19.3.0
 deno 1.24.1
 rust 1.62.1
 fd 8.4.0
@@ -33,3 +33,5 @@ kotlin 1.7.10
 richgo 0.3.11
 stern 1.22.0
 k9s 0.26.7
+stylua 0.15.3
+lua 5.4.4
