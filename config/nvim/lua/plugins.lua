@@ -14,12 +14,16 @@ local packer_bootstrap = ensure_packer()
 return require("packer").startup(function(use)
 	use({ "wbthomason/packer.nvim" })
 
+	-- command line
+	use({ "delphinus/emcl.nvim" })
+
 	-- highlints
 	use({ "joshdick/onedark.vim" })
 	use({ "cocopon/iceberg.vim" })
 	use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons", opt = true } })
 	use({ "akinsho/bufferline.nvim" })
 	use({ "norcalli/nvim-colorizer.lua" })
+	use({ "simeji/winresizer" })
 
 	-- telescope
 	use({ "nvim-lua/plenary.nvim" })
@@ -33,6 +37,12 @@ return require("packer").startup(function(use)
 	use({ "WhoIsSethDaniel/mason-tool-installer.nvim" })
 	use({ "folke/trouble.nvim" })
 	use({ "jose-elias-alvarez/null-ls.nvim" })
+
+	-- git
+	use({ "akinsho/git-conflict.nvim" })
+	use({ "iberianpig/tig-explorer.vim", requires = { "rbgrouleff/bclose.vim", opt = true } })
+	use({ "tpope/vim-fugitive" })
+	use({ "airblade/vim-gitgutter" })
 
 	-- completion core
 	use({ "hrsh7th/nvim-cmp" })
