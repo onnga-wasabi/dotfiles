@@ -1,3 +1,4 @@
+--[[
 local ok, bufferline = pcall(require, "bufferline")
 if not ok then
 	return
@@ -43,3 +44,4 @@ local set_keymap = vim.api.nvim_set_keymap
 
 set_keymap("n", "<tab>", "<cmd>BufferLineCycleNext<cr>", opts)
 set_keymap("n", "<s-tab>", "<cmd>BufferLineCyclePrev<cr>", opts)
+-- ]]
