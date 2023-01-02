@@ -45,6 +45,7 @@ alias vim='echo vimなんかありませーん, use n instead of vim'
 alias n=nvim
 alias vimdiff='nvim -d'
 alias go=richgo
+alias ks=k9s
 alias k=kubectl
 alias kc=kubectx
 alias kn=kubens
