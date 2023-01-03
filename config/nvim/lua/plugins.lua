@@ -27,7 +27,7 @@ return require("packer").startup(function(use)
 
 	-- telescope
 	use({ "nvim-lua/plenary.nvim" })
-	use({ "nvim-telescope/telescope.nvim", requires = { "nvim-lua/plenary.nvim", opt = true } })
+	use({ "nvim-telescope/telescope.nvim" })
 	use({ "nvim-telescope/telescope-file-browser.nvim" })
 
 	-- lsp
@@ -37,6 +37,10 @@ return require("packer").startup(function(use)
 	use({ "WhoIsSethDaniel/mason-tool-installer.nvim" })
 	use({ "folke/trouble.nvim" })
 	use({ "jose-elias-alvarez/null-ls.nvim" })
+
+	-- db
+	use({ "tpope/vim-dadbod" })
+	use({ "kristijanhusak/vim-dadbod-ui", requires = { "tpope/vim-dadbod" } })
 
 	-- git
 	use({ "akinsho/git-conflict.nvim" })

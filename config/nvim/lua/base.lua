@@ -20,8 +20,8 @@ set_keymap("n", "<c-w>v", "<c-w>v<c-w>l", opts)
 set_keymap("n", "<c-w>s", "<c-w>s<c-w>j", opts)
 
 set_keymap("n", ",", "<cmd>w<cr><cmd>bp<bar>sp<bar>bn<bar>bd<cr>", opts)
-set_keymap("n", "<c-w>p", "<cmd>bn<cr>", opts)
-set_keymap("n", "<c-w>n", "<cmd>bp<cr>", opts)
+set_keymap("n", "sp", "<cmd>bn<cr>", opts)
+set_keymap("n", "sn", "<cmd>bp<cr>", opts)
 
 set_keymap("i", "<c-c>", "<esc>", opts)
 

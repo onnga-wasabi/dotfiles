@@ -35,3 +35,4 @@ stern 1.22.0
 k9s 0.26.7
 stylua 0.15.3
 lua 5.4.4
+ffmpeg 5.1.2
