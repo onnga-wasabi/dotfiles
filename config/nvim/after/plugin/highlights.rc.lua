@@ -1,3 +1,5 @@
+require('onedark').load()
+
 vim.cmd("colorscheme onedark")
 
 vim.g.terminal_color_0 = "#000000" -- black
