@@ -19,7 +19,7 @@ set_keymap("n", "<leader>r", "<cmd>source ~/.config/nvim/init.lua<cr>", opts)
 set_keymap("n", "<c-w>v", "<c-w>v<c-w>l", opts)
 set_keymap("n", "<c-w>s", "<c-w>s<c-w>j", opts)
 
-set_keymap("n", ",", "<cmd>w<cr><cmd>bp<bar>sp<bar>bn<bar>bd<cr>", opts)
+set_keymap("n", ",", "<cmd>bp<bar>sp<bar>bn<bar>bd<cr>", opts)
 set_keymap("n", "sp", "<cmd>bn<cr>", opts)
 set_keymap("n", "sn", "<cmd>bp<cr>", opts)
 

@@ -25,6 +25,9 @@ telescope.setup({
 			"%.class",
 			"%.jar",
 			"%.csv",
+			"%mocks/",
+			"%.pb.go",
+			"%.pyi",
 		},
 	},
 })

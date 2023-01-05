@@ -49,7 +49,7 @@ local options = {
 	-- finder do lsp request timeout
 	-- if your project is big enough or your server very slow
 	-- you may need to increase this value
-	finder_request_timeout = 1500,
+	finder_request_timeout = 10000,
 	finder_action_keys = {
 		open = { "o", "<CR>" },
 		vsplit = "s",
