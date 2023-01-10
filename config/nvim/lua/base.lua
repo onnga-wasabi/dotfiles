@@ -34,7 +34,7 @@ set_keymap("v", ">", ">gv", opts)
 -- Util Functions {{{
 -- Open memo file
 vim.cmd("autocmd!")
-vim.api.nvim_create_user_command("Hoge", function(_)
-	vim.cmd("e " .. "~/_/hoge/hoge.markdown")
+vim.api.nvim_create_user_command("Memo", function(_)
+	vim.cmd("e " .. "~/._/memo/memo.md")
 end, {})
 -- }}} end of Util Functions
