@@ -10,6 +10,7 @@ brew/cleanup:
 
 update: etc/brew/Brewfile
 	-git add . && git commit -m "update"
+	git pull origin main
 	-git push origin main
 
 git-pull-origin: .
