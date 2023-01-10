@@ -1,17 +1,8 @@
 DOTPATH := `git rev-parse --show-toplevel`
 
-.PHONY: etc/brew/Brewfile
-etc/brew/Brewfile:
-	cd etc/brew; brew bundle dump -f
-
-.PHONY: brew/cleanup
-brew/cleanup:
-	cd etc/brew; brew bundle cleanup -f
-
-update: etc/brew/Brewfile
+update:
 	-git add . && git commit -m "update"
-	git pull origin main
-	-git push origin main
+	-git pull origin main && git push origin main
 
 git-pull-origin: .
 	git pull origin main

@@ -30,7 +30,6 @@ set_keymap("v", "<", "<gv", opts)
 set_keymap("v", ">", ">gv", opts)
 -- }}} end of Mappings
 
-
 -- Util Functions {{{
 -- Open memo file
 vim.cmd("autocmd!")
@@ -38,3 +37,6 @@ vim.api.nvim_create_user_command("Memo", function(_)
 	vim.cmd("e " .. "~/._/memo/memo.md")
 end, {})
 -- }}} end of Util Functions
+
+-- File Types
+vim.cmd([[au BufNewFile,BufRead *.rb,*.rbw,Brewfile        setf ruby]])

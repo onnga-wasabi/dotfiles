@@ -105,6 +105,13 @@ lspconfig.sumneko_lua.setup({
 	},
 })
 
+lspconfig.ruby_ls.setup({
+	filetypes = {
+		"ruby",
+		"Brewfile",
+	},
+})
+
 local ok, mason_tool_installer = pcall(require, "mason-tool-installer")
 if not ok then
 	return
