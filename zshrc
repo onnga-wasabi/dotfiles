@@ -25,6 +25,10 @@ export LDFLAGS="-L$(brew --prefix llvm)/lib"
 export CFLAGS="-I$(brew --prefix llvm)/include"
 export CPPFLAGS="-I$(brew --prefix llvm)/include"
 
+# openssl
+export LDFLAGS="${LDFLAGS} -L$(brew --prefix openssl)/lib"
+export CPPFLAGS="${CPPFLAGS} -I$(brew --prefix openssl)/include"
+
 autoload -Uz compinit
 compinit
 

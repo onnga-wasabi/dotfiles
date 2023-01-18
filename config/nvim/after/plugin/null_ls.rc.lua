@@ -56,6 +56,8 @@ local sources = {
 			"vim",
 			"--ignore",
 			"411",
+			"--ignore-pattern",
+			"!.eslintrc.js",
 			"--filename",
 			"$FILENAME",
 			"-",
