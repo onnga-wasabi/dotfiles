@@ -11,7 +11,7 @@ bind generic G none
 # Main
 bind main H ?git rebase -i %(commit)
 bind main P !?git pull origin %(branch)
-bind main q ?@<quit
+bind main q @sh -c ';'  # do nothing
 bind main c ?git checkout %(commit)
 
 # Log

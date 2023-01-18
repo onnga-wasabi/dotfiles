@@ -65,6 +65,13 @@ local sources = {
 	}),
 }
 
+if vim.fn.executable("djlint") == 1 then
+	sources[#sources+1] = formatting.djlint.with({
+		command = "djlint",
+		args = { "--reformat", "-"},
+	})
+end
+
 local options = {
 	sources = sources,
 }

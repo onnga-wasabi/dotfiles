@@ -28,6 +28,7 @@ telescope.setup({
       "%mocks/",
       "%.pb.go",
       "%.pyi",
+      "%__pycache__/*",
     },
   },
 })
