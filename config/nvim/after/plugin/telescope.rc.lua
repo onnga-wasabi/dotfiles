@@ -29,6 +29,7 @@ telescope.setup({
       "%.pb.go",
       "%.pyi",
       "%__pycache__/*",
+      "%.xlsx",
     },
   },
 })
