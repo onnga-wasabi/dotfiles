@@ -25,9 +25,11 @@ set_keymap("n", "sn", "<cmd>bp<cr>", opts)
 
 set_keymap("i", "<c-c>", "<esc>", opts)
 
--- Visual: v
 set_keymap("v", "<", "<gv", opts)
 set_keymap("v", ">", ">gv", opts)
+
+-- Terminals
+set_keymap("t", "<c-n>", "<c-\\><c-n>", opts)
 -- }}} end of Mappings
 
 -- Util Functions {{{
