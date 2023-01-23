@@ -48,6 +48,7 @@ alias loadenv='(){set -a; source $1; set +a;}'
 alias vim='echo vimなんかありませーん, use n instead of vim'
 alias n=nvim
 alias vimdiff='nvim -d'
+export EDITOR=nvim
 alias go=richgo
 alias ks=k9s
 alias k=kubectl
