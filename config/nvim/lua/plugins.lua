@@ -63,6 +63,7 @@ return require("packer").startup(function(use)
 	-- enhancement ui with lsp
 	use({ "onsails/lspkind.nvim" }) -- 補完候補にアイコンつける
 	use({ "glepnir/lspsaga.nvim" }) -- ゴリゴリIDEパワー
+	use({ "simrat39/symbols-outline.nvim" })
 
 	-- treesitter
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
