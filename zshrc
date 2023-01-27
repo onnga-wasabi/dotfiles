@@ -26,8 +26,8 @@ export CFLAGS="-I$(brew --prefix llvm)/include"
 export CPPFLAGS="-I$(brew --prefix llvm)/include"
 
 # openssl
-export LDFLAGS="${LDFLAGS} -L$(brew --prefix openssl)/lib"
-export CPPFLAGS="${CPPFLAGS} -I$(brew --prefix openssl)/include"
+export LDFLAGS="${LDFLAGS} -L$(brew --prefix openssl@1.1)/lib"
+export CPPFLAGS="${CPPFLAGS} -I$(brew --prefix openssl@1.1)/include"
 
 autoload -Uz compinit
 compinit
@@ -45,7 +45,7 @@ alias la='l -a'
 alias sed="gsed"
 alias realpath='(){ls --no-icons $1(:a)}'
 alias loadenv='(){set -a; source $1; set +a;}'
-alias vim='echo vimなんかありませーん, use n instead of vim'
+alias vim='echo "vimなんかありませーん, use n instead of vim"'
 alias n=nvim
 alias vimdiff='nvim -d'
 export EDITOR=nvim
