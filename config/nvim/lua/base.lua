@@ -24,7 +24,7 @@ set_keymap("n", "<c-w>h", "<cmd>:w<cr><c-w>h", opts)
 set_keymap("n", "<c-o>", "<cmd>:w<cr><c-o>", opts)
 set_keymap("n", "<c-s>", "<cmd>:w<cr><c-i>", opts)
 
-set_keymap("n", ",", "<cmd>bp<bar>sp<bar>bn<bar>bd<cr>", opts)
+set_keymap("n", ",", "<cmd>:w<cr><cmd>bp<bar>sp<bar>bn<bar>bd<cr>", opts)
 set_keymap("n", "sp", "<cmd>bn<cr>", opts)
 set_keymap("n", "sn", "<cmd>bp<cr>", opts)
 
