@@ -30,6 +30,7 @@ telescope.setup({
 			"%.pyi",
 			"%__pycache__/*",
 			"%.xlsx",
+			"%.ipynb",
 		},
 	},
 })
