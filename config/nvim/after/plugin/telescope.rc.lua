@@ -64,5 +64,5 @@ set_keymap("n", "gi", '<cmd>lua require("telescope.builtin").lsp_implementations
 set_keymap("n", "gr", '<cmd>lua require("telescope.builtin").lsp_references()<cr>', opts)
 
 -- Trouble
-set_keymap("n", "gxx", '<cmd>lua require("telescope.builtin").diagnostics()<cr>', opts)
+set_keymap("n", "gxw", '<cmd>lua require("telescope.builtin").diagnostics()<cr>', opts)
 -- }}} end of Mappings
