@@ -20,10 +20,11 @@ return require("packer").startup(function(use)
 	-- highlints
 	use({ "navarasu/onedark.nvim" })
 	use({ "cocopon/iceberg.vim" })
-	use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons", opt = true } })
+	use({ "nvim-lualine/lualine.nvim" })
 	use({ "akinsho/bufferline.nvim" })
 	use({ "norcalli/nvim-colorizer.lua" })
 	use({ "simeji/winresizer" })
+	use({ "kyazdani42/nvim-web-devicons" })
 
 	-- telescope
 	use({ "nvim-lua/plenary.nvim" })
@@ -64,6 +65,12 @@ return require("packer").startup(function(use)
 	use({ "onsails/lspkind.nvim" }) -- 補完候補にアイコンつける
 	use({ "glepnir/lspsaga.nvim" }) -- ゴリゴリIDEパワー
 	use({ "simrat39/symbols-outline.nvim" })
+
+	-- dap
+	-- thanks to: https://zenn.dev/lunarxlark/articles/763b3c26ed7ec0
+	use({ "mfussenegger/nvim-dap" })
+	use({ "leoluz/nvim-dap-go" })
+	use({ "rcarriga/nvim-dap-ui" })
 
 	-- treesitter
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
