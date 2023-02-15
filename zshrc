@@ -67,6 +67,8 @@ source $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
 autoload -U colors ; colors ; zstyle ':completion:*' list-colors "${LS_COLORS}"
 zstyle ':completion:*' menu select
 
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+
 ## terraform
 export GODEBUG=asyncpreemptoff=1
 
