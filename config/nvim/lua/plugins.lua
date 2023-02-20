@@ -65,6 +65,7 @@ return require("packer").startup(function(use)
 	use({ "onsails/lspkind.nvim" }) -- 補完候補にアイコンつける
 	use({ "glepnir/lspsaga.nvim" }) -- ゴリゴリIDEパワー
 	use({ "simrat39/symbols-outline.nvim" })
+	use({ "stevearc/aerial.nvim" })
 
 	-- dap
 	-- thanks to: https://zenn.dev/lunarxlark/articles/763b3c26ed7ec0

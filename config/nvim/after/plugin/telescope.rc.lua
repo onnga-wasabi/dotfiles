@@ -5,6 +5,7 @@ if not ok then
 end
 
 telescope.load_extension("file_browser")
+telescope.load_extension("aerial")
 telescope.setup({
 	defaults = {
 		initial_mode = "insert",
@@ -31,6 +32,16 @@ telescope.setup({
 			"%__pycache__/*",
 			"%.xlsx",
 			"%.ipynb",
+		},
+	},
+	extensions = {
+		aerial = {
+			-- Display symbols as <root>.<parent>.<symbol>
+			show_nesting = {
+				["_"] = false, -- This key will be the default
+				json = true, -- You can set the option for specific filetypes
+				yaml = true,
+			},
 		},
 	},
 })
@@ -65,4 +76,7 @@ set_keymap("n", "gr", '<cmd>lua require("telescope.builtin").lsp_references()<cr
 
 -- Trouble
 set_keymap("n", "gxw", '<cmd>lua require("telescope.builtin").diagnostics()<cr>', opts)
+
+-- Outlie
+set_keymap("n", "<leader>o", '<Cmd>lua require("telescope").extensions.aerial.aerial()<cr>', opts)
 -- }}} end of Mappings
