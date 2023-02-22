@@ -66,9 +66,7 @@ local sources = {
   }),
 
   -- miss spell
-  diagnostics.cspell.with({
-    extra_args = { "--config", "~/.config/cspell/cspell.json" },
-  }),
+  diagnostics.cspell,
   code_actions.cspell,
 }
 
