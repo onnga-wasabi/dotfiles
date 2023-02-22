@@ -1,0 +1,14 @@
+{
+  "allowCompoundWords": true,
+  "dictionaries": [
+    "user",
+  ],
+  "dictionaryDefinitions": [
+    {
+      "name": "user",
+      "path": "~/.config/cspell/dict/user.txt",
+      "description": "User dictionary"
+    },
+  ],
+  "languageSettings": []
+}

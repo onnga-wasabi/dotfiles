@@ -24,9 +24,14 @@ link_rc_files () {
     echo "symlink created ${HOME}/.${rc_file} -> ${DOTPATH}/${rc_file}"
   done
 
-  # Nvim
+  # nvim
   ln -sf ${DOTPATH}/config/nvim/ ${HOME}/.config/
   echo "symlink created ${DOTPATH}/config/nvim/ -> ${HOME}/.config/nvim"
+  echo
+
+  # cspell
+  ln -sf ${DOTPATH}/config/cspell/ ${HOME}/.config/
+  echo "symlink created ${DOTPATH}/config/cspell/ -> ${HOME}/.config/cspell"
   echo
 
   # iTerm 2
