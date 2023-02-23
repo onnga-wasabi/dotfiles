@@ -1,84 +1,101 @@
 local ok, null_ls = pcall(require, "null-ls")
 if not ok then
-  return
+	return
 end
 
 local formatting = null_ls.builtins.formatting
 local diagnostics = null_ls.builtins.diagnostics
 local code_actions = null_ls.builtins.code_actions
 
+function file_exists(name)
+	local f = io.open(name, "r")
+	if f ~= nil then
+		io.close(f)
+		return true
+	else
+		return false
+	end
+end
+
+local cspell_config_path = "cspell.yaml"
+if not file_exists(cspell_config_path) then
+	cspell_config_path = os.getenv("HOME") .. "/.config/cspell/cspell.yaml"
+end
+
 local sources = {
-  -- scala
-  formatting.scalafmt,
+	-- scala
+	formatting.scalafmt,
 
-  -- python
-  formatting.isort,
-  formatting.black.with({
-    extra_args = { "--line-length=150" },
-  }),
-  diagnostics.flake8.with({
-    extra_args = { "--max-line-length=150" },
-  }),
-  --diagnostics.mypy,
+	-- python
+	formatting.isort,
+	formatting.black.with({
+		extra_args = { "--line-length=150" },
+	}),
+	diagnostics.flake8.with({
+		extra_args = { "--max-line-length=150" },
+	}),
+	--diagnostics.mypy,
 
-  -- yaml
-  formatting.yamlfmt,
-  diagnostics.yamllint.with({
-    extra_args = { "--no-warnings" },
-  }),
+	-- yaml
+	formatting.yamlfmt,
+	diagnostics.yamllint.with({
+		extra_args = { "--no-warnings" },
+	}),
 
-  -- grpc
-  formatting.buf,
-  diagnostics.buf,
+	-- grpc
+	formatting.buf,
+	diagnostics.buf,
 
-  -- golang
-  formatting.goimports,
+	-- golang
+	formatting.goimports,
 
-  -- javascript
-  formatting.prettier.with({
-    extra_args = {
-      "--no-semi",
-      "--double-quote",
-      "--jsx-double-quote",
-    },
-  }),
-  formatting.eslint_d,
-  diagnostics.eslint_d,
+	-- javascript
+	formatting.prettier.with({
+		extra_args = {
+			"--no-semi",
+			"--double-quote",
+			"--jsx-double-quote",
+		},
+	}),
+	formatting.eslint_d,
+	diagnostics.eslint_d,
 
-  -- lua
-  formatting.stylua,
-  diagnostics.luacheck.with({
-    extra_args = {
-      "--formatter",
-      "plain",
-      "--codes",
-      "--ranges",
-      "--globals",
-      "vim",
-      "--ignore",
-      "411",
-      "--ignore-pattern",
-      "!.eslintrc.js",
-      "--filename",
-      "$FILENAME",
-      "-",
-    },
-  }),
+	-- lua
+	formatting.stylua,
+	diagnostics.luacheck.with({
+		extra_args = {
+			"--formatter",
+			"plain",
+			"--codes",
+			"--ranges",
+			"--globals",
+			"vim",
+			"--ignore",
+			"411",
+			"--ignore-pattern",
+			"!.eslintrc.js",
+			"--filename",
+			"$FILENAME",
+			"-",
+		},
+	}),
 
-  -- miss spell
-  diagnostics.cspell,
-  code_actions.cspell,
+	-- miss spell
+	diagnostics.cspell.with({
+		extra_args = { "--config", cspell_config_path },
+	}),
+	code_actions.cspell,
 }
 
 if vim.fn.executable("djlint") == 1 then
-  sources[#sources + 1] = formatting.djlint.with({
-    command = "djlint",
-    args = { "--reformat", "-" },
-  })
+	sources[#sources + 1] = formatting.djlint.with({
+		command = "djlint",
+		args = { "--reformat", "-" },
+	})
 end
 
 local options = {
-  sources = sources,
+	sources = sources,
 }
 
 null_ls.setup(options)

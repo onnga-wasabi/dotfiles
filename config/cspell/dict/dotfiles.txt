@@ -1,0 +1,9 @@
+DOTPATH
+zpreztorc
+powerlinerc
+vimrc
+latexmkrc
+tigrc
+nvim
+iterm
+googlecode

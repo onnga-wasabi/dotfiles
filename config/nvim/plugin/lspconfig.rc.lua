@@ -145,7 +145,6 @@ mason_tool_installer.setup({
 		"kotlin-language-server",
 		"groovy-language-server",
 		"typescript-language-server",
-    "cspell",
 	},
 
 	-- if set to true this will check each tool for updates. If updates

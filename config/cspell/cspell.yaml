@@ -1,3 +1,24 @@
 $schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json
 version: "0.2"
-allowCompoundWords: True
+dictionaryDefinitions:
+  - name: user
+    path: "~/.config/cspell/dict/user.txt"
+    addWords: true
+  - name: dotfiles
+    path: "~/.config/cspell/dict/dotfiles.txt"
+    addWords: true
+dictionaries:
+  - user
+  - dotfiles
+ignorePaths:
+  - "~/.config/cspell/cspell.yaml"
+  - "~/.config/cspell/dict/user.txt"
+  - "node_modules"
+  - "__pycache__"
+  - "**/*pkl"
+  - "**/*xlsx"
+  - "**/*csv"
+  - "**/*pyi"
+  - "**/*_pb2.py"
+  - "**/*_grpc.py"
+  - "**/*pb.go"
