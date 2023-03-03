@@ -35,7 +35,6 @@ compinit
 export LSCOLORS=gxfxcxdxbxegedabagacad
 export LS_COLORS="di=36"
 export PATH="$HOME/.local/bin:$PATH"
-export PATH="$HOME/Library/Application Support/Coursier/bin:$PATH"
 export PATH="$(brew --prefix llvm)/bin:$PATH"
 
 # Aliases
