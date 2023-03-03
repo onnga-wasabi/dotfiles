@@ -22,3 +22,10 @@ ignorePaths:
   - "**/*_pb2.py"
   - "**/*_grpc.py"
   - "**/*pb.go"
+import:
+  - "@cspell/dict-python/cspell-ext.json"
+  - "@cspell/dict-bash/cspell-ext.json"
+  - "@cspell/dict-cpp/cspell-ext.json"
+  - "@cspell/dict-django/cspell-ext.json"
+  - "@cspell/dict-docker/cspell-ext.json"
+  - "@cspell/dict-lua/cspell-ext.json"

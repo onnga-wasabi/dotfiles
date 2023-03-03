@@ -1,3 +1,4 @@
+dotfiles
 DOTPATH
 zpreztorc
 powerlinerc
