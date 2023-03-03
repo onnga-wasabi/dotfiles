@@ -75,13 +75,6 @@ export GODEBUG=asyncpreemptoff=1
 export GOPATH=$(go env GOPATH)
 export PATH="$PATH:${GOPATH}/bin"
 
-
-# load local rc files
-LOCAL_RC_FILE=${HOME}/.zshrc_local
-if [ -e ${LOCAL_RC_FILE} ]; then
-  source ${LOCAL_RC_FILE}
-fi
-
 ## fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!**/.git/*"'
@@ -120,3 +113,15 @@ if [ -f "${HOME}/.local/share/gcloud/google-cloud-sdk/path.zsh.inc" ]; then . "$
 
 # The next line enables shell command completion for gcloud.
 if [ -f "${HOME}/.local/share/gcloud/google-cloud-sdk/completion.zsh.inc" ]; then . "${HOME}/.local/share/gcloud/google-cloud-sdk/completion.zsh.inc"; fi
+
+
+# load darwin files
+if [ $(uname) = "Darwin" ]; then
+  source ${HOME}/.zshrc_darwin
+fi
+
+# load local rc files
+LOCAL_RC_FILE=${HOME}/.zshrc_local
+if [ -e ${LOCAL_RC_FILE} ]; then
+  source ${LOCAL_RC_FILE}
+fi

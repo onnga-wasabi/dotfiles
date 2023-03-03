@@ -6,6 +6,7 @@ source ${CURRENT}/share.sh
 link_rc_files () {
   RC_FILES="
     zshrc
+    zshrc_darwin
     zpreztorc
     tmux.conf
     tmux-powerlinerc
