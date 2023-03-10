@@ -1,31 +1,24 @@
-local options = {
-	encoding = "utf-8",
-	fileencoding = "utf-8",
-	title = true,
-	ignorecase = true,
-	smartcase = true,
-	backup = false,
-	writebackup = false,
-	swapfile = false,
-	autoindent = true,
-	smartindent = true,
-	cindent = true,
-	expandtab = true,
-	termguicolors = true,
-	cursorline = true,
-	number = true,
-	numberwidth = 4,
-	signcolumn = "yes",
-	wrap = false,
-	showtabline = 2,
-	shiftwidth = 2,
-	tabstop = 2,
-	timeoutlen = 300,
-	updatetime = 300,
-	laststatus = 3,
-	regexpengine = 2, -- 正規表現のエンジン
-}
-
-for k, v in pairs(options) do
-	vim.opt[k] = v
-end
+vim.o.encoding = "utf-8"
+vim.o.fileencoding = "utf-8"
+vim.o.title = true
+vim.o.ignorecase = true
+vim.o.smartcase = true
+vim.o.backup = false
+vim.o.writebackup = false
+vim.o.swapfile = false
+vim.o.autoindent = true
+vim.o.smartindent = true
+vim.o.cindent = true
+vim.o.expandtab = true
+vim.o.termguicolors = true
+vim.o.cursorline = true
+vim.o.number = true
+vim.o.numberwidth = 4
+vim.o.signcolumn = "yes"
+vim.o.wrap = false
+vim.o.showtabline = 2
+vim.o.shiftwidth = 2
+vim.o.tabstop = 2
+vim.o.timeoutlen = 300
+vim.o.updatetime = 300
+vim.o.laststatus = 3

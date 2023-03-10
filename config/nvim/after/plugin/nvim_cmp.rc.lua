@@ -71,3 +71,6 @@ cmp.setup.cmdline(":", {
 		{ name = "cmdline" },
 	}),
 })
+
+-- HACK
+vim.o.regexpengine = 1
