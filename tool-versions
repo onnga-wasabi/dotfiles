@@ -1,5 +1,5 @@
 python 3.11.1
-gcloud 378.0.0
+gcloud 420.0.0
 terraform 1.1.7
 java corretto-18.0.0.35.1
 sbt 1.6.2
@@ -19,7 +19,6 @@ fd 8.4.0
 hey v0.1.4
 grpcurl 1.8.7
 kubectl 1.24.4
-cloudsql-proxy 1.31.2
 postgres 12.12
 coursier 2.1.0-M7
 yq 4.28.1
@@ -38,3 +37,4 @@ lua 5.4.4
 ffmpeg 5.1.2
 ruby 3.2.0
 firebase 11.24.1
+gomigrate 4.15.2
