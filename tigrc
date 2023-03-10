@@ -6,7 +6,15 @@ color title-focus      white  blue bold
 
 # General
 bind generic g none
+bind generic gg move-first-line
+
 bind generic G none
+bind generic G move-last-line
+
+bind generic <C-f> move-page-down
+bind generic <C-b> move-page-up
+
+bind generic <C-w><C-w> view-next
 
 # Main
 bind main H ?git rebase -i %(commit)

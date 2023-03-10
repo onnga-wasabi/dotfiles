@@ -37,3 +37,4 @@ stylua 0.15.3
 lua 5.4.4
 ffmpeg 5.1.2
 ruby 3.2.0
+firebase 11.24.1
