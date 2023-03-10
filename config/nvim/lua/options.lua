@@ -29,6 +29,7 @@ local options = {
   updatetime = 300,
 
   laststatus = 3,
+  regexpengine = 1,
 }
 
 for k, v in pairs(options) do
