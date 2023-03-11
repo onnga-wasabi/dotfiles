@@ -29,7 +29,6 @@ set_keymap("n", "<c-f>", "<c-f>zz", opts)
 set_keymap("n", "<c-b>", "<c-b>zz", opts)
 
 
-set_keymap("n", ",", "<cmd>:w<cr><cmd>bp<bar>sp<bar>bn<bar>bd<cr>", opts)
 set_keymap("n", "sp", "<cmd>bn<cr>", opts)
 set_keymap("n", "sn", "<cmd>bp<cr>", opts)
 
@@ -56,3 +55,29 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 endif
 ]])
+
+
+-- refer to: https://lsifrontend.blog.fc2.com/blog-entry-356.html?sp
+vim.cmd([[
+" ウィンドウを閉じずにバッファを閉じる
+command! Ebd call EBufdelete()
+function! EBufdelete()
+  let l:currentBufNum = bufnr("%")
+  let l:alternateBufNum = bufnr("#")
+
+  if buflisted(l:alternateBufNum)
+    buffer #
+  else
+    bnext
+  endif
+
+  if buflisted(l:currentBufNum)
+    execute "silent bwipeout".l:currentBufNum
+    " bwipeoutに失敗した場合はウインドウ上のバッファを復元
+    if bufloaded(l:currentBufNum) != 0
+      execute "buffer " . l:currentBufNum
+    endif
+  endif
+endfunction
+]])
+set_keymap("n", ",", "<cmd>Ebd<cr>", opts)
