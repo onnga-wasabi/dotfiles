@@ -19,25 +19,18 @@ export HOMEBREW_EDITOR='vim'
 # Forcompilers
 export OPENBLAS=$(brew --prefix openblas)
 export PKG_CONFIG_PATH="$(brew --prefix openblas)/lib/pkgconfig"
-export LD_LIBRARY_PATH="$(brew --prefix openblas):${LD_LIBRARY_PATH}"
 
 # llvm
 export LDFLAGS="-L$(brew --prefix llvm)/lib"
 export CFLAGS="-I$(brew --prefix llvm)/include"
 export CPPFLAGS="-I$(brew --prefix llvm)/include"
-export LD_LIBRARY_PATH="$(brew --prefix llvm):${LD_LIBRARY_PATH}"
+export LD_LIBRARY_PATH="$(brew --prefix llvm)/lib:${LD_LIBRARY_PATH}"
 
 # openssl
 export LDFLAGS="${LDFLAGS} -L$(brew --prefix openssl)/lib"
 export CFLAGS="${CFLAGS} -I$(brew --prefix openssl)/include"
 export CPPFLAGS="${CPPFLAGS} -I$(brew --prefix openssl)/include"
-export LD_LIBRARY_PATH="$(brew --prefix openssl):${LD_LIBRARY_PATH}"
-
-# readline
-export LDFLAGS="${LDFLAGS} -L$(brew --prefix readline)/lib"
-export CFLAGS="${CFLAGS} -I$(brew --prefix readline)/include"
-export CPPFLAGS="${CPPFLAGS} -I$(brew --prefix readline)/include"
-export LD_LIBRARY_PATH="$(brew --prefix readline):${LD_LIBRARY_PATH}"
+export LD_LIBRARY_PATH="$(brew --prefix openssl)/lib:${LD_LIBRARY_PATH}"
 
 autoload -Uz compinit
 compinit
