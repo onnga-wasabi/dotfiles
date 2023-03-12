@@ -1,0 +1,1085 @@
+git pull origin main
+From github.com:onnga-wasabi/dotfiles
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Installing Brew Bundles...
+Running `brew update --auto-update`...
+Using coursier/formulas
+Tapping dagger/tap
+Tapping daipeihust/tap
+Tapping hashicorp/tap
+Using homebrew/bundle
+Tapping homebrew/cask-fonts
+Tapping homebrew/cask-versions
+Tapping homebrew/core
+Tapping homebrew/services
+Tapping versent/taps
+Installing openssl@3
+Installing readline
+Installing asdf
+==> Fetching dependencies for asdf: m4, openssl@1.1, berkeley-db, gdbm, expat, libxcrypt, perl, autoconf, automake, attr, coreutils, libtool, libyaml, and unixodbc
+==> Fetching m4
+==> Downloading https://ghcr.io/v2/homebrew/core/m4/manifests/1.4.19
+==> Downloading https://ghcr.io/v2/homebrew/core/m4/blobs/sha256:f6d1087a51e0ff2e582b3043a25a51b67971b2246cf65167ef3abf1230160f04
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:f6d1087a51e0ff2e582b3043a25a51b67971b2246cf65167ef3abf1230160f04?se=2023-03-12T11%3A00%3A00Z&sig=dmtwgNQ%2Fsx0KhJOzUUbQfAgzRXD7Bsj395ZZuvraJ6k%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching openssl@1.1
+==> Downloading https://ghcr.io/v2/homebrew/core/openssl/1.1/manifests/1.1.1t
+==> Downloading https://ghcr.io/v2/homebrew/core/openssl/1.1/blobs/sha256:8844b2e735dd6e8bc1395eda1a123c136f90cb8985fcec6a7ae6815b5aad971b
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:8844b2e735dd6e8bc1395eda1a123c136f90cb8985fcec6a7ae6815b5aad971b?se=2023-03-12T11%3A00%3A00Z&sig=mZmjknT0S4DLtNmpMQCgHS%2BudTp9oQM%2BIFY4H5KuIag%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching berkeley-db
+==> Downloading https://ghcr.io/v2/homebrew/core/berkeley-db/manifests/18.1.40_1
+==> Downloading https://ghcr.io/v2/homebrew/core/berkeley-db/blobs/sha256:ed8bbe73f3996dce31e082f325cb5230e6026d2067824e6ceaaceeafc146ff0c
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:ed8bbe73f3996dce31e082f325cb5230e6026d2067824e6ceaaceeafc146ff0c?se=2023-03-12T11%3A00%3A00Z&sig=fGM54e5FJ40VWdFLM%2B2UhTdK7SMOrWtfSuOuYt0YKYE%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching gdbm
+==> Downloading https://ghcr.io/v2/homebrew/core/gdbm/manifests/1.23
+==> Downloading https://ghcr.io/v2/homebrew/core/gdbm/blobs/sha256:7d5728174c3de6c048a233459a1b8ac9e8c53645ca14962d9a1deb60fd58a568
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:7d5728174c3de6c048a233459a1b8ac9e8c53645ca14962d9a1deb60fd58a568?se=2023-03-12T11%3A00%3A00Z&sig=ffEqR2VJdiY7i38S3JKfy7yJpRXvn84UpxNb8PNAJuw%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching expat
+==> Downloading https://ghcr.io/v2/homebrew/core/expat/manifests/2.5.0
+==> Downloading https://ghcr.io/v2/homebrew/core/expat/blobs/sha256:ed2b581249b57581db4178a3f219f94f75d8b540867cc27fe1b809b3d32f1772
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:ed2b581249b57581db4178a3f219f94f75d8b540867cc27fe1b809b3d32f1772?se=2023-03-12T11%3A00%3A00Z&sig=GFAAQStewas%2BYYtXRuhDM0Qt%2Bufxmt3ebYkxUCjTaxE%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching libxcrypt
+==> Downloading https://ghcr.io/v2/homebrew/core/libxcrypt/manifests/4.4.33
+==> Downloading https://ghcr.io/v2/homebrew/core/libxcrypt/blobs/sha256:809ff345c8f0d705ea1d84f086fe5b19f590b540db3902784db6f6c3c8ecf0b1
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:809ff345c8f0d705ea1d84f086fe5b19f590b540db3902784db6f6c3c8ecf0b1?se=2023-03-12T11%3A00%3A00Z&sig=QDjGia4KDnnJhW093JYjhk%2FJKuB3HQqgNUpmpUHvkLc%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching perl
+==> Downloading https://ghcr.io/v2/homebrew/core/perl/manifests/5.36.0
+==> Downloading https://ghcr.io/v2/homebrew/core/perl/blobs/sha256:64131980cdcecfdee05b10ab5878f3152f6f661fd779358b4d658d7d23f36d36
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:64131980cdcecfdee05b10ab5878f3152f6f661fd779358b4d658d7d23f36d36?se=2023-03-12T11%3A00%3A00Z&sig=ZwQNikRxx%2FTlAtKMwXpblX5SA2qSswNJBqnC%2BZhSxhc%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching autoconf
+==> Downloading https://ghcr.io/v2/homebrew/core/autoconf/manifests/2.71
+==> Downloading https://ghcr.io/v2/homebrew/core/autoconf/blobs/sha256:9f9a73292e64f19ec504459ee7f8b7f11f1e472d18252499705a9fc289c43f85
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:9f9a73292e64f19ec504459ee7f8b7f11f1e472d18252499705a9fc289c43f85?se=2023-03-12T11%3A00%3A00Z&sig=p6BkKQRjcXvKx4aBpBhAmMBFz4x73XGZ7mtZ23sxzts%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching automake
+==> Downloading https://ghcr.io/v2/homebrew/core/automake/manifests/1.16.5
+==> Downloading https://ghcr.io/v2/homebrew/core/automake/blobs/sha256:59808c20f7dc565f106b432941b43c52f3d7f46a8d562ab27a4aabd424783158
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:59808c20f7dc565f106b432941b43c52f3d7f46a8d562ab27a4aabd424783158?se=2023-03-12T11%3A00%3A00Z&sig=vWKiPtJJreaFhTxDqZsci5fgcY177M0ygZHYwW%2FTp0I%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching attr
+==> Downloading https://ghcr.io/v2/homebrew/core/attr/manifests/2.5.1
+==> Downloading https://ghcr.io/v2/homebrew/core/attr/blobs/sha256:a05ee49c7e8fcf992d4cc1cf6f1a9f72a6800ddcfa11f70dbf6ab957ed847ff3
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:a05ee49c7e8fcf992d4cc1cf6f1a9f72a6800ddcfa11f70dbf6ab957ed847ff3?se=2023-03-12T11%3A00%3A00Z&sig=hNN6CqKuSKQVRv6CC2K5PUI0w4N9ne7CmHUb7c1t0Kk%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching coreutils
+==> Downloading https://ghcr.io/v2/homebrew/core/coreutils/manifests/9.1
+==> Downloading https://ghcr.io/v2/homebrew/core/coreutils/blobs/sha256:3c2fbec99344b50d620695d16197eb112cb8bee6d3f9e47cb682484755b91f38
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:3c2fbec99344b50d620695d16197eb112cb8bee6d3f9e47cb682484755b91f38?se=2023-03-12T11%3A00%3A00Z&sig=2Y8otou7hf4Z9X1Xxf%2BDgAWRu4Y6Tv2E8LQRww8IFzU%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching libtool
+==> Downloading https://ghcr.io/v2/homebrew/core/libtool/manifests/2.4.7
+==> Downloading https://ghcr.io/v2/homebrew/core/libtool/blobs/sha256:1cde2899a36adf5b04d25a9b8b4d6bec8a3099bc59ae68c63e479a4da8ca70b3
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:1cde2899a36adf5b04d25a9b8b4d6bec8a3099bc59ae68c63e479a4da8ca70b3?se=2023-03-12T11%3A00%3A00Z&sig=EQ6Ykac4LpWH6tqpFrefZp7MLPZS6OL5TSpVDyG3O2I%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching libyaml
+==> Downloading https://ghcr.io/v2/homebrew/core/libyaml/manifests/0.2.5
+==> Downloading https://ghcr.io/v2/homebrew/core/libyaml/blobs/sha256:354677a745b6c62109e792ddbd0cbdaf9e6a471d84fdbde3a7d9bae36d832da8
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:354677a745b6c62109e792ddbd0cbdaf9e6a471d84fdbde3a7d9bae36d832da8?se=2023-03-12T11%3A00%3A00Z&sig=MVJ6Oa4MAUDs5tBFU2lnNGFHTPYHMMwUtoCHMNiBi54%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching unixodbc
+==> Downloading https://ghcr.io/v2/homebrew/core/unixodbc/manifests/2.3.11
+==> Downloading https://ghcr.io/v2/homebrew/core/unixodbc/blobs/sha256:e8d1c01d05e821f0e4aa4aa65f104266ed16331a3e39ae72071bbe0eaec03ea0
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:e8d1c01d05e821f0e4aa4aa65f104266ed16331a3e39ae72071bbe0eaec03ea0?se=2023-03-12T11%3A05%3A00Z&sig=LZDzJvY0unMWMU7%2FpFnlwxX8coMrKj3Mx7blS7VWs2M%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching asdf
+==> Downloading https://ghcr.io/v2/homebrew/core/asdf/manifests/0.11.2
+==> Downloading https://ghcr.io/v2/homebrew/core/asdf/blobs/sha256:21f1717a2655fe7808606d498c1aee95afbeeb570415882a514753adb96d0a1d
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:21f1717a2655fe7808606d498c1aee95afbeeb570415882a514753adb96d0a1d?se=2023-03-12T11%3A05%3A00Z&sig=iMyD32WR3hG86vfN5Q1aUgUy%2BVt3F7tnDMC3T5EQ2%2Bg%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+Error: Operation already in progress for linux-headers@5.15.formula
+Another active Homebrew process is already using linux-headers@5.15.formula.
+Please wait for it to finish or terminate it to continue.
+Installing asdf has failed!
+Installing zlib
+Installing bat
+Installing xz
+Installing sqlite
+Installing python@3.10
+==> Fetching dependencies for python@3.10: gdbm, mpdecimal, libedit, krb5, libtirpc, libnsl, bzip2, expat, libffi, libxcrypt, and unzip
+==> Fetching gdbm
+==> Downloading https://ghcr.io/v2/homebrew/core/gdbm/manifests/1.23
+Already downloaded: /home/user/.cache/Homebrew/downloads/ce78100f130177bffd255fda9df551477edd224a5080cb86cac12818954a7438--gdbm-1.23.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/gdbm/blobs/sha256:7d5728174c3de6c048a233459a1b8ac9e8c53645ca14962d9a1deb60fd58a568
+Already downloaded: /home/user/.cache/Homebrew/downloads/37a5b44bc9f29fbd91fb2f5ff1b40db184c4d9571ddcb8babfcf1834d8c77775--gdbm--1.23.x86_64_linux.bottle.tar.gz
+==> Fetching mpdecimal
+==> Downloading https://ghcr.io/v2/homebrew/core/mpdecimal/manifests/2.5.1
+==> Downloading https://ghcr.io/v2/homebrew/core/mpdecimal/blobs/sha256:c5d64a4dd47dc1b66887c0cecd884f0848a801cb2f684cde0f4664e709574067
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:c5d64a4dd47dc1b66887c0cecd884f0848a801cb2f684cde0f4664e709574067?se=2023-03-12T11%3A05%3A00Z&sig=gZm4z8gCXnfVyyjwml7rPlHJpYT3jfpxzHAadlbq4jA%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching libedit
+==> Downloading https://ghcr.io/v2/homebrew/core/libedit/manifests/20221030-3.1
+==> Downloading https://ghcr.io/v2/homebrew/core/libedit/blobs/sha256:bee1f6bfb90dd3c9b26ce4732e04025a468fe2fa29d63049cb0aa2a888e610d2
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:bee1f6bfb90dd3c9b26ce4732e04025a468fe2fa29d63049cb0aa2a888e610d2?se=2023-03-12T11%3A05%3A00Z&sig=Vs4AVdatEpT8Hbuq8wZcQn4PCWxFBsgSPM7kHa13ZTg%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching krb5
+==> Downloading https://ghcr.io/v2/homebrew/core/krb5/manifests/1.20.1
+==> Downloading https://ghcr.io/v2/homebrew/core/krb5/blobs/sha256:e3ea64db62d46cd9ecdb3f869254c53970440dea6b959e4f62f9bd8ffe8d8e35
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:e3ea64db62d46cd9ecdb3f869254c53970440dea6b959e4f62f9bd8ffe8d8e35?se=2023-03-12T11%3A05%3A00Z&sig=i%2FTpPxfh6q%2BlXGv7reSJs9vNQBnTNmZAMyUI3EPSs1Y%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching libtirpc
+==> Downloading https://ghcr.io/v2/homebrew/core/libtirpc/manifests/1.3.3
+==> Downloading https://ghcr.io/v2/homebrew/core/libtirpc/blobs/sha256:26371c5e683f16a4b2ebf4475150672f76d45e3d43583c942fcb0e916be77dc3
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:26371c5e683f16a4b2ebf4475150672f76d45e3d43583c942fcb0e916be77dc3?se=2023-03-12T11%3A05%3A00Z&sig=VaKdIgDLavwvBBwPX6TMaE2KV7Y2N2AJniAV%2FK3OmII%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching libnsl
+==> Downloading https://ghcr.io/v2/homebrew/core/libnsl/manifests/2.0.0_1
+==> Downloading https://ghcr.io/v2/homebrew/core/libnsl/blobs/sha256:ed70b285939e2ab21ba53d122ce2d4beab4cd0f9c86925c3d3a2cfb1b0eeecb3
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:ed70b285939e2ab21ba53d122ce2d4beab4cd0f9c86925c3d3a2cfb1b0eeecb3?se=2023-03-12T11%3A05%3A00Z&sig=pQy3oRwehuWD5llTNJfmYmhHw80EmgTupjEq0qDVzwg%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching bzip2
+==> Downloading https://ghcr.io/v2/homebrew/core/bzip2/manifests/1.0.8-2
+==> Downloading https://ghcr.io/v2/homebrew/core/bzip2/blobs/sha256:a731afa70daaafec28359b4f10f1c68455c1955ae66cdbb6b6d52eee277bbd3e
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:a731afa70daaafec28359b4f10f1c68455c1955ae66cdbb6b6d52eee277bbd3e?se=2023-03-12T11%3A05%3A00Z&sig=fSABYXgCKd%2FTmWZR6cqR8%2FAuyOQEi73ZNqBD6jHQXrA%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching expat
+==> Downloading https://ghcr.io/v2/homebrew/core/expat/manifests/2.5.0
+Already downloaded: /home/user/.cache/Homebrew/downloads/b842e1c2e5cbf31a2e2a3fdf4f68d06bf3a25a4a0429320411cb400db2461400--expat-2.5.0.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/expat/blobs/sha256:ed2b581249b57581db4178a3f219f94f75d8b540867cc27fe1b809b3d32f1772
+Already downloaded: /home/user/.cache/Homebrew/downloads/03989dcf45492d507e54ac1d0f80f9f8f366ec958b882f52b45394159d128c6c--expat--2.5.0.x86_64_linux.bottle.tar.gz
+==> Fetching libffi
+==> Downloading https://ghcr.io/v2/homebrew/core/libffi/manifests/3.4.4
+==> Downloading https://ghcr.io/v2/homebrew/core/libffi/blobs/sha256:dcc9412995b5e319f64796a77b1eb8e684f1d1b6b5d7ac824f434ada692e4ff8
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:dcc9412995b5e319f64796a77b1eb8e684f1d1b6b5d7ac824f434ada692e4ff8?se=2023-03-12T11%3A05%3A00Z&sig=20K%2FEDqi%2BIXqsnxolTfWlI%2B4BqHDOCHiheg%2B%2B5W6zmM%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching libxcrypt
+==> Downloading https://ghcr.io/v2/homebrew/core/libxcrypt/manifests/4.4.33
+Already downloaded: /home/user/.cache/Homebrew/downloads/d77d84cb94d509e3ccafd546b478087c28166e7f4ae0b1fc24d006e3480dda22--libxcrypt-4.4.33.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libxcrypt/blobs/sha256:809ff345c8f0d705ea1d84f086fe5b19f590b540db3902784db6f6c3c8ecf0b1
+Already downloaded: /home/user/.cache/Homebrew/downloads/5c1a018997127e3b47b6f32e90ec40bc6d39f3d84125b723b2eca3c728d2cab3--libxcrypt--4.4.33.x86_64_linux.bottle.tar.gz
+==> Fetching unzip
+==> Downloading https://ghcr.io/v2/homebrew/core/unzip/manifests/6.0_8
+==> Downloading https://ghcr.io/v2/homebrew/core/unzip/blobs/sha256:baf15e19852a0f9756e3302fa6f3866eaeccc06730c9907bffc19f32861d64bf
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:baf15e19852a0f9756e3302fa6f3866eaeccc06730c9907bffc19f32861d64bf?se=2023-03-12T11%3A05%3A00Z&sig=ec7RK91OssQUgAO2JFQ0YVfRSFaLqEJJz8EuPgAleco%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching python@3.10
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.10/manifests/3.10.10_1
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.10/blobs/sha256:f01aa14bb2ae227a242290438e91f12d07812a84beb744b0b33e5f1f9ee70f2f
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:f01aa14bb2ae227a242290438e91f12d07812a84beb744b0b33e5f1f9ee70f2f?se=2023-03-12T11%3A05%3A00Z&sig=ukLGOeno%2BlwTAfnwLU6MjaEFNPsADKZdAwBaEdrvOzU%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+Error: Operation already in progress for python@3.10.formula
+Another active Homebrew process is already using python@3.10.formula.
+Please wait for it to finish or terminate it to continue.
+Installing python@3.10 has failed!
+Installing glib
+make: *** [Makefile:11: run] Terminated
+==> Fetching dependencies for glib: bzip2, pcre2, libxcrypt, util-linux, libffi, mpdecimal, berkeley-db@5, libedit, krb5, libtirpc, libnsl, unzip, and python
+==> Fetching bzip2
+==> Downloading https://ghcr.io/v2/homebrew/core/bzip2/manifests/1.0.8-2
+Already downloaded: /home/user/.cache/Homebrew/downloads/c1a79a32cc9082c99fc318e6b2596b8b1f6e99abacb32bcbe88f979e4be5e4ea--bzip2-1.0.8-2.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/bzip2/blobs/sha256:a731afa70daaafec28359b4f10f1c68455c1955ae66cdbb6b6d52eee277bbd3e
+Already downloaded: /home/user/.cache/Homebrew/downloads/db074a718e02557eff8cf3cd1476e2fedc40d4ec894870c864b8251d75dec576--bzip2--1.0.8.x86_64_linux.bottle.2.tar.gz
+==> Fetching pcre2
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre2/manifests/10.42
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre2/blobs/sha256:6fb73ccbfd7f7d48b9400512ded73383a19dc54ec015ab1aab2b849480c3b3f8
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:6fb73ccbfd7f7d48b9400512ded73383a19dc54ec015ab1aab2b849480c3b3f8?se=2023-03-12T11%3A05%3A00Z&sig=KrOEtKmkJ96s8%2BlWBWdwrHvezce6UOAeTzh0MyQFkA8%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching libxcrypt
+==> Downloading https://ghcr.io/v2/homebrew/core/libxcrypt/manifests/4.4.33
+Already downloaded: /home/user/.cache/Homebrew/downloads/d77d84cb94d509e3ccafd546b478087c28166e7f4ae0b1fc24d006e3480dda22--libxcrypt-4.4.33.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libxcrypt/blobs/sha256:809ff345c8f0d705ea1d84f086fe5b19f590b540db3902784db6f6c3c8ecf0b1
+Already downloaded: /home/user/.cache/Homebrew/downloads/5c1a018997127e3b47b6f32e90ec40bc6d39f3d84125b723b2eca3c728d2cab3--libxcrypt--4.4.33.x86_64_linux.bottle.tar.gz
+==> Fetching util-linux
+==> Downloading https://ghcr.io/v2/homebrew/core/util-linux/manifests/2.38.1-2
+==> Downloading https://ghcr.io/v2/homebrew/core/util-linux/blobs/sha256:aa2192315d8696997a44fac1681386ff0978d354a326477090cc0e940dbfa4b6
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:aa2192315d8696997a44fac1681386ff0978d354a326477090cc0e940dbfa4b6?se=2023-03-12T11%3A05%3A00Z&sig=uZUhnA4A0%2Fn68%2B2BVjV%2B47IO66aADAa8uzERIs7%2FDMk%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching libffi
+==> Downloading https://ghcr.io/v2/homebrew/core/libffi/manifests/3.4.4
+Already downloaded: /home/user/.cache/Homebrew/downloads/f5fd52c2060b392cd349c2d45b783adb0e507a5166f125893d6e733d9b7f4afa--libffi-3.4.4.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libffi/blobs/sha256:dcc9412995b5e319f64796a77b1eb8e684f1d1b6b5d7ac824f434ada692e4ff8
+Already downloaded: /home/user/.cache/Homebrew/downloads/ca3d433de16e89ddbae57be1a624745600ee07b647342f4380254acc06fa0431--libffi--3.4.4.x86_64_linux.bottle.tar.gz
+==> Fetching mpdecimal
+==> Downloading https://ghcr.io/v2/homebrew/core/mpdecimal/manifests/2.5.1
+Already downloaded: /home/user/.cache/Homebrew/downloads/f367c2ee08c56b88be0662703a8e4275f8657608a268c8c44e845154b0cea543--mpdecimal-2.5.1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/mpdecimal/blobs/sha256:c5d64a4dd47dc1b66887c0cecd884f0848a801cb2f684cde0f4664e709574067
+Already downloaded: /home/user/.cache/Homebrew/downloads/e02dc86f10704b9aeb72336cbffeb0d490260c2d5d976556c00f8d9fce6bef03--mpdecimal--2.5.1.x86_64_linux.bottle.tar.gz
+==> Fetching berkeley-db@5
+==> Downloading https://ghcr.io/v2/homebrew/core/berkeley-db/5/manifests/5.3.28_1
+==> Downloading https://ghcr.io/v2/homebrew/core/berkeley-db/5/blobs/sha256:c0e2906cc6657dc497fec75629560b0a404b81cebadf5e10c1f70616a14fa886
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:c0e2906cc6657dc497fec75629560b0a404b81cebadf5e10c1f70616a14fa886?se=2023-03-12T11%3A05%3A00Z&sig=5Pu53737QsuZJ06FwcXvfwPwd7%2FSLnaslEMt7owXl0A%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching libedit
+==> Downloading https://ghcr.io/v2/homebrew/core/libedit/manifests/20221030-3.1
+Already downloaded: /home/user/.cache/Homebrew/downloads/fb5226448ca27f1779ac14bd7419ae08a24df67c516a919bd176b81ad0896390--libedit-20221030-3.1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libedit/blobs/sha256:bee1f6bfb90dd3c9b26ce4732e04025a468fe2fa29d63049cb0aa2a888e610d2
+Already downloaded: /home/user/.cache/Homebrew/downloads/cb584d6de2880054c41aceb962c287de5101444edfd2611e6afdb4aee428cca9--libedit--20221030-3.1.x86_64_linux.bottle.tar.gz
+==> Fetching krb5
+==> Downloading https://ghcr.io/v2/homebrew/core/krb5/manifests/1.20.1
+Already downloaded: /home/user/.cache/Homebrew/downloads/5e6306b4f3f1d8d7b9709ed1f4543a5f745d65f1c69cee7ea0c739d4b4adc4e2--krb5-1.20.1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/krb5/blobs/sha256:e3ea64db62d46cd9ecdb3f869254c53970440dea6b959e4f62f9bd8ffe8d8e35
+Already downloaded: /home/user/.cache/Homebrew/downloads/d28c7c00addcaac142f8e6aa2f9fecceb7f435c97eef21f0ddf32b53bdc6df1f--krb5--1.20.1.x86_64_linux.bottle.tar.gz
+==> Fetching libtirpc
+==> Downloading https://ghcr.io/v2/homebrew/core/libtirpc/manifests/1.3.3
+Already downloaded: /home/user/.cache/Homebrew/downloads/8855f5ef631c25ab1532940cd26ad4e298df26b4414ccd1426becf1b4ed7a3f9--libtirpc-1.3.3.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libtirpc/blobs/sha256:26371c5e683f16a4b2ebf4475150672f76d45e3d43583c942fcb0e916be77dc3
+Already downloaded: /home/user/.cache/Homebrew/downloads/5fff9750e00be58fcd7274922fd551422a2b885f50e849d9af74a44e659317f1--libtirpc--1.3.3.x86_64_linux.bottle.tar.gz
+==> Fetching libnsl
+==> Downloading https://ghcr.io/v2/homebrew/core/libnsl/manifests/2.0.0_1
+Already downloaded: /home/user/.cache/Homebrew/downloads/86e8a2a3ce4c0d286a9ff3a6776bfbbf67e8e9aefa48596a6149f09457bde4ef--libnsl-2.0.0_1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libnsl/blobs/sha256:ed70b285939e2ab21ba53d122ce2d4beab4cd0f9c86925c3d3a2cfb1b0eeecb3
+Already downloaded: /home/user/.cache/Homebrew/downloads/c9eaf36a8d19f53ae16de75047a0662fb77c2865d66e83a3b90391ace3a79617--libnsl--2.0.0_1.x86_64_linux.bottle.tar.gz
+==> Fetching unzip
+==> Downloading https://ghcr.io/v2/homebrew/core/unzip/manifests/6.0_8
+Already downloaded: /home/user/.cache/Homebrew/downloads/b9a98c1a65dea38eb0bb5d9106a5758ed0ff17635811bd7f7cd6be5908c2961b--unzip-6.0_8.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/unzip/blobs/sha256:baf15e19852a0f9756e3302fa6f3866eaeccc06730c9907bffc19f32861d64bf
+Already downloaded: /home/user/.cache/Homebrew/downloads/b21864e34ef4cb82ce78fcf50f8d91e7b3525e695b095c7d006c15cd802eefbb--unzip--6.0_8.x86_64_linux.bottle.tar.gz
+==> Fetching python@3.11
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.11/manifests/3.11.2_1
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.11/blobs/sha256:cc1f8647d66f6aa33cbeacf94199f09c40559967e6f4e1fefc0cadc635962c24
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:cc1f8647d66f6aa33cbeacf94199f09c40559967e6f4e1fefc0cadc635962c24?se=2023-03-12T11%3A05%3A00Z&sig=IXvFcsrwqW1LMPaDTu%2Bx1hXDO48Pl0WfeMbsngr3aE8%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching glib
+==> Downloading https://ghcr.io/v2/homebrew/core/glib/manifests/2.74.6
+==> Downloading https://ghcr.io/v2/homebrew/core/glib/blobs/sha256:486818883876d020b1f37ff475a634e9d16be6c1d9e8affff72476dfb348a731
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:486818883876d020b1f37ff475a634e9d16be6c1d9e8affff72476dfb348a731?se=2023-03-12T11%3A05%3A00Z&sig=uMf%2Bx6m513SXGxydhASfIU58JZXB8xlsUizN6srH0PM%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+Error: Operation already in progress for linux-headers@5.15.formula
+Another active Homebrew process is already using linux-headers@5.15.formula.
+Please wait for it to finish or terminate it to continue.
+Installing glib has failed!
+Installing cmake
+==> Fetching cmake
+==> Downloading https://ghcr.io/v2/homebrew/core/cmake/manifests/3.25.3
+==> Downloading https://ghcr.io/v2/homebrew/core/cmake/blobs/sha256:4de69da1eb7d50aa82a0db15b3ce59a55e38a06725b4f5f43f0f0e2b15177783
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:4de69da1eb7d50aa82a0db15b3ce59a55e38a06725b4f5f43f0f0e2b15177783?se=2023-03-12T11%3A05%3A00Z&sig=NgCSg2ALvfcLhL14k%2FAVg%2FG6qiE620itWoGK2mrXh90%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+Error: Operation already in progress for cmake.formula
+Another active Homebrew process is already using cmake.formula.
+Please wait for it to finish or terminate it to continue.
+Installing cmake has failed!
+Installing csvq
+==> Fetching csvq
+==> Downloading https://ghcr.io/v2/homebrew/core/csvq/manifests/1.17.11
+==> Downloading https://ghcr.io/v2/homebrew/core/csvq/blobs/sha256:4c054f4e356cef7abc322b4beacea894ebb98ccac5830b6dc7e0bec37b2a0272
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:4c054f4e356cef7abc322b4beacea894ebb98ccac5830b6dc7e0bec37b2a0272?se=2023-03-12T11%3A05%3A00Z&sig=Rz74Supjkh7WxTptAnGJizrThAvTq2hQP5%2FXkOl5WZQ%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+Error: Operation already in progress for linux-headers@5.15.formula
+Another active Homebrew process is already using linux-headers@5.15.formula.
+Please wait for it to finish or terminate it to continue.
+Installing csvq has failed!
+Installing unbound
+Installing gnutls
+==> Fetching dependencies for gnutls: libunistring, libidn2, libtasn1, nettle, libffi, and p11-kit
+==> Fetching libunistring
+==> Downloading https://ghcr.io/v2/homebrew/core/libunistring/manifests/1.1
+==> Downloading https://ghcr.io/v2/homebrew/core/libunistring/blobs/sha256:252f3716191a8c08f8d10e2c20b84cf9645e2c264f409f58d3255d9a4edce77f
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:252f3716191a8c08f8d10e2c20b84cf9645e2c264f409f58d3255d9a4edce77f?se=2023-03-12T11%3A05%3A00Z&sig=2HQ4EFdVacYWYe6fmXtQVMq4cQ%2BQVIsTV6M%2BiVj91C4%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching libidn2
+==> Downloading https://ghcr.io/v2/homebrew/core/libidn2/manifests/2.3.4_1-1
+==> Downloading https://ghcr.io/v2/homebrew/core/libidn2/blobs/sha256:af78945967847cdf33779abbd1142cabb31d6b5d428f367e23bc068f1d240e49
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:af78945967847cdf33779abbd1142cabb31d6b5d428f367e23bc068f1d240e49?se=2023-03-12T11%3A05%3A00Z&sig=A%2BtrgHYAxqS%2FTDnVKTmTAmiV6eWY8qVEedRt0o7myqk%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching libtasn1
+==> Downloading https://ghcr.io/v2/homebrew/core/libtasn1/manifests/4.19.0
+==> Downloading https://ghcr.io/v2/homebrew/core/libtasn1/blobs/sha256:e994c7b8c16afb59368d8d09a3f193451c9deab1e4a83f8a94650e27674d9278
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:e994c7b8c16afb59368d8d09a3f193451c9deab1e4a83f8a94650e27674d9278?se=2023-03-12T11%3A05%3A00Z&sig=7usCEarbsmAsFqAAwPmY35LHnGIhyLj2nS%2FJGV1DAcI%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching nettle
+==> Downloading https://ghcr.io/v2/homebrew/core/nettle/manifests/3.8.1
+==> Downloading https://ghcr.io/v2/homebrew/core/nettle/blobs/sha256:1901826420ae92f7998068673ec444d32550618f38ad1c074acf68be16b9b056
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:1901826420ae92f7998068673ec444d32550618f38ad1c074acf68be16b9b056?se=2023-03-12T11%3A05%3A00Z&sig=GXt6CQoZv8srBXGImVDAXkl5heRw%2FpXpFKb73fH5C9U%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching libffi
+==> Downloading https://ghcr.io/v2/homebrew/core/libffi/manifests/3.4.4
+Already downloaded: /home/user/.cache/Homebrew/downloads/f5fd52c2060b392cd349c2d45b783adb0e507a5166f125893d6e733d9b7f4afa--libffi-3.4.4.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libffi/blobs/sha256:dcc9412995b5e319f64796a77b1eb8e684f1d1b6b5d7ac824f434ada692e4ff8
+Already downloaded: /home/user/.cache/Homebrew/downloads/ca3d433de16e89ddbae57be1a624745600ee07b647342f4380254acc06fa0431--libffi--3.4.4.x86_64_linux.bottle.tar.gz
+==> Fetching p11-kit
+==> Downloading https://ghcr.io/v2/homebrew/core/p11-kit/manifests/0.24.1_1
+==> Downloading https://ghcr.io/v2/homebrew/core/p11-kit/blobs/sha256:02b36849258c93af1a99460457fb93da9c2554b8c444fdbbc85c8d38326e0ef7
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:02b36849258c93af1a99460457fb93da9c2554b8c444fdbbc85c8d38326e0ef7?se=2023-03-12T11%3A05%3A00Z&sig=HydxU%2FsgT2Wy1foT%2FpaMRKDHuPeyRSX1eiiuCr09GDI%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching gnutls
+==> Downloading https://ghcr.io/v2/homebrew/core/gnutls/manifests/3.8.0
+==> Downloading https://ghcr.io/v2/homebrew/core/gnutls/blobs/sha256:7a131f11110a752a7326a0b1c57dff58c7fc4eea5f2a1e4ae7de781d71532883
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:7a131f11110a752a7326a0b1c57dff58c7fc4eea5f2a1e4ae7de781d71532883?se=2023-03-12T11%3A05%3A00Z&sig=olRfiSCVD2FjMLwOtvd9P%2FfAr748T1Wf9pmApCCBbRk%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+Error: Operation already in progress for linux-headers@5.15.formula
+Another active Homebrew process is already using linux-headers@5.15.formula.
+Please wait for it to finish or terminate it to continue.
+Installing gnutls has failed!
+Installing curl
+==> Fetching dependencies for curl: brotli, libunistring, libidn2, libssh2, util-linux, openldap, and rtmpdump
+==> Fetching brotli
+==> Downloading https://ghcr.io/v2/homebrew/core/brotli/manifests/1.0.9
+==> Downloading https://ghcr.io/v2/homebrew/core/brotli/blobs/sha256:97756cdd4ee7ca03251307eafdb3dff7be3f070a8c0fdf385e87e7ad4a1068de
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:97756cdd4ee7ca03251307eafdb3dff7be3f070a8c0fdf385e87e7ad4a1068de?se=2023-03-12T11%3A05%3A00Z&sig=wVKDRqfXS%2FcwEUZjqdX1SBCJvgAfBE5Fw6ivF39rDfI%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching libunistring
+==> Downloading https://ghcr.io/v2/homebrew/core/libunistring/manifests/1.1
+Already downloaded: /home/user/.cache/Homebrew/downloads/a34801f1ad5800ba51b2b3951d82a913ccf0641982f86b02df2f0aa182535055--libunistring-1.1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libunistring/blobs/sha256:252f3716191a8c08f8d10e2c20b84cf9645e2c264f409f58d3255d9a4edce77f
+Already downloaded: /home/user/.cache/Homebrew/downloads/acc8b5bda4be9c1f9fb5016ebed59e76f37c87c5ead566f58f79aa3064cfbbe1--libunistring--1.1.x86_64_linux.bottle.tar.gz
+==> Fetching libidn2
+==> Downloading https://ghcr.io/v2/homebrew/core/libidn2/manifests/2.3.4_1-1
+Already downloaded: /home/user/.cache/Homebrew/downloads/03ad193177f4e7d05ee2ed19a455028cb5fbf7ea1a812d88f18f5e9e8b4a4d43--libidn2-2.3.4_1-1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libidn2/blobs/sha256:af78945967847cdf33779abbd1142cabb31d6b5d428f367e23bc068f1d240e49
+Already downloaded: /home/user/.cache/Homebrew/downloads/bc61c7d91e776e8967178a1ff72134e7d5a797c3db23c0c90e45612f99815fe0--libidn2--2.3.4_1.x86_64_linux.bottle.1.tar.gz
+==> Fetching libssh2
+==> Downloading https://ghcr.io/v2/homebrew/core/libssh2/manifests/1.10.0
+==> Downloading https://ghcr.io/v2/homebrew/core/libssh2/blobs/sha256:2ff0fe65fb281d51dab44a53b15ef40ebeebf09a7f4d28e86dfc0cc18e49bbc1
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:2ff0fe65fb281d51dab44a53b15ef40ebeebf09a7f4d28e86dfc0cc18e49bbc1?se=2023-03-12T11%3A05%3A00Z&sig=sjGFlgXFFFK%2BCe4aDmtkD3nVhLo9I3eBKREcJMyVRkc%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching util-linux
+==> Downloading https://ghcr.io/v2/homebrew/core/util-linux/manifests/2.38.1-2
+Already downloaded: /home/user/.cache/Homebrew/downloads/423da7f55a0a35f6f3c79ca3ba0de616ae946fd67b0043ea703d7747c6b2288f--util-linux-2.38.1-2.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/util-linux/blobs/sha256:aa2192315d8696997a44fac1681386ff0978d354a326477090cc0e940dbfa4b6
+Already downloaded: /home/user/.cache/Homebrew/downloads/41769be9d24f6c2849fc1478a8bf83e5efc8dffb38ff76000433ca2de90185aa--util-linux--2.38.1.x86_64_linux.bottle.2.tar.gz
+==> Fetching openldap
+==> Downloading https://ghcr.io/v2/homebrew/core/openldap/manifests/2.6.4
+==> Downloading https://ghcr.io/v2/homebrew/core/openldap/blobs/sha256:67954b08e3cc04b58c58c2169789a73517ae634da2820130cf547d96cd37a7b3
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:67954b08e3cc04b58c58c2169789a73517ae634da2820130cf547d96cd37a7b3?se=2023-03-12T11%3A05%3A00Z&sig=5bNUmShrCFmF86JFSDrj3qV0IF9NgC6D%2B0g5GtYBf18%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching rtmpdump
+==> Downloading https://ghcr.io/v2/homebrew/core/rtmpdump/manifests/2.4.20151223_1
+==> Downloading https://ghcr.io/v2/homebrew/core/rtmpdump/blobs/sha256:c1d50c3dc8938a0e69c86d29046c924c3e9f7d80c567c8bd848fe368ae0a992e
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:c1d50c3dc8938a0e69c86d29046c924c3e9f7d80c567c8bd848fe368ae0a992e?se=2023-03-12T11%3A05%3A00Z&sig=3etISjFBV0tcwO%2BcWmQShv4L3y0udogJXuuBla%2FKuE4%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching curl
+==> Downloading https://ghcr.io/v2/homebrew/core/curl/manifests/7.88.1
+==> Downloading https://ghcr.io/v2/homebrew/core/curl/blobs/sha256:f915f992603842a7f608881e78d696fb9fd288e7fcf0f9f9c2b76fb72c2508e4
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:f915f992603842a7f608881e78d696fb9fd288e7fcf0f9f9c2b76fb72c2508e4?se=2023-03-12T11%3A05%3A00Z&sig=2h5G35x6eOUi0u1W0k1%2F3qR6LiUUtt7DV8CcJsXidPI%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+Error: Operation already in progress for linux-headers@5.15.formula
+Another active Homebrew process is already using linux-headers@5.15.formula.
+Please wait for it to finish or terminate it to continue.
+Installing curl has failed!
+Installing exa
+==> Fetching dependencies for exa: libssh2 and libgit2
+==> Fetching libssh2
+==> Downloading https://ghcr.io/v2/homebrew/core/libssh2/manifests/1.10.0
+Already downloaded: /home/user/.cache/Homebrew/downloads/6e41bd7557e621390f4e9b68efeffc513d76c89598bdcf08c113dcb26af48c26--libssh2-1.10.0.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libssh2/blobs/sha256:2ff0fe65fb281d51dab44a53b15ef40ebeebf09a7f4d28e86dfc0cc18e49bbc1
+Already downloaded: /home/user/.cache/Homebrew/downloads/3dca6665bf186c8493284fc4e8ebd3223146eb2db70478a18d4d13650ff742a5--libssh2--1.10.0.x86_64_linux.bottle.tar.gz
+==> Fetching libgit2
+==> Downloading https://ghcr.io/v2/homebrew/core/libgit2/manifests/1.5.2
+==> Downloading https://ghcr.io/v2/homebrew/core/libgit2/blobs/sha256:016e41900dd2630bd8573c00a2fd4e268d0c9064e772c53588d45bcc7e2557b6
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:016e41900dd2630bd8573c00a2fd4e268d0c9064e772c53588d45bcc7e2557b6?se=2023-03-12T11%3A05%3A00Z&sig=0jamTjXKbaheqVoiiriVaMc1yqOOJ8wGuxAeEEKFvdc%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching exa
+==> Downloading https://ghcr.io/v2/homebrew/core/exa/manifests/0.10.1-5
+==> Downloading https://ghcr.io/v2/homebrew/core/exa/blobs/sha256:17a48a5beedeb00f98311e75e25cc3cd7043b1f9ef28ceccc5285bb4848eec34
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:17a48a5beedeb00f98311e75e25cc3cd7043b1f9ef28ceccc5285bb4848eec34?se=2023-03-12T11%3A05%3A00Z&sig=SBjjy7NOqaoCLN2%2F%2FtBDK9vRYNlJC0OiZVMYGrRhe9Y%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+Error: Operation already in progress for linux-headers@5.15.formula
+Another active Homebrew process is already using linux-headers@5.15.formula.
+Please wait for it to finish or terminate it to continue.
+Installing exa has failed!
+Installing folly
+==> Fetching dependencies for folly: icu4c, boost, double-conversion, fmt, gflags, glog, and snappy
+==> Fetching icu4c
+==> Downloading https://ghcr.io/v2/homebrew/core/icu4c/manifests/72.1
+==> Downloading https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:880ba1731d14d66d48594a7ca1532b12ec50c1e2e3b6c7cd96cfaf05bab04d2f
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:880ba1731d14d66d48594a7ca1532b12ec50c1e2e3b6c7cd96cfaf05bab04d2f?se=2023-03-12T11%3A05%3A00Z&sig=52oYTYEM9c1oZNZkEM%2FQ1cO%2Fm68NYUKXEPk4SOJz%2BkU%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching boost
+==> Downloading https://ghcr.io/v2/homebrew/core/boost/manifests/1.81.0_1
+==> Downloading https://ghcr.io/v2/homebrew/core/boost/blobs/sha256:26a83186402f3625806df9d7f6e41a1188d726d7f21ee5ccbfb3310e763d1ebc
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:26a83186402f3625806df9d7f6e41a1188d726d7f21ee5ccbfb3310e763d1ebc?se=2023-03-12T11%3A05%3A00Z&sig=F%2FzSiFMX%2BlnYDrcd%2BcfjNGvRwXTUfcjuV0M4qMibz3g%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching double-conversion
+==> Downloading https://ghcr.io/v2/homebrew/core/double-conversion/manifests/3.2.1
+==> Downloading https://ghcr.io/v2/homebrew/core/double-conversion/blobs/sha256:ad1dbba4e56ae238b08b842855f8ca8ca1c929644a09a9f91c24d4c7fafc2e9f
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:ad1dbba4e56ae238b08b842855f8ca8ca1c929644a09a9f91c24d4c7fafc2e9f?se=2023-03-12T11%3A05%3A00Z&sig=NkaasDWjUAlGHneyoxNi5UmKm%2BaU9gCGAMgoWJFqy6A%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching fmt
+==> Downloading https://ghcr.io/v2/homebrew/core/fmt/manifests/9.1.0
+==> Downloading https://ghcr.io/v2/homebrew/core/fmt/blobs/sha256:978a0685bf616cf383c4ffacf8210ad881f0f2d3ab94207005604648316dc32c
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:978a0685bf616cf383c4ffacf8210ad881f0f2d3ab94207005604648316dc32c?se=2023-03-12T11%3A05%3A00Z&sig=k7Zm0M98UKjo57F37oai1Kf4dFuG2knyHHhvEicL6t8%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching gflags
+==> Downloading https://ghcr.io/v2/homebrew/core/gflags/manifests/2.2.2-2
+==> Downloading https://ghcr.io/v2/homebrew/core/gflags/blobs/sha256:f11fa1aff8e21d32012f8fbb78a2f954241f4e026b8518a6c874e2d537201629
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:f11fa1aff8e21d32012f8fbb78a2f954241f4e026b8518a6c874e2d537201629?se=2023-03-12T11%3A05%3A00Z&sig=pKzShyGgrUT8MVtUAvwPSh48D0sqC3cv4IC9S5Hmv%2B0%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching glog
+==> Downloading https://ghcr.io/v2/homebrew/core/glog/manifests/0.6.0
+==> Downloading https://ghcr.io/v2/homebrew/core/glog/blobs/sha256:04695a6df86ea26cadda86975bc9ad9c1ec112e8325e2bbc5f25939b42698463
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:04695a6df86ea26cadda86975bc9ad9c1ec112e8325e2bbc5f25939b42698463?se=2023-03-12T11%3A05%3A00Z&sig=CEOHp1P5rNA66FhSqzSzfabRez%2FZH9l5gIVqdci8Fio%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching snappy
+==> Downloading https://ghcr.io/v2/homebrew/core/snappy/manifests/1.1.10
+==> Downloading https://ghcr.io/v2/homebrew/core/snappy/blobs/sha256:73aa76de40ad1ca4f5b03a76180a018aadbc05bda2cde1d4b9030cf56d100f2f
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:73aa76de40ad1ca4f5b03a76180a018aadbc05bda2cde1d4b9030cf56d100f2f?se=2023-03-12T11%3A05%3A00Z&sig=mjibqz83%2FvxO5m8Iv7GhpoBs9Aykha%2F7ZUi4CMiAvvk%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching folly
+==> Downloading https://ghcr.io/v2/homebrew/core/folly/manifests/2023.03.06.00
+==> Downloading https://ghcr.io/v2/homebrew/core/folly/blobs/sha256:5e5cc051fc2413171f6c55993c11973db9cb6f0ee07a1f6c39ef84a239afee76
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:5e5cc051fc2413171f6c55993c11973db9cb6f0ee07a1f6c39ef84a239afee76?se=2023-03-12T11%3A05%3A00Z&sig=y6m94y8hMd%2Bks1Pf5GF9CT%2BvrJoBWjQt2oMZZX8rs%2BQ%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+Error: Operation already in progress for linux-headers@5.15.formula
+Another active Homebrew process is already using linux-headers@5.15.formula.
+Please wait for it to finish or terminate it to continue.
+Installing folly has failed!
+Installing fizz
+==> Fetching dependencies for fizz: icu4c, boost, double-conversion, fmt, gflags, glog, snappy, folly, and libsodium
+==> Fetching icu4c
+==> Downloading https://ghcr.io/v2/homebrew/core/icu4c/manifests/72.1
+Already downloaded: /home/user/.cache/Homebrew/downloads/adaa2fd48ef337b5bfee51ed8902dab61120bb41bd18f98eb20e744fdd5548c1--icu4c-72.1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:880ba1731d14d66d48594a7ca1532b12ec50c1e2e3b6c7cd96cfaf05bab04d2f
+Already downloaded: /home/user/.cache/Homebrew/downloads/18d475b90e32a0f6fd7b96f11c0abe488edb5a6981857fe34fe99e103ebe75d8--icu4c--72.1.x86_64_linux.bottle.tar.gz
+==> Fetching boost
+==> Downloading https://ghcr.io/v2/homebrew/core/boost/manifests/1.81.0_1
+Already downloaded: /home/user/.cache/Homebrew/downloads/8d79ba33b2820584f37a08164c2e12a409c2915b01fbe52c3d71f4d8a50a808f--boost-1.81.0_1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/boost/blobs/sha256:26a83186402f3625806df9d7f6e41a1188d726d7f21ee5ccbfb3310e763d1ebc
+Already downloaded: /home/user/.cache/Homebrew/downloads/2e06368db29168476f8b88579f21134e51999b6882a080d34947759a9fd6d296--boost--1.81.0_1.x86_64_linux.bottle.tar.gz
+==> Fetching double-conversion
+==> Downloading https://ghcr.io/v2/homebrew/core/double-conversion/manifests/3.2.1
+Already downloaded: /home/user/.cache/Homebrew/downloads/0e93f00dabb6049f16642982ff101a50df05d48176c81cef5f8ddde83654a895--double-conversion-3.2.1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/double-conversion/blobs/sha256:ad1dbba4e56ae238b08b842855f8ca8ca1c929644a09a9f91c24d4c7fafc2e9f
+Already downloaded: /home/user/.cache/Homebrew/downloads/2016e0fcd1e1106f15a396baf19d5a956c4a372c5a0e76590fe594caf28367b2--double-conversion--3.2.1.x86_64_linux.bottle.tar.gz
+==> Fetching fmt
+==> Downloading https://ghcr.io/v2/homebrew/core/fmt/manifests/9.1.0
+Already downloaded: /home/user/.cache/Homebrew/downloads/8f35416112a505799fe75809def57cf2f65135372ad484585ddc74418c008431--fmt-9.1.0.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/fmt/blobs/sha256:978a0685bf616cf383c4ffacf8210ad881f0f2d3ab94207005604648316dc32c
+Already downloaded: /home/user/.cache/Homebrew/downloads/c726e5a888245c54b29ff1e7214c6963aabd6b3b2f9006f0257d45810526868f--fmt--9.1.0.x86_64_linux.bottle.tar.gz
+==> Fetching gflags
+==> Downloading https://ghcr.io/v2/homebrew/core/gflags/manifests/2.2.2-2
+Already downloaded: /home/user/.cache/Homebrew/downloads/9683aeddd51c2c61698e3e3e9942ac77c776893acd679bcd1690fdd98fe8a2e2--gflags-2.2.2-2.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/gflags/blobs/sha256:f11fa1aff8e21d32012f8fbb78a2f954241f4e026b8518a6c874e2d537201629
+Already downloaded: /home/user/.cache/Homebrew/downloads/b45d77a00415fc6807e3eab3627d9f6f6d1d40472eb3ceacd8f7a7da6444c643--gflags--2.2.2.x86_64_linux.bottle.2.tar.gz
+==> Fetching glog
+==> Downloading https://ghcr.io/v2/homebrew/core/glog/manifests/0.6.0
+Already downloaded: /home/user/.cache/Homebrew/downloads/ce2b2dbc995f00003a0f9190f9be41eb0d801df95aaff0b5bb14ffdc7867599e--glog-0.6.0.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/glog/blobs/sha256:04695a6df86ea26cadda86975bc9ad9c1ec112e8325e2bbc5f25939b42698463
+Already downloaded: /home/user/.cache/Homebrew/downloads/df163fc9491afb7d3ea02356d5c93125b0c26c162756de6e6bdc310d230236cb--glog--0.6.0.x86_64_linux.bottle.tar.gz
+==> Fetching snappy
+==> Downloading https://ghcr.io/v2/homebrew/core/snappy/manifests/1.1.10
+Already downloaded: /home/user/.cache/Homebrew/downloads/66500196008160ff18d67179e002e417a71c59707d74a6706c2e89a8aa2411b8--snappy-1.1.10.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/snappy/blobs/sha256:73aa76de40ad1ca4f5b03a76180a018aadbc05bda2cde1d4b9030cf56d100f2f
+Already downloaded: /home/user/.cache/Homebrew/downloads/fd58f679f3b2a813b65cbf6e00379d36838c8e7f5187561ba400d5019f9d0de1--snappy--1.1.10.x86_64_linux.bottle.tar.gz
+==> Fetching folly
+==> Downloading https://ghcr.io/v2/homebrew/core/folly/manifests/2023.03.06.00
+Already downloaded: /home/user/.cache/Homebrew/downloads/75813b368cfc30cca85d6686608e0e7101f81c305bad7bc8837e6cf6b778f12b--folly-2023.03.06.00.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/folly/blobs/sha256:5e5cc051fc2413171f6c55993c11973db9cb6f0ee07a1f6c39ef84a239afee76
+Already downloaded: /home/user/.cache/Homebrew/downloads/1ba90b86386837887852708e3ce55ecc5263ba25a41b26e375d33f5f5b7cd2b9--folly--2023.03.06.00.x86_64_linux.bottle.tar.gz
+==> Fetching libsodium
+==> Downloading https://ghcr.io/v2/homebrew/core/libsodium/manifests/1.0.18_1
+==> Downloading https://ghcr.io/v2/homebrew/core/libsodium/blobs/sha256:1ab2c66fc8ae6c1245b49c9bd7a32853c1b348afe7086d4c2d3baf5ea30bbac9
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:1ab2c66fc8ae6c1245b49c9bd7a32853c1b348afe7086d4c2d3baf5ea30bbac9?se=2023-03-12T11%3A05%3A00Z&sig=1wcwWtjhbAAgN%2B%2FACEIHxo8tRMHqsd77U%2FU8peeyM6g%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching fizz
+==> Downloading https://ghcr.io/v2/homebrew/core/fizz/manifests/2023.03.06.00
+==> Downloading https://ghcr.io/v2/homebrew/core/fizz/blobs/sha256:ae3a86745b4875e362178ab512107662334f99c470a806fbe341ed6a07a577c3
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:ae3a86745b4875e362178ab512107662334f99c470a806fbe341ed6a07a577c3?se=2023-03-12T11%3A05%3A00Z&sig=vICcK5ctwYdH22Le%2BIpfE2kEUkI000gYAEU047qx4tI%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+Error: Operation already in progress for linux-headers@5.15.formula
+Another active Homebrew process is already using linux-headers@5.15.formula.
+Please wait for it to finish or terminate it to continue.
+Installing fizz has failed!
+Installing wangle
+==> Fetching dependencies for wangle: icu4c, boost, double-conversion, fmt, gflags, glog, snappy, folly, libsodium, and fizz
+==> Fetching icu4c
+==> Downloading https://ghcr.io/v2/homebrew/core/icu4c/manifests/72.1
+Already downloaded: /home/user/.cache/Homebrew/downloads/adaa2fd48ef337b5bfee51ed8902dab61120bb41bd18f98eb20e744fdd5548c1--icu4c-72.1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:880ba1731d14d66d48594a7ca1532b12ec50c1e2e3b6c7cd96cfaf05bab04d2f
+Already downloaded: /home/user/.cache/Homebrew/downloads/18d475b90e32a0f6fd7b96f11c0abe488edb5a6981857fe34fe99e103ebe75d8--icu4c--72.1.x86_64_linux.bottle.tar.gz
+==> Fetching boost
+==> Downloading https://ghcr.io/v2/homebrew/core/boost/manifests/1.81.0_1
+Already downloaded: /home/user/.cache/Homebrew/downloads/8d79ba33b2820584f37a08164c2e12a409c2915b01fbe52c3d71f4d8a50a808f--boost-1.81.0_1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/boost/blobs/sha256:26a83186402f3625806df9d7f6e41a1188d726d7f21ee5ccbfb3310e763d1ebc
+Already downloaded: /home/user/.cache/Homebrew/downloads/2e06368db29168476f8b88579f21134e51999b6882a080d34947759a9fd6d296--boost--1.81.0_1.x86_64_linux.bottle.tar.gz
+==> Fetching double-conversion
+==> Downloading https://ghcr.io/v2/homebrew/core/double-conversion/manifests/3.2.1
+Already downloaded: /home/user/.cache/Homebrew/downloads/0e93f00dabb6049f16642982ff101a50df05d48176c81cef5f8ddde83654a895--double-conversion-3.2.1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/double-conversion/blobs/sha256:ad1dbba4e56ae238b08b842855f8ca8ca1c929644a09a9f91c24d4c7fafc2e9f
+Already downloaded: /home/user/.cache/Homebrew/downloads/2016e0fcd1e1106f15a396baf19d5a956c4a372c5a0e76590fe594caf28367b2--double-conversion--3.2.1.x86_64_linux.bottle.tar.gz
+==> Fetching fmt
+==> Downloading https://ghcr.io/v2/homebrew/core/fmt/manifests/9.1.0
+Already downloaded: /home/user/.cache/Homebrew/downloads/8f35416112a505799fe75809def57cf2f65135372ad484585ddc74418c008431--fmt-9.1.0.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/fmt/blobs/sha256:978a0685bf616cf383c4ffacf8210ad881f0f2d3ab94207005604648316dc32c
+Already downloaded: /home/user/.cache/Homebrew/downloads/c726e5a888245c54b29ff1e7214c6963aabd6b3b2f9006f0257d45810526868f--fmt--9.1.0.x86_64_linux.bottle.tar.gz
+==> Fetching gflags
+==> Downloading https://ghcr.io/v2/homebrew/core/gflags/manifests/2.2.2-2
+Already downloaded: /home/user/.cache/Homebrew/downloads/9683aeddd51c2c61698e3e3e9942ac77c776893acd679bcd1690fdd98fe8a2e2--gflags-2.2.2-2.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/gflags/blobs/sha256:f11fa1aff8e21d32012f8fbb78a2f954241f4e026b8518a6c874e2d537201629
+Already downloaded: /home/user/.cache/Homebrew/downloads/b45d77a00415fc6807e3eab3627d9f6f6d1d40472eb3ceacd8f7a7da6444c643--gflags--2.2.2.x86_64_linux.bottle.2.tar.gz
+==> Fetching glog
+==> Downloading https://ghcr.io/v2/homebrew/core/glog/manifests/0.6.0
+Already downloaded: /home/user/.cache/Homebrew/downloads/ce2b2dbc995f00003a0f9190f9be41eb0d801df95aaff0b5bb14ffdc7867599e--glog-0.6.0.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/glog/blobs/sha256:04695a6df86ea26cadda86975bc9ad9c1ec112e8325e2bbc5f25939b42698463
+Already downloaded: /home/user/.cache/Homebrew/downloads/df163fc9491afb7d3ea02356d5c93125b0c26c162756de6e6bdc310d230236cb--glog--0.6.0.x86_64_linux.bottle.tar.gz
+==> Fetching snappy
+==> Downloading https://ghcr.io/v2/homebrew/core/snappy/manifests/1.1.10
+Already downloaded: /home/user/.cache/Homebrew/downloads/66500196008160ff18d67179e002e417a71c59707d74a6706c2e89a8aa2411b8--snappy-1.1.10.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/snappy/blobs/sha256:73aa76de40ad1ca4f5b03a76180a018aadbc05bda2cde1d4b9030cf56d100f2f
+Already downloaded: /home/user/.cache/Homebrew/downloads/fd58f679f3b2a813b65cbf6e00379d36838c8e7f5187561ba400d5019f9d0de1--snappy--1.1.10.x86_64_linux.bottle.tar.gz
+==> Fetching folly
+==> Downloading https://ghcr.io/v2/homebrew/core/folly/manifests/2023.03.06.00
+Already downloaded: /home/user/.cache/Homebrew/downloads/75813b368cfc30cca85d6686608e0e7101f81c305bad7bc8837e6cf6b778f12b--folly-2023.03.06.00.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/folly/blobs/sha256:5e5cc051fc2413171f6c55993c11973db9cb6f0ee07a1f6c39ef84a239afee76
+Already downloaded: /home/user/.cache/Homebrew/downloads/1ba90b86386837887852708e3ce55ecc5263ba25a41b26e375d33f5f5b7cd2b9--folly--2023.03.06.00.x86_64_linux.bottle.tar.gz
+==> Fetching libsodium
+==> Downloading https://ghcr.io/v2/homebrew/core/libsodium/manifests/1.0.18_1
+Already downloaded: /home/user/.cache/Homebrew/downloads/d14e811d4b4dc5be4758836da0008ea37879d7a8f7d353829decd14f70a20dec--libsodium-1.0.18_1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libsodium/blobs/sha256:1ab2c66fc8ae6c1245b49c9bd7a32853c1b348afe7086d4c2d3baf5ea30bbac9
+Already downloaded: /home/user/.cache/Homebrew/downloads/08992d4ba225d2edec8c9c2e52c3bf295c9d66666e152b9b7f377563bc76f70e--libsodium--1.0.18_1.x86_64_linux.bottle.tar.gz
+==> Fetching fizz
+==> Downloading https://ghcr.io/v2/homebrew/core/fizz/manifests/2023.03.06.00
+Already downloaded: /home/user/.cache/Homebrew/downloads/4d6c407dc4a41d397f19e7c2a312d813bc00e7daf71d09ffe023f6a1f815c613--fizz-2023.03.06.00.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/fizz/blobs/sha256:ae3a86745b4875e362178ab512107662334f99c470a806fbe341ed6a07a577c3
+Already downloaded: /home/user/.cache/Homebrew/downloads/f532f15333cafd1b7a87d684510eaee75e8f23551c1475575faf25154b4371a3--fizz--2023.03.06.00.x86_64_linux.bottle.tar.gz
+==> Fetching wangle
+==> Downloading https://ghcr.io/v2/homebrew/core/wangle/manifests/2023.03.06.00
+==> Downloading https://ghcr.io/v2/homebrew/core/wangle/blobs/sha256:fe64e54be968ae07e81bbd396ced2d7591f17752910c2c06e69569274a0562a5
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:fe64e54be968ae07e81bbd396ced2d7591f17752910c2c06e69569274a0562a5?se=2023-03-12T11%3A05%3A00Z&sig=pev%2FLQL6fEAONReiV%2Fu8n7W48YuVFz0SnFABAHE1eHU%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+Error: Operation already in progress for linux-headers@5.15.formula
+Another active Homebrew process is already using linux-headers@5.15.formula.
+Please wait for it to finish or terminate it to continue.
+Installing wangle has failed!
+Installing fbthrift
+==> Fetching dependencies for fbthrift: icu4c, boost, double-conversion, fmt, gflags, glog, snappy, folly, libsodium, fizz, and wangle
+==> Fetching icu4c
+==> Downloading https://ghcr.io/v2/homebrew/core/icu4c/manifests/72.1
+Already downloaded: /home/user/.cache/Homebrew/downloads/adaa2fd48ef337b5bfee51ed8902dab61120bb41bd18f98eb20e744fdd5548c1--icu4c-72.1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:880ba1731d14d66d48594a7ca1532b12ec50c1e2e3b6c7cd96cfaf05bab04d2f
+Already downloaded: /home/user/.cache/Homebrew/downloads/18d475b90e32a0f6fd7b96f11c0abe488edb5a6981857fe34fe99e103ebe75d8--icu4c--72.1.x86_64_linux.bottle.tar.gz
+==> Fetching boost
+==> Downloading https://ghcr.io/v2/homebrew/core/boost/manifests/1.81.0_1
+Already downloaded: /home/user/.cache/Homebrew/downloads/8d79ba33b2820584f37a08164c2e12a409c2915b01fbe52c3d71f4d8a50a808f--boost-1.81.0_1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/boost/blobs/sha256:26a83186402f3625806df9d7f6e41a1188d726d7f21ee5ccbfb3310e763d1ebc
+Already downloaded: /home/user/.cache/Homebrew/downloads/2e06368db29168476f8b88579f21134e51999b6882a080d34947759a9fd6d296--boost--1.81.0_1.x86_64_linux.bottle.tar.gz
+==> Fetching double-conversion
+==> Downloading https://ghcr.io/v2/homebrew/core/double-conversion/manifests/3.2.1
+Already downloaded: /home/user/.cache/Homebrew/downloads/0e93f00dabb6049f16642982ff101a50df05d48176c81cef5f8ddde83654a895--double-conversion-3.2.1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/double-conversion/blobs/sha256:ad1dbba4e56ae238b08b842855f8ca8ca1c929644a09a9f91c24d4c7fafc2e9f
+Already downloaded: /home/user/.cache/Homebrew/downloads/2016e0fcd1e1106f15a396baf19d5a956c4a372c5a0e76590fe594caf28367b2--double-conversion--3.2.1.x86_64_linux.bottle.tar.gz
+==> Fetching fmt
+==> Downloading https://ghcr.io/v2/homebrew/core/fmt/manifests/9.1.0
+Already downloaded: /home/user/.cache/Homebrew/downloads/8f35416112a505799fe75809def57cf2f65135372ad484585ddc74418c008431--fmt-9.1.0.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/fmt/blobs/sha256:978a0685bf616cf383c4ffacf8210ad881f0f2d3ab94207005604648316dc32c
+Already downloaded: /home/user/.cache/Homebrew/downloads/c726e5a888245c54b29ff1e7214c6963aabd6b3b2f9006f0257d45810526868f--fmt--9.1.0.x86_64_linux.bottle.tar.gz
+==> Fetching gflags
+==> Downloading https://ghcr.io/v2/homebrew/core/gflags/manifests/2.2.2-2
+Already downloaded: /home/user/.cache/Homebrew/downloads/9683aeddd51c2c61698e3e3e9942ac77c776893acd679bcd1690fdd98fe8a2e2--gflags-2.2.2-2.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/gflags/blobs/sha256:f11fa1aff8e21d32012f8fbb78a2f954241f4e026b8518a6c874e2d537201629
+Already downloaded: /home/user/.cache/Homebrew/downloads/b45d77a00415fc6807e3eab3627d9f6f6d1d40472eb3ceacd8f7a7da6444c643--gflags--2.2.2.x86_64_linux.bottle.2.tar.gz
+==> Fetching glog
+==> Downloading https://ghcr.io/v2/homebrew/core/glog/manifests/0.6.0
+Already downloaded: /home/user/.cache/Homebrew/downloads/ce2b2dbc995f00003a0f9190f9be41eb0d801df95aaff0b5bb14ffdc7867599e--glog-0.6.0.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/glog/blobs/sha256:04695a6df86ea26cadda86975bc9ad9c1ec112e8325e2bbc5f25939b42698463
+Already downloaded: /home/user/.cache/Homebrew/downloads/df163fc9491afb7d3ea02356d5c93125b0c26c162756de6e6bdc310d230236cb--glog--0.6.0.x86_64_linux.bottle.tar.gz
+==> Fetching snappy
+==> Downloading https://ghcr.io/v2/homebrew/core/snappy/manifests/1.1.10
+Already downloaded: /home/user/.cache/Homebrew/downloads/66500196008160ff18d67179e002e417a71c59707d74a6706c2e89a8aa2411b8--snappy-1.1.10.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/snappy/blobs/sha256:73aa76de40ad1ca4f5b03a76180a018aadbc05bda2cde1d4b9030cf56d100f2f
+Already downloaded: /home/user/.cache/Homebrew/downloads/fd58f679f3b2a813b65cbf6e00379d36838c8e7f5187561ba400d5019f9d0de1--snappy--1.1.10.x86_64_linux.bottle.tar.gz
+==> Fetching folly
+==> Downloading https://ghcr.io/v2/homebrew/core/folly/manifests/2023.03.06.00
+Already downloaded: /home/user/.cache/Homebrew/downloads/75813b368cfc30cca85d6686608e0e7101f81c305bad7bc8837e6cf6b778f12b--folly-2023.03.06.00.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/folly/blobs/sha256:5e5cc051fc2413171f6c55993c11973db9cb6f0ee07a1f6c39ef84a239afee76
+Already downloaded: /home/user/.cache/Homebrew/downloads/1ba90b86386837887852708e3ce55ecc5263ba25a41b26e375d33f5f5b7cd2b9--folly--2023.03.06.00.x86_64_linux.bottle.tar.gz
+==> Fetching libsodium
+==> Downloading https://ghcr.io/v2/homebrew/core/libsodium/manifests/1.0.18_1
+Already downloaded: /home/user/.cache/Homebrew/downloads/d14e811d4b4dc5be4758836da0008ea37879d7a8f7d353829decd14f70a20dec--libsodium-1.0.18_1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libsodium/blobs/sha256:1ab2c66fc8ae6c1245b49c9bd7a32853c1b348afe7086d4c2d3baf5ea30bbac9
+Already downloaded: /home/user/.cache/Homebrew/downloads/08992d4ba225d2edec8c9c2e52c3bf295c9d66666e152b9b7f377563bc76f70e--libsodium--1.0.18_1.x86_64_linux.bottle.tar.gz
+==> Fetching fizz
+==> Downloading https://ghcr.io/v2/homebrew/core/fizz/manifests/2023.03.06.00
+Already downloaded: /home/user/.cache/Homebrew/downloads/4d6c407dc4a41d397f19e7c2a312d813bc00e7daf71d09ffe023f6a1f815c613--fizz-2023.03.06.00.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/fizz/blobs/sha256:ae3a86745b4875e362178ab512107662334f99c470a806fbe341ed6a07a577c3
+Already downloaded: /home/user/.cache/Homebrew/downloads/f532f15333cafd1b7a87d684510eaee75e8f23551c1475575faf25154b4371a3--fizz--2023.03.06.00.x86_64_linux.bottle.tar.gz
+==> Fetching wangle
+==> Downloading https://ghcr.io/v2/homebrew/core/wangle/manifests/2023.03.06.00
+Already downloaded: /home/user/.cache/Homebrew/downloads/0eb6a2e8738725d081b099d5f34325af8520ecacb60962cef2fe607527020e4f--wangle-2023.03.06.00.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/wangle/blobs/sha256:fe64e54be968ae07e81bbd396ced2d7591f17752910c2c06e69569274a0562a5
+Already downloaded: /home/user/.cache/Homebrew/downloads/ba1916ac5672faa047d8b009cda90dc2c2ffba5a543beb12ff0c8fe6eb72b4e6--wangle--2023.03.06.00.x86_64_linux.bottle.tar.gz
+==> Fetching fbthrift
+==> Downloading https://ghcr.io/v2/homebrew/core/fbthrift/manifests/2023.03.06.00
+==> Downloading https://ghcr.io/v2/homebrew/core/fbthrift/blobs/sha256:771ed4720009ae0bdc3c3a63b5da47ac3cdd6e3ea0607066edb86d9767e7d39a
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:771ed4720009ae0bdc3c3a63b5da47ac3cdd6e3ea0607066edb86d9767e7d39a?se=2023-03-12T11%3A05%3A00Z&sig=8sEyVcn7BPz7vw8sLglcdBTkkvaFjOL8wLuE%2BGVFvhw%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+Error: Operation already in progress for linux-headers@5.15.formula
+Another active Homebrew process is already using linux-headers@5.15.formula.
+Please wait for it to finish or terminate it to continue.
+Installing fbthrift has failed!
+Installing fb303
+==> Fetching dependencies for fb303: icu4c, boost, double-conversion, fmt, gflags, glog, snappy, folly, libsodium, fizz, wangle, and fbthrift
+==> Fetching icu4c
+==> Downloading https://ghcr.io/v2/homebrew/core/icu4c/manifests/72.1
+Already downloaded: /home/user/.cache/Homebrew/downloads/adaa2fd48ef337b5bfee51ed8902dab61120bb41bd18f98eb20e744fdd5548c1--icu4c-72.1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:880ba1731d14d66d48594a7ca1532b12ec50c1e2e3b6c7cd96cfaf05bab04d2f
+Already downloaded: /home/user/.cache/Homebrew/downloads/18d475b90e32a0f6fd7b96f11c0abe488edb5a6981857fe34fe99e103ebe75d8--icu4c--72.1.x86_64_linux.bottle.tar.gz
+==> Fetching boost
+==> Downloading https://ghcr.io/v2/homebrew/core/boost/manifests/1.81.0_1
+Already downloaded: /home/user/.cache/Homebrew/downloads/8d79ba33b2820584f37a08164c2e12a409c2915b01fbe52c3d71f4d8a50a808f--boost-1.81.0_1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/boost/blobs/sha256:26a83186402f3625806df9d7f6e41a1188d726d7f21ee5ccbfb3310e763d1ebc
+Already downloaded: /home/user/.cache/Homebrew/downloads/2e06368db29168476f8b88579f21134e51999b6882a080d34947759a9fd6d296--boost--1.81.0_1.x86_64_linux.bottle.tar.gz
+==> Fetching double-conversion
+==> Downloading https://ghcr.io/v2/homebrew/core/double-conversion/manifests/3.2.1
+Already downloaded: /home/user/.cache/Homebrew/downloads/0e93f00dabb6049f16642982ff101a50df05d48176c81cef5f8ddde83654a895--double-conversion-3.2.1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/double-conversion/blobs/sha256:ad1dbba4e56ae238b08b842855f8ca8ca1c929644a09a9f91c24d4c7fafc2e9f
+Already downloaded: /home/user/.cache/Homebrew/downloads/2016e0fcd1e1106f15a396baf19d5a956c4a372c5a0e76590fe594caf28367b2--double-conversion--3.2.1.x86_64_linux.bottle.tar.gz
+==> Fetching fmt
+==> Downloading https://ghcr.io/v2/homebrew/core/fmt/manifests/9.1.0
+Already downloaded: /home/user/.cache/Homebrew/downloads/8f35416112a505799fe75809def57cf2f65135372ad484585ddc74418c008431--fmt-9.1.0.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/fmt/blobs/sha256:978a0685bf616cf383c4ffacf8210ad881f0f2d3ab94207005604648316dc32c
+Already downloaded: /home/user/.cache/Homebrew/downloads/c726e5a888245c54b29ff1e7214c6963aabd6b3b2f9006f0257d45810526868f--fmt--9.1.0.x86_64_linux.bottle.tar.gz
+==> Fetching gflags
+==> Downloading https://ghcr.io/v2/homebrew/core/gflags/manifests/2.2.2-2
+Already downloaded: /home/user/.cache/Homebrew/downloads/9683aeddd51c2c61698e3e3e9942ac77c776893acd679bcd1690fdd98fe8a2e2--gflags-2.2.2-2.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/gflags/blobs/sha256:f11fa1aff8e21d32012f8fbb78a2f954241f4e026b8518a6c874e2d537201629
+Already downloaded: /home/user/.cache/Homebrew/downloads/b45d77a00415fc6807e3eab3627d9f6f6d1d40472eb3ceacd8f7a7da6444c643--gflags--2.2.2.x86_64_linux.bottle.2.tar.gz
+==> Fetching glog
+==> Downloading https://ghcr.io/v2/homebrew/core/glog/manifests/0.6.0
+Already downloaded: /home/user/.cache/Homebrew/downloads/ce2b2dbc995f00003a0f9190f9be41eb0d801df95aaff0b5bb14ffdc7867599e--glog-0.6.0.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/glog/blobs/sha256:04695a6df86ea26cadda86975bc9ad9c1ec112e8325e2bbc5f25939b42698463
+Already downloaded: /home/user/.cache/Homebrew/downloads/df163fc9491afb7d3ea02356d5c93125b0c26c162756de6e6bdc310d230236cb--glog--0.6.0.x86_64_linux.bottle.tar.gz
+==> Fetching snappy
+==> Downloading https://ghcr.io/v2/homebrew/core/snappy/manifests/1.1.10
+Already downloaded: /home/user/.cache/Homebrew/downloads/66500196008160ff18d67179e002e417a71c59707d74a6706c2e89a8aa2411b8--snappy-1.1.10.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/snappy/blobs/sha256:73aa76de40ad1ca4f5b03a76180a018aadbc05bda2cde1d4b9030cf56d100f2f
+Already downloaded: /home/user/.cache/Homebrew/downloads/fd58f679f3b2a813b65cbf6e00379d36838c8e7f5187561ba400d5019f9d0de1--snappy--1.1.10.x86_64_linux.bottle.tar.gz
+==> Fetching folly
+==> Downloading https://ghcr.io/v2/homebrew/core/folly/manifests/2023.03.06.00
+Already downloaded: /home/user/.cache/Homebrew/downloads/75813b368cfc30cca85d6686608e0e7101f81c305bad7bc8837e6cf6b778f12b--folly-2023.03.06.00.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/folly/blobs/sha256:5e5cc051fc2413171f6c55993c11973db9cb6f0ee07a1f6c39ef84a239afee76
+Already downloaded: /home/user/.cache/Homebrew/downloads/1ba90b86386837887852708e3ce55ecc5263ba25a41b26e375d33f5f5b7cd2b9--folly--2023.03.06.00.x86_64_linux.bottle.tar.gz
+==> Fetching libsodium
+==> Downloading https://ghcr.io/v2/homebrew/core/libsodium/manifests/1.0.18_1
+Already downloaded: /home/user/.cache/Homebrew/downloads/d14e811d4b4dc5be4758836da0008ea37879d7a8f7d353829decd14f70a20dec--libsodium-1.0.18_1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libsodium/blobs/sha256:1ab2c66fc8ae6c1245b49c9bd7a32853c1b348afe7086d4c2d3baf5ea30bbac9
+Already downloaded: /home/user/.cache/Homebrew/downloads/08992d4ba225d2edec8c9c2e52c3bf295c9d66666e152b9b7f377563bc76f70e--libsodium--1.0.18_1.x86_64_linux.bottle.tar.gz
+==> Fetching fizz
+==> Downloading https://ghcr.io/v2/homebrew/core/fizz/manifests/2023.03.06.00
+Already downloaded: /home/user/.cache/Homebrew/downloads/4d6c407dc4a41d397f19e7c2a312d813bc00e7daf71d09ffe023f6a1f815c613--fizz-2023.03.06.00.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/fizz/blobs/sha256:ae3a86745b4875e362178ab512107662334f99c470a806fbe341ed6a07a577c3
+Already downloaded: /home/user/.cache/Homebrew/downloads/f532f15333cafd1b7a87d684510eaee75e8f23551c1475575faf25154b4371a3--fizz--2023.03.06.00.x86_64_linux.bottle.tar.gz
+==> Fetching wangle
+==> Downloading https://ghcr.io/v2/homebrew/core/wangle/manifests/2023.03.06.00
+Already downloaded: /home/user/.cache/Homebrew/downloads/0eb6a2e8738725d081b099d5f34325af8520ecacb60962cef2fe607527020e4f--wangle-2023.03.06.00.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/wangle/blobs/sha256:fe64e54be968ae07e81bbd396ced2d7591f17752910c2c06e69569274a0562a5
+Already downloaded: /home/user/.cache/Homebrew/downloads/ba1916ac5672faa047d8b009cda90dc2c2ffba5a543beb12ff0c8fe6eb72b4e6--wangle--2023.03.06.00.x86_64_linux.bottle.tar.gz
+==> Fetching fbthrift
+==> Downloading https://ghcr.io/v2/homebrew/core/fbthrift/manifests/2023.03.06.00
+Already downloaded: /home/user/.cache/Homebrew/downloads/87544b202c86e29fa1bdbdb8e52555082735f6114240a14836133a9066d41dae--fbthrift-2023.03.06.00.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/fbthrift/blobs/sha256:771ed4720009ae0bdc3c3a63b5da47ac3cdd6e3ea0607066edb86d9767e7d39a
+Already downloaded: /home/user/.cache/Homebrew/downloads/b6aa12592c0f0d0098c32ad8c996d2d639ac7dbdc6f6fdf173d59bfb85c2ed10--fbthrift--2023.03.06.00.x86_64_linux.bottle.tar.gz
+==> Fetching fb303
+==> Downloading https://ghcr.io/v2/homebrew/core/fb303/manifests/2023.02.20.00
+==> Downloading https://ghcr.io/v2/homebrew/core/fb303/blobs/sha256:191d184643000bca84d86d4a394f2fcff5aaa179a652b0aac8a6eaa0b2fe1f9c
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:191d184643000bca84d86d4a394f2fcff5aaa179a652b0aac8a6eaa0b2fe1f9c?se=2023-03-12T11%3A05%3A00Z&sig=dmJiLnl%2F9H6Gig%2B%2F2QFdAQPl%2Fqo%2Bsnox6SeoBRdEE4s%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+Error: Operation already in progress for linux-headers@5.15.formula
+Another active Homebrew process is already using linux-headers@5.15.formula.
+Please wait for it to finish or terminate it to continue.
+Installing fb303 has failed!
+Installing fzf
+==> Fetching fzf
+==> Downloading https://ghcr.io/v2/homebrew/core/fzf/manifests/0.38.0
+==> Downloading https://ghcr.io/v2/homebrew/core/fzf/blobs/sha256:a3f4e066283a232e101188d8a0781c73768bea8cd5d1981c6632a05884308992
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:a3f4e066283a232e101188d8a0781c73768bea8cd5d1981c6632a05884308992?se=2023-03-12T11%3A05%3A00Z&sig=Grkrjy6Q9BHWd6qUAkHWaNW5a4HTa5AvkuSn%2FrG%2FS04%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+Error: Operation already in progress for linux-headers@5.15.formula
+Another active Homebrew process is already using linux-headers@5.15.formula.
+Please wait for it to finish or terminate it to continue.
+Installing fzf has failed!
+Installing gcc
+Installing gh
+==> Fetching gh
+==> Downloading https://ghcr.io/v2/homebrew/core/gh/manifests/2.24.3
+==> Downloading https://ghcr.io/v2/homebrew/core/gh/blobs/sha256:7fd409ee6ab37ea4562cea4a84c6c244cf6c3acae6c5e49d739ed84397ce9f89
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:7fd409ee6ab37ea4562cea4a84c6c244cf6c3acae6c5e49d739ed84397ce9f89?se=2023-03-12T11%3A05%3A00Z&sig=sOHMmJrBTOIL1mce50z83xUp9MYxKcqSZLcFpNrmiGQ%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+Error: Operation already in progress for linux-headers@5.15.formula
+Another active Homebrew process is already using linux-headers@5.15.formula.
+Please wait for it to finish or terminate it to continue.
+Installing gh has failed!
+Installing little-cms2
+Installing ghostscript
+==> Fetching dependencies for ghostscript: libpng, freetype, fontconfig, jbig2dec, libidn, and openjpeg
+==> Fetching libpng
+==> Downloading https://ghcr.io/v2/homebrew/core/libpng/manifests/1.6.39-1
+==> Downloading https://ghcr.io/v2/homebrew/core/libpng/blobs/sha256:499c5d31e7d78ab405e95aa16fc713e5ae4686d8919f5b94c8864fdde26e62de
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:499c5d31e7d78ab405e95aa16fc713e5ae4686d8919f5b94c8864fdde26e62de?se=2023-03-12T11%3A10%3A00Z&sig=dnIj5W2idiwOUt5mPOskgMBldI7UNU%2BCuZqIAJLwIw4%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching freetype
+==> Downloading https://ghcr.io/v2/homebrew/core/freetype/manifests/2.13.0_1
+==> Downloading https://ghcr.io/v2/homebrew/core/freetype/blobs/sha256:590c8b0e9e3c5866a92537fcad41b235da504af96de11e945c64f110f0e6b436
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:590c8b0e9e3c5866a92537fcad41b235da504af96de11e945c64f110f0e6b436?se=2023-03-12T11%3A10%3A00Z&sig=vdNdZAUBH9Pe6uQuBYS%2Fpzf8xfVWynRNuZtil6Tf714%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching fontconfig
+==> Downloading https://ghcr.io/v2/homebrew/core/fontconfig/manifests/2.14.2
+==> Downloading https://ghcr.io/v2/homebrew/core/fontconfig/blobs/sha256:d92379c3a5f5c62a368e3d3ccd0db43d66a99c8c4347d0852d68b433b96706e0
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:d92379c3a5f5c62a368e3d3ccd0db43d66a99c8c4347d0852d68b433b96706e0?se=2023-03-12T11%3A10%3A00Z&sig=o9%2B3ZVvvuxDKL1Du50f9kSCa1m6Xkkf1wi%2B6NsRJqq4%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching jbig2dec
+==> Downloading https://ghcr.io/v2/homebrew/core/jbig2dec/manifests/0.19
+==> Downloading https://ghcr.io/v2/homebrew/core/jbig2dec/blobs/sha256:5653cc9180b808ea6a60c11e6ef8fc76695e87ae47d5d1c6e6ed40070546f414
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:5653cc9180b808ea6a60c11e6ef8fc76695e87ae47d5d1c6e6ed40070546f414?se=2023-03-12T11%3A10%3A00Z&sig=Fk5VO9inXxoKGaU5qLZL21R5kvEI7ywC4S%2FNDo%2FmrcU%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching libidn
+==> Downloading https://ghcr.io/v2/homebrew/core/libidn/manifests/1.41
+==> Downloading https://ghcr.io/v2/homebrew/core/libidn/blobs/sha256:fe9a04089d251cc404385029ab855630c509961937930cb703ff85b236503751
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:fe9a04089d251cc404385029ab855630c509961937930cb703ff85b236503751?se=2023-03-12T11%3A10%3A00Z&sig=FNtiJe36KKUxfoN8CZpEseyWfS11uEwm%2BBkEk9HO8es%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching openjpeg
+==> Downloading https://ghcr.io/v2/homebrew/core/openjpeg/manifests/2.5.0-1
+==> Downloading https://ghcr.io/v2/homebrew/core/openjpeg/blobs/sha256:9e57a66212ac4fca6dd1c802c80cea7e3157157b16577d549f2b1f4001386ce7
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:9e57a66212ac4fca6dd1c802c80cea7e3157157b16577d549f2b1f4001386ce7?se=2023-03-12T11%3A10%3A00Z&sig=yqwgdlLGeIItI%2F6Rk6QqW658s%2BVPOlxx%2FH4R3nt8EbU%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching ghostscript
+==> Downloading https://ghcr.io/v2/homebrew/core/ghostscript/manifests/10.0.0
+==> Downloading https://ghcr.io/v2/homebrew/core/ghostscript/blobs/sha256:95c5e86cc3e8d68e61b7c7c7659aa75b6673d399f67e99ab815418d9f165ce22
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:95c5e86cc3e8d68e61b7c7c7659aa75b6673d399f67e99ab815418d9f165ce22?se=2023-03-12T11%3A10%3A00Z&sig=m0RE0Z5QzsUhn0ao6t6%2B9MGqbwjjd1xlxJQqXu%2FxT14%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+Error: Operation already in progress for linux-headers@5.15.formula
+Another active Homebrew process is already using linux-headers@5.15.formula.
+Please wait for it to finish or terminate it to continue.
+Installing ghostscript has failed!
+Using unbound
+Installing gnutls
+Installing harfbuzz
+Installing pango
+==> Fetching dependencies for pango: fribidi
+==> Fetching fribidi
+==> Downloading https://ghcr.io/v2/homebrew/core/fribidi/manifests/1.0.12
+Already downloaded: /home/user/.cache/Homebrew/downloads/43df59a54cb64e3d6de7c967b4b3fbb01989512758bffd8e681dcf9347a8a34f--fribidi-1.0.12.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/fribidi/blobs/sha256:89141837e7e5289c0553c17908f7ae7c04140eb5bba8436648f9f8e9b6d842f1
+Already downloaded: /home/user/.cache/Homebrew/downloads/1377f6097f890d09d6a37e6baa74652bfcf40a118db637533819e4cd4a8de6c9--fribidi--1.0.12.x86_64_linux.bottle.tar.gz
+==> Fetching pango
+==> Downloading https://ghcr.io/v2/homebrew/core/pango/manifests/1.50.14
+Already downloaded: /home/user/.cache/Homebrew/downloads/9c0c4eff2aee3f88e99725c8ca269b1bd37db7bb38fbec2fe3da6a1c42b75171--pango-1.50.14.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/pango/blobs/sha256:c0e091a6c225b78ca16eef4dd0d955a13996c44896a6ee5d182aef5944f59cc8
+Already downloaded: /home/user/.cache/Homebrew/downloads/4b65d240abbc21c1eacc6a8c193971e070154c00fdde21088262a1d3515b2f0f--pango--1.50.14.x86_64_linux.bottle.tar.gz
+==> Installing dependencies for pango: fribidi
+==> Installing pango dependency: fribidi
+==> Pouring fribidi--1.0.12.x86_64_linux.bottle.tar.gz
+🍺  /home/linuxbrew/.linuxbrew/Cellar/fribidi/1.0.12: 68 files, 633.3KB
+==> Installing pango
+==> Pouring pango--1.50.14.x86_64_linux.bottle.tar.gz
+Error: No such file or directory @ dir_s_rmdir - /home/user/.cache/Homebrew/downloads/d71d6e0256d9cafc8eff303279ed590f0479178c1bbdfcd51d795868cba0dd78--libxml2--2.10.3_2.x86_64_linux.bottle.tar.gz.incomplete
+🍺  /home/linuxbrew/.linuxbrew/Cellar/pango/1.50.14: 71 files, 3.6MB
+==> Running `brew cleanup pango`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+Installing pango has failed!
+Installing graphviz
+==> Fetching dependencies for graphviz: aom, libavif, giflib, webp, gd, jasper, libxml2, netpbm, gts, shared-mime-info, gdk-pixbuf, and librsvg
+==> Fetching aom
+==> Downloading https://ghcr.io/v2/homebrew/core/aom/manifests/3.6.0
+Already downloaded: /home/user/.cache/Homebrew/downloads/292418c3faf9d89740c28cb5ff2e0a9c6b54248feeb81bea6e5ef16ec58094ef--aom-3.6.0.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/aom/blobs/sha256:dd6938f444ac758c20caa553b64dbfa4cdebd60b6e572d08b0be69a704599f35
+Already downloaded: /home/user/.cache/Homebrew/downloads/c913f1e1bc189656596906cbe89fcb9864dcb77806ecf00c804926f36e02efc7--aom--3.6.0.x86_64_linux.bottle.tar.gz
+==> Fetching libavif
+==> Downloading https://ghcr.io/v2/homebrew/core/libavif/manifests/0.11.1
+Already downloaded: /home/user/.cache/Homebrew/downloads/f08cf357f1acda8a92ebdc044798dec116c2859db84bfbdc3b33fc7ba5489316--libavif-0.11.1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libavif/blobs/sha256:b519a99be7b7bf73c940eb53f1bd89cb8d06317f4888e6d71c217b03242e15a7
+Already downloaded: /home/user/.cache/Homebrew/downloads/47550496159077df6d20b643684df2c48c563c7bbb765ca74cbb8aebe80ddd6a--libavif--0.11.1.x86_64_linux.bottle.tar.gz
+==> Fetching giflib
+==> Downloading https://ghcr.io/v2/homebrew/core/giflib/manifests/5.2.1
+Already downloaded: /home/user/.cache/Homebrew/downloads/51910e68b838a5c62c91c9352172d516e77a3c3c1a59a2cebaffc3f64f46adf4--giflib-5.2.1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/giflib/blobs/sha256:d753208ed3a4bbd60b59e3ca4466196e4b935d4f434935b540fc6bfb5f3e0385
+Already downloaded: /home/user/.cache/Homebrew/downloads/8b455314f84de663b41694ac8b97db87303e264df97fe392a4150802f5f05c42--giflib--5.2.1.x86_64_linux.bottle.tar.gz
+==> Fetching webp
+==> Downloading https://ghcr.io/v2/homebrew/core/webp/manifests/1.3.0
+Already downloaded: /home/user/.cache/Homebrew/downloads/ff02a3b4855cce282bd060ddc2ebc168bb518214e27695910d0a9c0f814d4dc6--webp-1.3.0.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/webp/blobs/sha256:89347c4622e958013b7977a06178766cf00d5a98e67acc03163d0c27595cf18f
+Already downloaded: /home/user/.cache/Homebrew/downloads/96921744044f0c1189bcc3e28fa596d23e8a3222836334ede1d1ddddb1f192fe--webp--1.3.0.x86_64_linux.bottle.tar.gz
+==> Fetching gd
+==> Downloading https://ghcr.io/v2/homebrew/core/gd/manifests/2.3.3_4
+Already downloaded: /home/user/.cache/Homebrew/downloads/b1b614eba8dda21397146b638261b77c20c721208eb32e9a6bd660d94bd7ef45--gd-2.3.3_4.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/gd/blobs/sha256:523b01e8bfe6bfdb5d405b9d9d44567d99bd2d98e51b82c1b936e1e85f8c0195
+Already downloaded: /home/user/.cache/Homebrew/downloads/747480f2d9b8b66eb98a9543c27047faa6b5a1048dcd50ae02a43ba44b85051f--gd--2.3.3_4.x86_64_linux.bottle.tar.gz
+==> Fetching jasper
+==> Downloading https://ghcr.io/v2/homebrew/core/jasper/manifests/4.0.0
+Already downloaded: /home/user/.cache/Homebrew/downloads/a5ab8e3744c61422bddbcc71e69430cf12fdfed5468a0c340ca93f8bc8092f4e--jasper-4.0.0.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/jasper/blobs/sha256:87f9e9ea0014f9965ff66dc114c31b1077197c8157442c167af890c6b27d72c3
+Already downloaded: /home/user/.cache/Homebrew/downloads/734b6be37116950b8a22edda0680bf81fc07f34d036e6759ad530574efa72101--jasper--4.0.0.x86_64_linux.bottle.tar.gz
+==> Fetching libxml2
+==> Downloading https://ghcr.io/v2/homebrew/core/libxml2/manifests/2.10.3_2
+Already downloaded: /home/user/.cache/Homebrew/downloads/b9bca4d09669e97fc62af68c36730b71bc7386e106937e6484609ef998d7cd00--libxml2-2.10.3_2.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libxml2/blobs/sha256:c707815a1730c8e83bea251ca7d95f027bd5e8f4914ad17f84df268a4582272b
+Already downloaded: /home/user/.cache/Homebrew/downloads/d71d6e0256d9cafc8eff303279ed590f0479178c1bbdfcd51d795868cba0dd78--libxml2--2.10.3_2.x86_64_linux.bottle.tar.gz
+==> Fetching netpbm
+==> Downloading https://ghcr.io/v2/homebrew/core/netpbm/manifests/10.86.37
+Already downloaded: /home/user/.cache/Homebrew/downloads/45fa5e317edb8a680253cd4ab092db4dde18b52ab8dd5545fdd5b4f12d865714--netpbm-10.86.37.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/netpbm/blobs/sha256:065a106d58725f57fe502c87f25e0267b53073d2595430163b27f6ceed6a4570
+Already downloaded: /home/user/.cache/Homebrew/downloads/0740a4c5f9bbde9452777e47caf90fbad6208b175321d8053a1fc413b14eace6--netpbm--10.86.37.x86_64_linux.bottle.tar.gz
+==> Fetching gts
+==> Downloading https://ghcr.io/v2/homebrew/core/gts/manifests/0.7.6_2
+Already downloaded: /home/user/.cache/Homebrew/downloads/92ceec88a6ed240f3b11bc038643c68aa112a561b0a2437f267d568fd20eac1e--gts-0.7.6_2.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/gts/blobs/sha256:8574a923a6854116b836f04ffdd0b556d71c3e63da1127a90c2e6ac573900c88
+Already downloaded: /home/user/.cache/Homebrew/downloads/3cd9e8c9e4cd01a147214f7294429e1b8b2b72d82458d439eb931010a7ca99ac--gts--0.7.6_2.x86_64_linux.bottle.tar.gz
+==> Fetching shared-mime-info
+==> Downloading https://ghcr.io/v2/homebrew/core/shared-mime-info/manifests/2.2
+Already downloaded: /home/user/.cache/Homebrew/downloads/2c9f3cd44de9ab2002edcd3ea75c4962573b88993dc7533a9e97a2501bc08964--shared-mime-info-2.2.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/shared-mime-info/blobs/sha256:42873f1d296084b1afe36a085f96b9b4074b1337b290cc0daf9a81859cf6766a
+Already downloaded: /home/user/.cache/Homebrew/downloads/1fa9ab1bb4609d027c20dca203ac91d8babde69cd7ceebc21fcaeb1f20a78cbb--shared-mime-info--2.2.x86_64_linux.bottle.tar.gz
+==> Fetching gdk-pixbuf
+==> Downloading https://ghcr.io/v2/homebrew/core/gdk-pixbuf/manifests/2.42.10-1
+Already downloaded: /home/user/.cache/Homebrew/downloads/20210ffb58b68658340b3ede23acd091e163ef5ebfd2090699c29f995d275b9c--gdk-pixbuf-2.42.10-1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/gdk-pixbuf/blobs/sha256:f49f3d34c8671c9dff090f7f943fd55223a3a0d0f3fe6411be6f73c34daa6501
+Already downloaded: /home/user/.cache/Homebrew/downloads/0a0f47050f3968388e6fc514f36806fa0d0c4d0ebc0018aef1abdcbf2b2a1f14--gdk-pixbuf--2.42.10.x86_64_linux.bottle.1.tar.gz
+==> Fetching librsvg
+==> Downloading https://ghcr.io/v2/homebrew/core/librsvg/manifests/2.55.1
+Already downloaded: /home/user/.cache/Homebrew/downloads/82a4ba5f6a95ae105bdcbea15c2199be17506493b277a9378a297d2d221c918f--librsvg-2.55.1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/librsvg/blobs/sha256:93be523ec2aa4953ce6965abbfd46097fb73e1fe224649bcc8ea277da3c97a19
+Already downloaded: /home/user/.cache/Homebrew/downloads/359fb34c3d6e2ab83fcf04b34af1c2199e9f98622704196d8b1ed78a40eb0815--librsvg--2.55.1.x86_64_linux.bottle.tar.gz
+==> Fetching graphviz
+==> Downloading https://ghcr.io/v2/homebrew/core/graphviz/manifests/7.1.0
+Already downloaded: /home/user/.cache/Homebrew/downloads/0fd0a5e3c9da519b37c1c05ee20b6387ae5582a8418bc9f0baeb617cd4d09b9f--graphviz-7.1.0.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/graphviz/blobs/sha256:40b2a381152cdd1829408f79eeb6be9ac35f683be4c59fd8ec6cdebe197c8859
+Error: Operation already in progress for graphviz.formula
+Another active Homebrew process is already using graphviz.formula.
+Please wait for it to finish or terminate it to continue.
+Already downloaded: /home/user/.cache/Homebrew/downloads/23bab32887a3fc1e4e1bdb7909c1479c6f63866ee50d2df8f6c5dd086c106a07--graphviz--7.1.0.x86_64_linux.bottle.tar.gz
+Installing graphviz has failed!
+Installing hey
+==> Fetching hey
+==> Downloading https://ghcr.io/v2/homebrew/core/hey/manifests/0.1.4
+==> Downloading https://ghcr.io/v2/homebrew/core/hey/blobs/sha256:e5454552b0eb8d412645a0a5211b0566a41d13fc238149177bfddea36ace56e4
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:e5454552b0eb8d412645a0a5211b0566a41d13fc238149177bfddea36ace56e4?se=2023-03-12T11%3A10%3A00Z&sig=dbvkN3%2Feb%2FqNo9h8WyqyMB0QguiSdBfBsH79Z3D4DNs%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+Error: Operation already in progress for linux-headers@5.15.formula
+Another active Homebrew process is already using linux-headers@5.15.formula.
+Please wait for it to finish or terminate it to continue.
+Installing hey has failed!
+Installing imagemagick
+==> Fetching dependencies for imagemagick: jbig2dec, libidn, openjpeg, ghostscript, libde265, libxml2, shared-mime-info, x265, libheif, liblqr, libraw, imath, and openexr
+==> Fetching jbig2dec
+==> Downloading https://ghcr.io/v2/homebrew/core/jbig2dec/manifests/0.19
+Already downloaded: /home/user/.cache/Homebrew/downloads/7ccee54c3223d3dac8893faecaf641cbaa6e7032422a6edff1a185f73b0b19cd--jbig2dec-0.19.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/jbig2dec/blobs/sha256:5653cc9180b808ea6a60c11e6ef8fc76695e87ae47d5d1c6e6ed40070546f414
+Already downloaded: /home/user/.cache/Homebrew/downloads/8c249fb4b9ad54f70607b571080ed358d7ab59662acba103e3edd99ac3729e58--jbig2dec--0.19.x86_64_linux.bottle.tar.gz
+==> Fetching libidn
+==> Downloading https://ghcr.io/v2/homebrew/core/libidn/manifests/1.41
+Already downloaded: /home/user/.cache/Homebrew/downloads/3348a0d39ff5653d7b8399a91aac106be4e8e442d7861a7156048d5305965adf--libidn-1.41.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libidn/blobs/sha256:fe9a04089d251cc404385029ab855630c509961937930cb703ff85b236503751
+Already downloaded: /home/user/.cache/Homebrew/downloads/48ea365eea57921510161c55ce308d3dbcd9214dbafb1110a9457cb26f2fb7bb--libidn--1.41.x86_64_linux.bottle.tar.gz
+==> Fetching openjpeg
+==> Downloading https://ghcr.io/v2/homebrew/core/openjpeg/manifests/2.5.0-1
+Already downloaded: /home/user/.cache/Homebrew/downloads/181ab6026fe4071698a63df6d38c848c6d4857c25b7e9cc84e48631de219dfea--openjpeg-2.5.0-1.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/openjpeg/blobs/sha256:9e57a66212ac4fca6dd1c802c80cea7e3157157b16577d549f2b1f4001386ce7
+Already downloaded: /home/user/.cache/Homebrew/downloads/0801086fc41f6ece266248bce9a21e6de7a4351ddd54f33531312294ab82def7--openjpeg--2.5.0.x86_64_linux.bottle.1.tar.gz
+==> Fetching ghostscript
+==> Downloading https://ghcr.io/v2/homebrew/core/ghostscript/manifests/10.0.0
+Already downloaded: /home/user/.cache/Homebrew/downloads/919adad92d529a69e3901e4a591834548f163f1a1ccfb1ad8af39e874cf40caf--ghostscript-10.0.0.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/ghostscript/blobs/sha256:95c5e86cc3e8d68e61b7c7c7659aa75b6673d399f67e99ab815418d9f165ce22
+Already downloaded: /home/user/.cache/Homebrew/downloads/572ab7da29cc45405c3487d3f8e1b871fbae16194c494c3e97dfae7fc0e63297--ghostscript--10.0.0.x86_64_linux.bottle.tar.gz
+==> Fetching libde265
+==> Downloading https://ghcr.io/v2/homebrew/core/libde265/manifests/1.0.11
+==> Downloading https://ghcr.io/v2/homebrew/core/libde265/blobs/sha256:8385af5d9d6ee2d7c009ec98ffef6884abad83664fa31f3d631f80d597ef2573
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:8385af5d9d6ee2d7c009ec98ffef6884abad83664fa31f3d631f80d597ef2573?se=2023-03-12T11%3A10%3A00Z&sig=Ff4o7%2FMIS0QBMfcKq9A%2BGSHKA7bQg0XmOIF%2FaTHR9yw%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching libxml2
+==> Downloading https://ghcr.io/v2/homebrew/core/libxml2/manifests/2.10.3_2
+Already downloaded: /home/user/.cache/Homebrew/downloads/b9bca4d09669e97fc62af68c36730b71bc7386e106937e6484609ef998d7cd00--libxml2-2.10.3_2.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/libxml2/blobs/sha256:c707815a1730c8e83bea251ca7d95f027bd5e8f4914ad17f84df268a4582272b
+Already downloaded: /home/user/.cache/Homebrew/downloads/d71d6e0256d9cafc8eff303279ed590f0479178c1bbdfcd51d795868cba0dd78--libxml2--2.10.3_2.x86_64_linux.bottle.tar.gz
+==> Fetching shared-mime-info
+==> Downloading https://ghcr.io/v2/homebrew/core/shared-mime-info/manifests/2.2
+Already downloaded: /home/user/.cache/Homebrew/downloads/2c9f3cd44de9ab2002edcd3ea75c4962573b88993dc7533a9e97a2501bc08964--shared-mime-info-2.2.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/shared-mime-info/blobs/sha256:42873f1d296084b1afe36a085f96b9b4074b1337b290cc0daf9a81859cf6766a
+Already downloaded: /home/user/.cache/Homebrew/downloads/1fa9ab1bb4609d027c20dca203ac91d8babde69cd7ceebc21fcaeb1f20a78cbb--shared-mime-info--2.2.x86_64_linux.bottle.tar.gz
+==> Fetching x265
+==> Downloading https://ghcr.io/v2/homebrew/core/x265/manifests/3.5-1
+==> Downloading https://ghcr.io/v2/homebrew/core/x265/blobs/sha256:c80f18988caea25e95ca87dd648f5ff8b0856e24d26adc8d68ca68cc6d4faabf
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:c80f18988caea25e95ca87dd648f5ff8b0856e24d26adc8d68ca68cc6d4faabf?se=2023-03-12T11%3A10%3A00Z&sig=OSix6VPqcE%2F9kTC5DR1hvoi9ipRRlPEr3YiLoXev7LY%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching libheif
+==> Downloading https://ghcr.io/v2/homebrew/core/libheif/manifests/1.15.1
+==> Downloading https://ghcr.io/v2/homebrew/core/libheif/blobs/sha256:87421411f1ee23d5a017c4fb201263df8baaa488de71395c40e91db4c4214767
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:87421411f1ee23d5a017c4fb201263df8baaa488de71395c40e91db4c4214767?se=2023-03-12T11%3A10%3A00Z&sig=j4fg4r5V%2BkzsdF7Zk%2Bx212eJhGv6njKmI3aGjZoLAco%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching liblqr
+==> Downloading https://ghcr.io/v2/homebrew/core/liblqr/manifests/0.4.2_1-2
+==> Downloading https://ghcr.io/v2/homebrew/core/liblqr/blobs/sha256:11cfab7a9ac36b9ca2d2f3984ed8c40ee4af55bc8a473ae27d5abba9e4892934
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:11cfab7a9ac36b9ca2d2f3984ed8c40ee4af55bc8a473ae27d5abba9e4892934?se=2023-03-12T11%3A10%3A00Z&sig=ZzuxgISz6VkpSX34VuYNVw0eAPs7WpVpi9zNeudLoyU%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching libraw
+==> Downloading https://ghcr.io/v2/homebrew/core/libraw/manifests/0.21.1
+==> Downloading https://ghcr.io/v2/homebrew/core/libraw/blobs/sha256:c0cae61daa96f85eb9e030c78ce9f023cbf6663f5016a0a793cea445a26d0c31
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:c0cae61daa96f85eb9e030c78ce9f023cbf6663f5016a0a793cea445a26d0c31?se=2023-03-12T11%3A10%3A00Z&sig=CNHhdCiQnDWHNK40pcDtNR4%2Fm%2BcAGDIAES6QTuU6pdU%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching imath
+==> Downloading https://ghcr.io/v2/homebrew/core/imath/manifests/3.1.7
+==> Downloading https://ghcr.io/v2/homebrew/core/imath/blobs/sha256:f650fac2f979a3eda5d86c9d0e98687a987428fac960659844f5bc831feb8d8c
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:f650fac2f979a3eda5d86c9d0e98687a987428fac960659844f5bc831feb8d8c?se=2023-03-12T11%3A10%3A00Z&sig=HEAJApTdWx9blnIMfes4xcs%2Bhq%2BwgpYV0nKg2HxW2A0%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching openexr
+==> Downloading https://ghcr.io/v2/homebrew/core/openexr/manifests/3.1.6
+==> Downloading https://ghcr.io/v2/homebrew/core/openexr/blobs/sha256:6cff41929d6d580903bbaca126eef5a09894ba2ac421140c0a7b85fb125393c1
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:6cff41929d6d580903bbaca126eef5a09894ba2ac421140c0a7b85fb125393c1?se=2023-03-12T11%3A10%3A00Z&sig=XaAeEbKUht2hyAw%2FVtu%2FAUIgqrN0RL6GmF3VSRqRpaQ%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching imagemagick
+==> Downloading https://ghcr.io/v2/homebrew/core/imagemagick/manifests/7.1.1-3
+==> Downloading https://ghcr.io/v2/homebrew/core/imagemagick/blobs/sha256:f9ac15107d6892976786027235da0870cb0797d5f43ee20f591ef1e8f5bd9d6f
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:f9ac15107d6892976786027235da0870cb0797d5f43ee20f591ef1e8f5bd9d6f?se=2023-03-12T11%3A10%3A00Z&sig=t7xJL6apycBeBLZx3USjE542xvnNHdjo7picUXsOXDQ%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+Error: Operation already in progress for linux-headers@5.15.formula
+Another active Homebrew process is already using linux-headers@5.15.formula.
+Please wait for it to finish or terminate it to continue.
+Installing imagemagick has failed!
+Installing libfido2
+==> Fetching dependencies for libfido2: libcbor, libcap, and systemd
+==> Fetching libcbor
+==> Downloading https://ghcr.io/v2/homebrew/core/libcbor/manifests/0.10.2
+==> Downloading https://ghcr.io/v2/homebrew/core/libcbor/blobs/sha256:0c532bdfe6b9efb37ff7cd43d1fcf2def27aefbffbea09093cecf16f95adc198
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:0c532bdfe6b9efb37ff7cd43d1fcf2def27aefbffbea09093cecf16f95adc198?se=2023-03-12T11%3A10%3A00Z&sig=v8g9XT23L3OrmV%2Bl85Ayq8hddS9U9sf5rQJDoJAd61U%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching libcap
+==> Downloading https://ghcr.io/v2/homebrew/core/libcap/manifests/2.67
+==> Downloading https://ghcr.io/v2/homebrew/core/libcap/blobs/sha256:c176235b593bff16392580d44d2b72118d6ab5a438abc73580a63f1112694164
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:c176235b593bff16392580d44d2b72118d6ab5a438abc73580a63f1112694164?se=2023-03-12T11%3A10%3A00Z&sig=4vR1LsT%2Fd5OjXTrqojlMEl%2FWpUbt%2FM9szY7A7poFmGw%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching systemd
+==> Downloading https://ghcr.io/v2/homebrew/core/systemd/manifests/253
+==> Downloading https://ghcr.io/v2/homebrew/core/systemd/blobs/sha256:7013a6313b536193abf0205457a7f063e83af6bc11290b395323760ac1fcb5e5
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:7013a6313b536193abf0205457a7f063e83af6bc11290b395323760ac1fcb5e5?se=2023-03-12T11%3A10%3A00Z&sig=xwacQqiQggQZzEJUjrmUiiiV2195SivhbEbK26EtSVI%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching libfido2
+==> Downloading https://ghcr.io/v2/homebrew/core/libfido2/manifests/1.13.0
+==> Downloading https://ghcr.io/v2/homebrew/core/libfido2/blobs/sha256:98b05a5da57c807f92bf4a689991556fc25b58df95de4a065368bfde80d35fc6
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:98b05a5da57c807f92bf4a689991556fc25b58df95de4a065368bfde80d35fc6?se=2023-03-12T11%3A10%3A00Z&sig=5PfTIvEXqIUmIl2yS92dwcpTYWpX%2FXTqDULvZTQ08%2Bg%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+Error: Operation already in progress for linux-headers@5.15.formula
+Another active Homebrew process is already using linux-headers@5.15.formula.
+Please wait for it to finish or terminate it to continue.
+Installing libfido2 has failed!
+Installing libomp
+==> Fetching libomp
+==> Downloading https://ghcr.io/v2/homebrew/core/libomp/manifests/15.0.7
+==> Downloading https://ghcr.io/v2/homebrew/core/libomp/blobs/sha256:d2a16a906c029e8405a11924837417ad1008d41bb1877399f494cb872a179f01
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:d2a16a906c029e8405a11924837417ad1008d41bb1877399f494cb872a179f01?se=2023-03-12T11%3A10%3A00Z&sig=jL%2B%2FXmEY79XqY74d4YLKmSq0tgeqQtSFAmYC8d%2BlejY%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+Error: Operation already in progress for linux-headers@5.15.formula
+Another active Homebrew process is already using linux-headers@5.15.formula.
+Please wait for it to finish or terminate it to continue.
+Installing libomp has failed!
+Installing libxft
+==> Fetching libxft
+==> Downloading https://ghcr.io/v2/homebrew/core/libxft/manifests/2.3.7
+==> Downloading https://ghcr.io/v2/homebrew/core/libxft/blobs/sha256:c64c26f48726bcf50db5be2e2b89d3a387f7ed08d840f48fd84e30210ed77386
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:c64c26f48726bcf50db5be2e2b89d3a387f7ed08d840f48fd84e30210ed77386?se=2023-03-12T11%3A15%3A00Z&sig=xAzz3NIOhNz6M8saQN4m6rtwotSlgrnUW54Zo%2FXrO4Q%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+Error: Operation already in progress for linux-headers@5.15.formula
+Another active Homebrew process is already using linux-headers@5.15.formula.
+Please wait for it to finish or terminate it to continue.
+Installing libxft has failed!
+Installing llvm
+==> Fetching dependencies for llvm: six, z3, and elfutils
+==> Fetching six
+==> Downloading https://ghcr.io/v2/homebrew/core/six/manifests/1.16.0_3
+==> Downloading https://ghcr.io/v2/homebrew/core/six/blobs/sha256:0dee50367c6facbfc8f65e8a82bcd3e08d43da262b1adff6ccf943ef5bfaf313
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:0dee50367c6facbfc8f65e8a82bcd3e08d43da262b1adff6ccf943ef5bfaf313?se=2023-03-12T11%3A15%3A00Z&sig=cC9HeQeXZe%2BOZQaOsJMap%2Fn5vgEa%2F%2BOpyPktFYvo2GQ%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching z3
+==> Downloading https://ghcr.io/v2/homebrew/core/z3/manifests/4.12.1
+==> Downloading https://ghcr.io/v2/homebrew/core/z3/blobs/sha256:d8039fa032a059b5dfc7b61412dc6a446b1f16839e5efaf52b3e61428ea613a2
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:d8039fa032a059b5dfc7b61412dc6a446b1f16839e5efaf52b3e61428ea613a2?se=2023-03-12T11%3A15%3A00Z&sig=mcxkUb5m9fGjdikOcvaIkNwA5KgdgvvSc34%2FOb6hVVY%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching elfutils
+==> Downloading https://ghcr.io/v2/homebrew/core/elfutils/manifests/0.189
+==> Downloading https://ghcr.io/v2/homebrew/core/elfutils/blobs/sha256:19fc802ff82228928519269ac4fd6668fa4942d9665a419651a4760b2557c2b7
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:19fc802ff82228928519269ac4fd6668fa4942d9665a419651a4760b2557c2b7?se=2023-03-12T11%3A15%3A00Z&sig=nYUNP2TxbBxH2gJJrhzEDploumaQY0il7tlCyZl%2BM7A%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+==> Fetching llvm
+==> Downloading https://ghcr.io/v2/homebrew/core/llvm/manifests/15.0.7_1
+==> Downloading https://ghcr.io/v2/homebrew/core/llvm/blobs/sha256:303e3cdd27ea04b32002b74a52ca10902381b93d6576fa2488d83c059ee0122c
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:303e3cdd27ea04b32002b74a52ca10902381b93d6576fa2488d83c059ee0122c?se=2023-03-12T11%3A15%3A00Z&sig=r21HpNkA%2FplWCSH9nLj2osv0eMYIC1KHCuDduIOyVjY%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+Error: Operation already in progress for linux-headers@5.15.formula
+Another active Homebrew process is already using linux-headers@5.15.formula.
+Please wait for it to finish or terminate it to continue.
+Installing llvm has failed!
+Installing mecab
+==> Fetching mecab
+==> Downloading https://ghcr.io/v2/homebrew/core/mecab/manifests/0.996-3
+==> Downloading https://ghcr.io/v2/homebrew/core/mecab/blobs/sha256:47d2d29a34af53a9343cc99277fd19df64d0148e80007a19a2215e79b201a2a4
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:47d2d29a34af53a9343cc99277fd19df64d0148e80007a19a2215e79b201a2a4?se=2023-03-12T11%3A15%3A00Z&sig=CJWdpwqk%2FJDIV7LquUsIIrtunzx1fEHG3K01Bk9qVHY%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+Error: Operation already in progress for linux-headers@5.15.formula
+Another active Homebrew process is already using linux-headers@5.15.formula.
+Please wait for it to finish or terminate it to continue.
+Installing mecab has failed!
+Installing mecab-ipadic
+==> Fetching dependencies for mecab-ipadic: mecab
+==> Fetching mecab
+==> Downloading https://ghcr.io/v2/homebrew/core/mecab/manifests/0.996-3
+Already downloaded: /home/user/.cache/Homebrew/downloads/21431e68751945bd7900be15e222a38b4402841088e6d5669b4f48c56dc614b3--mecab-0.996-3.bottle_manifest.json
+==> Downloading https://ghcr.io/v2/homebrew/core/mecab/blobs/sha256:47d2d29a34af53a9343cc99277fd19df64d0148e80007a19a2215e79b201a2a4
+Already downloaded: /home/user/.cache/Homebrew/downloads/0f782d16f650db73130588c3e363b758fef2f918e58789e60865cd04d789b8de--mecab--0.996.x86_64_linux.bottle.3.tar.gz
+==> Fetching mecab-ipadic
+==> Downloading https://ghcr.io/v2/homebrew/core/mecab-ipadic/manifests/2.7.0-20070801
+==> Downloading https://ghcr.io/v2/homebrew/core/mecab-ipadic/blobs/sha256:df2442b2842ff74edaee7ff39d84ac0ee9a4e6eefd931d80eac8c181b04d1b9d
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:df2442b2842ff74edaee7ff39d84ac0ee9a4e6eefd931d80eac8c181b04d1b9d?se=2023-03-12T11%3A15%3A00Z&sig=a5Bw87wQ%2FKdzyMSYiajE%2FdWADMiGsUSvWjFnOiuw11g%3D&sp=r&spr=https&sr=b&sv=2019-12-12
+Error: Operation already in progress for linux-headers@5.15.formula
+Another active Homebrew process is already using linux-headers@5.15.formula.
+Please wait for it to finish or terminate it to continue.
+Installing mecab-ipadic has failed!
+Installing mesa
+Installing mysql
+Installing mysql-client
+Installing nmap
+Installing node
+Installing openblas
+Installing openjdk
+Installing postgresql@14
+Installing python@3.9
+Installing redis
+Installing sqlparse
+Installing tcl-tk
+Installing texlive
+Installing tig
+Installing tmux
+Installing unar
+Installing wget
+Installing hashicorp/tap/terraform-ls
+Homebrew Bundle failed! 26 Brewfile dependencies failed to install.
+
+Installing zprezto...
+Already installed!
+
+Installing tmux-powerline...
+Already installed!
+
+Plugin add python 
+Plugin named python already added
+Plugin add gcloud 
+Plugin named gcloud already added
+Plugin add terraform 
+Plugin named terraform already added
+Plugin add java 
+Plugin named java already added
+Plugin add sbt 
+Plugin named sbt already added
+Plugin add neovim 
+Plugin named neovim already added
+Plugin add golang 
+Plugin named golang already added
+Plugin add act 
+Plugin named act already added
+Plugin add saml2aws 
+Plugin named saml2aws already added
+Plugin add cmake 
+Plugin named cmake already added
+Plugin add ripgrep 
+Plugin named ripgrep already added
+Plugin add jq 
+Plugin named jq already added
+Plugin add awscli 
+Plugin named awscli already added
+Plugin add terragrunt 
+Plugin named terragrunt already added
+Plugin add nodejs 
+Plugin named nodejs already added
+Plugin add deno 
+Plugin named deno already added
+Plugin add rust 
+Plugin named rust already added
+Plugin add fd 
+Plugin named fd already added
+Plugin add hey 
+Plugin named hey already added
+Plugin add grpcurl 
+Plugin named grpcurl already added
+Plugin add kubectl 
+Plugin named kubectl already added
+Plugin add postgres 
+Plugin named postgres already added
+Plugin add coursier https://github.com/onnga-wasabi/asdf-coursier
+Plugin named coursier already added
+Plugin add yq 
+Plugin named yq already added
+Plugin add lazydocker https://github.com/comdotlinux/asdf-lazydocker
+Plugin named lazydocker already added
+Plugin add kubectx 
+Plugin named kubectx already added
+Plugin add kube-score 
+Plugin named kube-score already added
+Plugin add protoc 
+Plugin named protoc already added
+Plugin add buf 
+Plugin named buf already added
+Plugin add gradle 
+Plugin named gradle already added
+Plugin add kotlin 
+Plugin named kotlin already added
+Plugin add richgo 
+Plugin named richgo already added
+Plugin add stern 
+Plugin named stern already added
+Plugin add k9s 
+Plugin named k9s already added
+Plugin add stylua 
+Plugin named stylua already added
+Plugin add lua 
+Plugin named lua already added
+Plugin add ffmpeg 
+Plugin named ffmpeg already added
+Plugin add ruby 
+Plugin named ruby already added
+Plugin add firebase 
+Plugin named firebase already added
+Plugin add gomigrate 
+Plugin named gomigrate already added
+Installing asdf VMs...
+act 0.2.26 is already installed
+awscli 2.5.2 is already installed
+buf 1.9.0 is already installed
+cmake 3.24.1 is already installed
+coursier 2.1.0-M7 is already installed
+deno 1.24.1 is already installed
+fd 8.4.0 is already installed
+mkdir: cannot create directory ‘/home/user/.asdf/downloads/ffmpeg/5.1.2’: File exists
+* Downloading ffmpeg release 5.1.2...
+* Configuring ffmpeg with default options
+nasm/yasm not found or too old. Use --disable-x86asm for a crippled build.
+
+If you think configure made a mistake, make sure you are using the latest
+version from Git.  If the latest version fails, report the problem to the
+ffmpeg-user@ffmpeg.org mailing list or IRC #ffmpeg on irc.libera.chat.
+Include the log file "ffbuild/config.log" produced by configure as this will help
+solve the problem.
+asdf-ffmpeg: An error occurred while installing ffmpeg 5.1.2.
+
+Installing dein...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    14  100    14    0     0    305      0 --:--:-- --:--:-- --:--:--   311
+./installer.sh: 1: 404:: not found
+Installed!
+Createing Preference dir...
+Created!
+symlink created /home/user/.zshrc -> /home/user/dotfiles/zshrc
+symlink created /home/user/.zshrc_darwin -> /home/user/dotfiles/zshrc_darwin
+symlink created /home/user/.zpreztorc -> /home/user/dotfiles/zpreztorc
+symlink created /home/user/.tmux.conf -> /home/user/dotfiles/tmux.conf
+symlink created /home/user/.tmux-powerlinerc -> /home/user/dotfiles/tmux-powerlinerc
+symlink created /home/user/.vimrc -> /home/user/dotfiles/vimrc
+symlink created /home/user/.tool-versions -> /home/user/dotfiles/tool-versions
+symlink created /home/user/.gitconfig -> /home/user/dotfiles/gitconfig
+symlink created /home/user/.gitignore_global -> /home/user/dotfiles/gitignore_global
+symlink created /home/user/.latexmkrc -> /home/user/dotfiles/latexmkrc
+symlink created /home/user/.default-python-packages -> /home/user/dotfiles/default-python-packages
+symlink created /home/user/.tigrc -> /home/user/dotfiles/tigrc
+symlink created /home/user/dotfiles/config/nvim/ -> /home/user/.config/nvim
+
+symlink created /home/user/dotfiles/config/cspell/ -> /home/user/.config/cspell
+
+symlink created /home/user/dotfiles/etc/iterm/Preferences/com.googlecode.iterm2.plist -> /home/user/Documents/Preferences/com.googlecode.iterm2.plist
+
