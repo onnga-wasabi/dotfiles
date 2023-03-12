@@ -30,7 +30,7 @@ export LD_LIBRARY_PATH="$(brew --prefix llvm)/lib:${LD_LIBRARY_PATH}"
 export LDFLAGS="${LDFLAGS} -L$(brew --prefix openssl)/lib"
 export CFLAGS="${CFLAGS} -I$(brew --prefix openssl)/include"
 export CPPFLAGS="${CPPFLAGS} -I$(brew --prefix openssl)/include"
-export LD_LIBRARY_PATH="$(brew --prefix openssl)/lib:${LD_LIBRARY_PATH}"
+export PKG_CONFIG_PATH="$(brew --prefix openssl)/lib/pkgconfig"
 
 autoload -Uz compinit
 compinit
@@ -69,6 +69,7 @@ source $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
 autoload -U colors ; colors ; zstyle ':completion:*' list-colors "${LS_COLORS}"
 zstyle ':completion:*' menu select
 
+export PYTHON_CONFIGURE_OPTS="–with-openssl=$(brew --prefix openssl)/lib/pkgconfig –with-ssl"
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl)"
 
 ## terraform
