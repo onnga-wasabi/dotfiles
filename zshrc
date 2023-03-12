@@ -27,8 +27,13 @@ export CPPFLAGS="-I$(brew --prefix llvm)/include"
 
 # openssl
 export LDFLAGS="${LDFLAGS} -L$(brew --prefix openssl)/lib"
-export CFLAGS="-I$(brew --prefix openssl)/include"
+export CFLAGS="${CFLAGS} -I$(brew --prefix openssl)/include"
 export CPPFLAGS="${CPPFLAGS} -I$(brew --prefix openssl)/include"
+
+# readline
+export LDFLAGS="${LDFLAGS} -L$(brew --prefix readline)/lib"
+export CFLAGS="${CFLAGS} -I$(brew --prefix readline)/include"
+export CPPFLAGS="${CPPFLAGS} -I$(brew --prefix readline)/include"
 
 autoload -Uz compinit
 compinit
@@ -67,7 +72,6 @@ source $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
 autoload -U colors ; colors ; zstyle ':completion:*' list-colors "${LS_COLORS}"
 zstyle ':completion:*' menu select
 
-export PYTHON_CONFIGURE_OPTS="-with-openssl=$(brew --prefix openssl)/bin/openssl"
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl)"
 
 ## terraform
