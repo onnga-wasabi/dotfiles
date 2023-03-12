@@ -63,7 +63,6 @@ brew "tig"
 brew "tmux"
 brew "unar"
 brew "wget"
-brew "coursier/formulas/coursier"
 brew "hashicorp/tap/terraform-ls"
 
 if OS.mac?
