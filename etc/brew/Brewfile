@@ -64,6 +64,7 @@ brew "tmux"
 brew "unar"
 brew "wget"
 brew "yasm"
+brew "libxmlsec1"
 brew "hashicorp/tap/terraform-ls"
 
 if OS.mac?
