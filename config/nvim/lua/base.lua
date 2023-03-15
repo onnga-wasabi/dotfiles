@@ -17,12 +17,12 @@ set_keymap("n", "<leader>r", "<cmd>source ~/.config/nvim/init.lua<cr>", opts)
 set_keymap("n", "<c-w>v", "<c-w>v<c-w>l", opts)
 set_keymap("n", "<c-w>s", "<c-w>s<c-w>j", opts)
 
-set_keymap("n", "<c-w>l", "<cr><c-w>l", opts)
-set_keymap("n", "<c-w>j", "<cr><c-w>j", opts)
-set_keymap("n", "<c-w>k", "<cr><c-w>k", opts)
-set_keymap("n", "<c-w>h", "<cr><c-w>h", opts)
-set_keymap("n", "<c-o>", "<cr><c-o>", opts)
-set_keymap("n", "<c-s>", "<cr><c-i>", opts)
+set_keymap("n", "<c-w>l", "<cmd>silent! w<cr><c-w>l", opts)
+set_keymap("n", "<c-w>j", "<cmd>silent! w<cr><c-w>j", opts)
+set_keymap("n", "<c-w>k", "<cmd>silent! w<cr><c-w>k", opts)
+set_keymap("n", "<c-w>h", "<cmd>silent! w<cr><c-w>h", opts)
+set_keymap("n", "<c-o>", "<cmd>silent! w<cr><c-o>", opts)
+set_keymap("n", "<c-s>", "<cmd>silent! w<cr><c-i>", opts)
 
 -- cursor
 set_keymap("n", "<c-f>", "<c-f>zz", opts)
@@ -80,4 +80,4 @@ function! EBufdelete()
   endif
 endfunction
 ]])
-set_keymap("n", ",", "<cmd>Ebd<cr>", opts)
+set_keymap("n", ",", "<cmd>silent! w<cr><cmd>Ebd<cr>", opts)
