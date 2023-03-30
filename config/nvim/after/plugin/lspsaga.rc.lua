@@ -26,7 +26,7 @@ local options = {
 	},
 	diagnostic = {
 		show_code_action = false,
-		show_source = false,
+		show_source = true,
 		jump_num_shortcut = false,
 		keys = {
 			exec_action = "o",
