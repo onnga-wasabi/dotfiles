@@ -1,6 +1,7 @@
 DOTPATH := `git rev-parse --show-toplevel`
 
 update:
+	stylua config/**/*.lua
 	-git add . && git commit -m "update"
 	-git pull origin main && git push origin main
 

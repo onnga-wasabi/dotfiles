@@ -35,7 +35,6 @@ dap.adapters.go = function(callback, config)
 	end, 100)
 end
 
-
 local ok, dap_go = pcall(require, "dap-go")
 if not ok then
 	return

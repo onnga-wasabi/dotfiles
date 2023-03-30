@@ -80,7 +80,6 @@ set_keymap("n", "gxw", '<cmd>lua require("telescope.builtin").diagnostics()<cr>'
 -- Outlie
 set_keymap("n", "<leader>o", '<Cmd>lua require("telescope").extensions.aerial.aerial()<cr>', opts)
 
-
 -- Teleskan
 --- Most used functions
 set_keymap("n", "<leader>Zp", "<cmd>Telekasten panel<CR>", opts)

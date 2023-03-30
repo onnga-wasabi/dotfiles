@@ -19,7 +19,7 @@ end
 
 local cspell_config_path = "cspell.yaml"
 if not file_exists(cspell_config_path) then
-  cspell_config_path = "cspell.config.yaml"
+	cspell_config_path = "cspell.config.yaml"
 elseif not file_exists(cspell_config_path) then
 	cspell_config_path = os.getenv("HOME") .. "/.config/cspell/cspell.yaml"
 end
