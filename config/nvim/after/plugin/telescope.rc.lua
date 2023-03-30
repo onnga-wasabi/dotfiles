@@ -83,15 +83,15 @@ set_keymap("n", "<leader>o", '<Cmd>lua require("telescope").extensions.aerial.ae
 
 -- Teleskan
 --- Most used functions
-set_keymap("n", "<leader>zp", "<cmd>Telekasten panel<CR>", opts)
-set_keymap("n", "<leader>zf", "<cmd>Telekasten find_notes<CR>", opts)
-set_keymap("n", "<leader>zg", "<cmd>Telekasten search_notes<CR>", opts)
-set_keymap("n", "<leader>zd", "<cmd>Telekasten goto_today<CR>", opts)
-set_keymap("n", "<leader>zz", "<cmd>Telekasten follow_link<CR>", opts)
-set_keymap("n", "<leader>zn", "<cmd>Telekasten new_note<CR>", opts)
-set_keymap("n", "<leader>zc", "<cmd>Telekasten show_calendar<CR>", opts)
-set_keymap("n", "<leader>zb", "<cmd>Telekasten show_backlinks<CR>", opts)
-set_keymap("n", "<leader>zI", "<cmd>Telekasten insert_img_link<CR>", opts)
+set_keymap("n", "<leader>Zp", "<cmd>Telekasten panel<CR>", opts)
+set_keymap("n", "<leader>Zf", "<cmd>Telekasten find_notes<CR>", opts)
+set_keymap("n", "<leader>Zg", "<cmd>Telekasten search_notes<CR>", opts)
+set_keymap("n", "<leader>Zd", "<cmd>Telekasten goto_today<CR>", opts)
+set_keymap("n", "<leader>Zz", "<cmd>Telekasten follow_link<CR>", opts)
+set_keymap("n", "<leader>Zn", "<cmd>Telekasten new_note<CR>", opts)
+set_keymap("n", "<leader>Zc", "<cmd>Telekasten show_calendar<CR>", opts)
+set_keymap("n", "<leader>Zb", "<cmd>Telekasten show_backlinks<CR>", opts)
+set_keymap("n", "<leader>ZI", "<cmd>Telekasten insert_img_link<CR>", opts)
 --- Call insert link automatically when we start typing a link
 -- set_keymap("i", "[[", "<cmd>Telekasten insert_link<CR>", opts)
 

@@ -124,9 +124,9 @@ lspsaga.setup(options)
 local opts = { noremap = true, silent = true }
 local set_keymap = vim.api.nvim_set_keymap
 
-set_keymap("n", "gh", "<cmd>Lspsaga lsp_finder<cr>", opts)
-set_keymap("n", "ga", "<cmd>Lspsaga code_action<cr>", opts)
-set_keymap("n", "gR", "<cmd>Lspsaga rename<cr>", opts)
+set_keymap("n", "<A-g>h", "<cmd>Lspsaga lsp_finder<cr>", opts)
+set_keymap("n", "<A-g>a", "<cmd>Lspsaga code_action<cr>", opts)
+set_keymap("n", "<A-g>r", "<cmd>Lspsaga rename<cr>", opts)
 set_keymap("n", "gxl", "<cmd>Lspsaga show_line_diagnostics<cr>", opts)
 set_keymap("n", "gxc", "<cmd>Lspsaga show_cursor_diagnosticscr>", opts)
 set_keymap("n", "K", "<cmd>Lspsaga hover_doc<cr>", opts)
