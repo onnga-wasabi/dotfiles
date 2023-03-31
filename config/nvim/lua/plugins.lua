@@ -28,6 +28,7 @@ return require("packer").startup(function(use)
 	use({ "gen740/SmoothCursor.nvim" })
 	use({ "Pocco81/true-zen.nvim" })
 	use({ "lukas-reineke/headlines.nvim", requires = { "nvim-treesitter/nvim-treesitter" } })
+	use({ "levouh/tint.nvim" })
 
 	-- telescope
 	use({ "nvim-lua/plenary.nvim" })
