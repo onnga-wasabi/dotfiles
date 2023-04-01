@@ -29,6 +29,7 @@ export CPPFLAGS="-I$(brew --prefix llvm)/include"
 export LD_LIBRARY_PATH="$(brew --prefix llvm)/lib:${LD_LIBRARY_PATH}"
 
 # openssl
+export PATH="$(brew --prefix openssl)/bin:${PATH}"
 export LDFLAGS="${LDFLAGS} -L$(brew --prefix openssl)/lib"
 export CFLAGS="${CFLAGS} -I$(brew --prefix openssl)/include"
 export CPPFLAGS="${CPPFLAGS} -I$(brew --prefix openssl)/include"
