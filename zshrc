@@ -30,11 +30,11 @@ export CPPFLAGS="${CPPFLAGS} -I$(brew --prefix llvm)/include"
 export LD_LIBRARY_PATH="$(brew --prefix llvm)/lib:${LD_LIBRARY_PATH}"
 
 # openssl
-export PATH="$(brew --prefix openssl)/bin:${PATH}"
-export LDFLAGS="${LDFLAGS} -L$(brew --prefix openssl)/lib"
-export CFLAGS="${CFLAGS} -I$(brew --prefix openssl)/include"
-export CPPFLAGS="${CPPFLAGS} -I$(brew --prefix openssl)/include"
-export PKG_CONFIG_PATH="$(brew --prefix openssl)/lib/pkgconfig:${PKG_CONFIG_PATH}"
+export PATH="$(brew --prefix openss@1.1)/bin:${PATH}"
+export LDFLAGS="${LDFLAGS} -L$(brew --prefix openss@1.1)/lib"
+export CFLAGS="${CFLAGS} -I$(brew --prefix openss@1.1)/include"
+export CPPFLAGS="${CPPFLAGS} -I$(brew --prefix openss@1.1)/include"
+export PKG_CONFIG_PATH="$(brew --prefix openss@1.1)/lib/pkgconfig:${PKG_CONFIG_PATH}"
 
 autoload -Uz compinit
 compinit
@@ -71,8 +71,7 @@ source $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
 autoload -U colors ; colors ; zstyle ':completion:*' list-colors "${LS_COLORS}"
 zstyle ':completion:*' menu select
 
-# export PYTHON_CONFIGURE_OPTS="-–with-openssl=$(brew --prefix openssl)/lib/pkgconfig"
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl)"
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 
 ## terraform
 export GODEBUG=asyncpreemptoff=1
