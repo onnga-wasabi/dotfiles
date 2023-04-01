@@ -12,6 +12,7 @@ fi
 
 # Customize to your needs...
 export LANG=en_US.UTF-8
+export PATH="/opt/homebrew/bin:${PATH}"
 export PATH="$(brew --prefix mysql-client)/bin:${PATH}"
 export HOMEBREW_EDITOR='vim'
 
