@@ -77,7 +77,6 @@ if OS.mac?
   cask "devtoys"
   cask "docker"
   cask "font-hack-nerd-font"
-  cask "google-japanese-ime"
   cask "iterm2"
   cask "libreoffice"
   cask "meetingbar"
