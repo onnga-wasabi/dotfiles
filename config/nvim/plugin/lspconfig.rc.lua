@@ -144,7 +144,7 @@ mason_tool_installer.setup({
     "jdtls", -- java
     "kotlin-language-server",
     "groovy-language-server",
-    "luacheck"
+    "luacheck",
     "typescript-language-server",
   },
   -- if set to true this will check each tool for updates. If updates
