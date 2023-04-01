@@ -29,4 +29,3 @@ install_asdf_vms () {
   done
 }
 
-install_asdf_vms
