@@ -132,3 +132,5 @@ LOCAL_RC_FILE=${HOME}/.zshrc_local
 if [ -e ${LOCAL_RC_FILE} ]; then
   source ${LOCAL_RC_FILE}
 fi
+
+export ARCHFLAGS='-arch arm64'
