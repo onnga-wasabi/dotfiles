@@ -20,12 +20,13 @@ export HOMEBREW_EDITOR='vim'
 
 # Forcompilers
 export OPENBLAS=$(brew --prefix openblas)
-export PKG_CONFIG_PATH="$(brew --prefix openblas)/lib/pkgconfig"
+export PKG_CONFIG_PATH="$(brew --prefix openblas)/lib/pkgconfig:${PKG_CONFIG_PATH}"
 
 # llvm
-export LDFLAGS="-L$(brew --prefix llvm)/lib"
-export CFLAGS="-I$(brew --prefix llvm)/include"
-export CPPFLAGS="-I$(brew --prefix llvm)/include"
+export PATH="$(brew --prefix llvm)/bin:$PATH"
+export LDFLAGS="${LDFLAGS} -L$(brew --prefix llvm)/lib"
+export CFLAGS="${CFLAGS} -I$(brew --prefix llvm)/include"
+export CPPFLAGS="${CPPFLAGS} -I$(brew --prefix llvm)/include"
 export LD_LIBRARY_PATH="$(brew --prefix llvm)/lib:${LD_LIBRARY_PATH}"
 
 # openssl
@@ -33,15 +34,13 @@ export PATH="$(brew --prefix openssl)/bin:${PATH}"
 export LDFLAGS="${LDFLAGS} -L$(brew --prefix openssl)/lib"
 export CFLAGS="${CFLAGS} -I$(brew --prefix openssl)/include"
 export CPPFLAGS="${CPPFLAGS} -I$(brew --prefix openssl)/include"
-export PKG_CONFIG_PATH="$(brew --prefix openssl)/lib/pkgconfig"
+export PKG_CONFIG_PATH="$(brew --prefix openssl)/lib/pkgconfig:${PKG_CONFIG_PATH}"
 
 autoload -Uz compinit
 compinit
 
 export LSCOLORS=gxfxcxdxbxegedabagacad
 export LS_COLORS="di=36"
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="$(brew --prefix llvm)/bin:$PATH"
 
 # Aliases
 alias ls='exa --icons --git -F'
@@ -133,3 +132,4 @@ if [ -e ${LOCAL_RC_FILE} ]; then
   source ${LOCAL_RC_FILE}
 fi
 
+export PATH="$HOME/.local/bin:$PATH"
