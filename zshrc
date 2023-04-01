@@ -19,22 +19,25 @@ export HOMEBREW_EDITOR='vim'
 
 
 # Forcompilers
-export OPENBLAS=$(brew --prefix openblas)
-export PKG_CONFIG_PATH="$(brew --prefix openblas)/lib/pkgconfig:${PKG_CONFIG_PATH}"
+OPENBLAS_PREFIX=$(brew --prefix openblas)
+export OPENBLAS=${OPENSSL_PREFIX}
+export PKG_CONFIG_PATH="${OPENSSL_PREFIX}/lib/pkgconfig:${PKG_CONFIG_PATH}"
 
 # llvm
-export PATH="$(brew --prefix llvm)/bin:$PATH"
-export LDFLAGS="${LDFLAGS} -L$(brew --prefix llvm)/lib"
-export CFLAGS="${CFLAGS} -I$(brew --prefix llvm)/include"
-export CPPFLAGS="${CPPFLAGS} -I$(brew --prefix llvm)/include"
-export LD_LIBRARY_PATH="$(brew --prefix llvm)/lib:${LD_LIBRARY_PATH}"
+LLVM_PREFIX=$(brew --prefix llvm)
+export PATH="${LLVM_PREFIX}/bin:$PATH"
+export LDFLAGS="${LDFLAGS} -L${LLVM_PREFIX}/lib"
+export CFLAGS="${CFLAGS} -I${LLVM_PREFIX}/include"
+export CPPFLAGS="${CPPFLAGS} -I${LLVM_PREFIX}/include"
+export LD_LIBRARY_PATH="${LLVM_PREFIX}/lib:${LD_LIBRARY_PATH}"
 
 # openssl
-export PATH="$(brew --prefix openss@1.1)/bin:${PATH}"
-export LDFLAGS="${LDFLAGS} -L$(brew --prefix openss@1.1)/lib"
-export CFLAGS="${CFLAGS} -I$(brew --prefix openss@1.1)/include"
-export CPPFLAGS="${CPPFLAGS} -I$(brew --prefix openss@1.1)/include"
-export PKG_CONFIG_PATH="$(brew --prefix openss@1.1)/lib/pkgconfig:${PKG_CONFIG_PATH}"
+OPENSSL_PREFIX=$(brew --prefix openssl@1.1)
+export PATH="${OPENSSL_PREFIX}/bin:${PATH}"
+export LDFLAGS="${LDFLAGS} -L${OPENSSL_PREFIX}/lib"
+export CFLAGS="${CFLAGS} -I${OPENSSL_PREFIX}/include"
+export CPPFLAGS="${CPPFLAGS} -I${OPENSSL_PREFIX}/include"
+export PKG_CONFIG_PATH="${OPENSSL_PREFIX}/lib/pkgconfig:${PKG_CONFIG_PATH}"
 
 autoload -Uz compinit
 compinit
