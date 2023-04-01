@@ -1,4 +1,4 @@
-#
+#/var/folders/hh/vrcl1wp93xxb5dpqkrl93r4m0000gn/T/python-build.20230401212955.12059 ~/dotfiles/etc/brew
 # Executes commands at the start of an interactive session.
 #
 # Authors:
@@ -72,7 +72,7 @@ source $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
 autoload -U colors ; colors ; zstyle ':completion:*' list-colors "${LS_COLORS}"
 zstyle ':completion:*' menu select
 
-export PYTHON_CONFIGURE_OPTS="-–with-openssl=$(brew --prefix openssl)/lib/pkgconfig"
+# export PYTHON_CONFIGURE_OPTS="-–with-openssl=$(brew --prefix openssl)/lib/pkgconfig"
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl)"
 
 ## terraform
