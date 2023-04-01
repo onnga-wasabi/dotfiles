@@ -64,6 +64,7 @@ brew "tmux"
 brew "unar"
 brew "wget"
 brew "yasm"
+brew "luarocks"
 brew "libxmlsec1"
 brew "hashicorp/tap/terraform-ls"
 
