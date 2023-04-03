@@ -5,7 +5,7 @@ end
 
 local config = {
 	markdown = {
-		query = vim.treesitter.parce.query_parse(
+		query = vim.treesitter.query.parse(
 			"markdown",
 			[[
                 (atx_heading [
