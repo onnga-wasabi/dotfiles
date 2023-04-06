@@ -83,7 +83,6 @@ if OS.mac?
   cask "monitorcontrol"
   cask "notion"
   cask "raycast"
-  cask "skitch"
   cask "slack"
   cask "spectacle"
   cask "spotify"
