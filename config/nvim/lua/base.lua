@@ -24,9 +24,18 @@ set_keymap("n", "<c-w>h", "<cmd>silent! w<cr><c-w>h", opts)
 set_keymap("n", "<c-o>", "<cmd>silent! w<cr><c-o>", opts)
 set_keymap("n", "<c-s>", "<cmd>silent! w<cr><c-i>", opts)
 
+set_keymap("v", "<c-w>l", "<cmd>silent! w<cr><c-w>l", opts)
+set_keymap("v", "<c-w>j", "<cmd>silent! w<cr><c-w>j", opts)
+set_keymap("v", "<c-w>k", "<cmd>silent! w<cr><c-w>k", opts)
+set_keymap("v", "<c-w>h", "<cmd>silent! w<cr><c-w>h", opts)
+set_keymap("v", "<c-o>", "<cmd>silent! w<cr><c-o>", opts)
+set_keymap("v", "<c-s>", "<cmd>silent! w<cr><c-i>", opts)
+
 -- cursor
 set_keymap("n", "<c-f>", "<c-f>zz", opts)
 set_keymap("n", "<c-b>", "<c-b>zz", opts)
+set_keymap("v", "<c-f>", "<c-f>zz", opts)
+set_keymap("v", "<c-b>", "<c-b>zz", opts)
 
 set_keymap("n", "sp", "<cmd>bn<cr>", opts)
 set_keymap("n", "sn", "<cmd>bp<cr>", opts)
@@ -44,7 +53,7 @@ set_keymap("t", "<c-n>", "<c-\\><c-n>", opts)
 -- Open memo file
 vim.cmd("autocmd!")
 vim.api.nvim_create_user_command("Memo", function(_)
-	vim.cmd("e " .. "~/._/memo/memo.md")
+  vim.cmd("e " .. "~/._/memo/memo.md")
 end, {})
 -- }}} end of Util Functions
 

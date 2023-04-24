@@ -79,8 +79,6 @@ lspconfig.kotlin_language_server.setup({})
 
 lspconfig.groovyls.setup({})
 
-lspconfig.sqls.setup({})
-
 lspconfig.lua_ls.setup({
   settings = {
     Lua = {
