@@ -95,8 +95,8 @@ true_zen.setup(config)
 local opts = { noremap = true, silent = true }
 local set_keymap = vim.api.nvim_set_keymap
 
-set_keymap("n", "<leader><s-n>", "<cmd>:TZNarrow<CR>", opts)
-set_keymap("v", "<leader><s-n>", "<cmd>:'<,'>TZNarrow<CR>", opts)
-set_keymap("n", "<leader><s-f>", "<cmd>:TZFocus<CR>", opts)
-set_keymap("n", "<leader><s-m>", "<cmd>:TZMinimalist<CR>", opts)
-set_keymap("n", "<leader><s-a>", "<cmd>:TZAtaraxis<CR><cmd>set nu<CR>", opts)
+set_keymap("n", "<s-t>zn", "<cmd>:TZNarrow<CR>", opts)
+set_keymap("v", "<s-t>zn", "<cmd>:'<,'>TZNarrow<CR>", opts)
+set_keymap("n", "<s-t>zf", "<cmd>:TZFocus<CR>", opts)
+set_keymap("n", "<s-t>zm", "<cmd>:TZMinimalist<CR>", opts)
+set_keymap("n", "<s-t>za", "<cmd>:TZAtaraxis<CR><cmd>set nu<CR>", opts)

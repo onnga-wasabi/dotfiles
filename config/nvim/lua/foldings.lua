@@ -1,7 +1,7 @@
 local fold_options = {
-	foldcolumn = "2",
-	foldlevel = 2,
-	foldmethod = "manual",
+	foldcolumn = "4",
+	foldlevel = 4,
+	foldmethod = "expr",
 }
 for k, v in pairs(fold_options) do
 	vim.opt[k] = v
