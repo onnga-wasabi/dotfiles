@@ -31,7 +31,7 @@ local sources = {
   -- python
   formatting.isort,
   formatting.black.with({
-    extra_args = { "--line-length=150" },
+    extra_args = { "--line-length=119" },
   }),
   -- diagnostics.pyproject_flake8,
   -- diagnostics.mypy,

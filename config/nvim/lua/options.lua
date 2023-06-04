@@ -23,5 +23,5 @@ vim.o.timeoutlen = 300
 vim.o.updatetime = 300
 vim.o.laststatus = 3
 vim.o.foldlevel = 20
-vim.o.foldmethod = "expr"
+vim.o.foldmethod = "manual"
 vim.o.foldexpr = "nvim_treesitter#foldexpr()"

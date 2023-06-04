@@ -1,11 +1,11 @@
-local fold_options = {
-	foldcolumn = "4",
-	foldlevel = 4,
-	foldmethod = "expr",
-}
-for k, v in pairs(fold_options) do
-	vim.opt[k] = v
-end
+-- local fold_options = {
+-- 	foldcolumn = "6",
+-- 	foldlevel = 6,
+-- 	foldmethod = "expr",
+-- }
+-- for k, v in pairs(fold_options) do
+-- 	vim.opt[k] = v
+-- end
 
 local persistence_foldings = function(autocmd_event)
 	if vim.fn.expand("%") ~= "" and vim.bo.buftype ~= "nofile" then
