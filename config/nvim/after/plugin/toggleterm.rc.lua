@@ -10,5 +10,5 @@ toggleterm.setup({
 local opts = { noremap = true, silent = true }
 local set_keymap = vim.api.nvim_set_keymap
 
-set_keymap("n", "<a-`>", "<cmd>ToggleTerm direction=float<cr>", opts)
-set_keymap("t", "<a-`>", "<cmd>ToggleTerm direction=float<cr>", opts)
+set_keymap("n", "<a-t>", "<cmd>ToggleTerm direction=float<cr>", opts)
+set_keymap("t", "<a-t>", "<cmd>ToggleTerm direction=float<cr>", opts)
