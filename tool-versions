@@ -14,7 +14,7 @@ awscli 2.5.2
 terragrunt 0.37.1
 nodejs 19.3.0
 deno 1.31.2
-rust 1.62.1
+rust 1.70.0
 fd 8.4.0
 hey v0.1.4
 grpcurl 1.8.7
