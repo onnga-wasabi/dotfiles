@@ -75,7 +75,6 @@ if OS.mac?
   cask "alt-tab"
   cask "dbeaver-community"
   cask "devtoys"
-  cask "docker"
   cask "discord"
   cask "flameshot"
   cask "font-hack-nerd-font"
