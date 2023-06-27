@@ -93,4 +93,5 @@ if OS.mac?
   cask "visual-studio-code"
   cask "wireshark"
   cask "zoom"
+  cask "raycast"
 end
