@@ -1,6 +1,6 @@
 python 3.11.1
 gcloud 420.0.0
-terraform 0.13.7
+terraform 1.5.1
 java corretto-18.0.0.35.1
 sbt 1.6.2
 neovim nightly
@@ -11,7 +11,7 @@ cmake 3.24.1
 ripgrep 13.0.0
 jq 1.6
 awscli 2.5.2
-terragrunt 0.37.1
+terragrunt 0.47.0
 nodejs 19.3.0
 deno 1.31.2
 rust 1.70.0
