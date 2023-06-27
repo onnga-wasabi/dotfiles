@@ -16,6 +16,7 @@ link_rc_files () {
     gitignore_global
     latexmkrc
     default-python-packages
+    default-cargo-crates
     tigrc
   "
 
