@@ -26,6 +26,7 @@ install_asdf_vms () {
     echo "Install ${plugin} ${version}"
     asdf install ${plugin} ${version}
     asdf reshim ${plugin}
+    echo ""
   done
 }
 
