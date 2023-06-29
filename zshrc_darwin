@@ -3,4 +3,11 @@ export HDF5_DIR=$(brew --prefix hdf5)
 # xcode
 export CFLAGS="$CFLAGS -I$(xcrun --show-sdk-path)/usr/include"
 export SDKROOT="$(xcrun --sdk macosx --show-sdk-path)"
-export LDFLAGS="-L$(xcrun --show-sdk-path)/usr/lib"
+export LDFLAGS="${LDFLAGS} -L$(xcrun --show-sdk-path)/usr/lib"
+
+# libffi
+# LIBFFI_PREFIX=$(brew --prefix libffi)
+# export LDFLAGS="${LDFLAGS} -L${LIBFFI_PREFIX}/lib"
+# export CPPFLAGS="${CPPFLAGS} -I${LIBFFI_PREFIX}/include"
+# export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} ${LIBFFI_PREFIX}/lib/pkgconfig"
+
