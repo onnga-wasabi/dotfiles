@@ -65,6 +65,7 @@ brew "tmux"
 brew "unar"
 brew "wget"
 brew "yasm"
+brew "btop"
 
 if OS.mac?
   brew "coreutils"
