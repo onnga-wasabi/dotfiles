@@ -14,8 +14,6 @@ source ${CURRENT}/iterm.sh
 install_brew_bundle
 install_prezto
 install_tmux_powerline
-install_asdf_vms
-install_dein
-create_preference_dir
-
 link_rc_files
+create_preference_dir
+install_asdf_vms
