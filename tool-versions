@@ -16,7 +16,7 @@ nodejs 19.3.0
 deno 1.31.2
 rust 1.70.0
 fd 8.4.0
-hey v0.1.4
+hey 0.1.4
 grpcurl 1.8.7
 kubectl 1.24.4
 coursier 2.1.0-M7
