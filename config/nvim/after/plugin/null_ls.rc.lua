@@ -38,10 +38,6 @@ local sources = {
 
   -- yaml
   formatting.yamlfmt,
-  diagnostics.yamllint.with({
-    extra_args = { "--no-warnings"},
-  }),
-
   -- grpc
   formatting.buf,
   diagnostics.buf,
