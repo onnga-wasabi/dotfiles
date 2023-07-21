@@ -28,7 +28,7 @@ bind log H ?git rebase -i %(commit)
 # Refs
 bind refs c !@git checkout %(branch)
 bind refs b !@git branch "%(prompt Enter branch name: )"
-bind refs p !?gh pr create -B %(branch) -w
+bind refs p !?gh pr create -B %(branch)
 bind refs v !@?gh pr view --web %(branch)
 bind refs P !?git push origin %(branch)
 bind refs r ?git rebase %(branch)
