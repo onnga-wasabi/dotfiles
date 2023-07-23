@@ -77,6 +77,7 @@ return require("packer").startup(function(use)
 	-- thanks to: https://zenn.dev/lunarxlark/articles/763b3c26ed7ec0
 	use({ "mfussenegger/nvim-dap" })
 	use({ "leoluz/nvim-dap-go" })
+	use({ "mfussenegger/nvim-dap-python" })
 	use({ "rcarriga/nvim-dap-ui" })
 
 	-- treesitter

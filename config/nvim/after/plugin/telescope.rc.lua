@@ -55,7 +55,7 @@ local set_keymap = vim.api.nvim_set_keymap
 set_keymap("n", "<leader>p", '<cmd>lua require("telescope.builtin").find_files({hidden=true})<cr>', opts)
 set_keymap(
 	"n",
-	"<leader>d",
+	"<leader>c",
 	'<cmd>lua require("telescope.builtin").find_files({ hidden = true, cwd = vim.fn.expand("~/dotfiles") })<cr>',
 	opts
 )
