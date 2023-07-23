@@ -4,7 +4,8 @@ if not ok then
 end
 
 local venv = os.getenv("VIRTUAL_ENV")
-command = venv .. "/bin/python"
-dap_python.setup(command)
-dap_python.test_runner = 'pytest'
-
+if venv then
+	command = venv .. "/bin/python"
+	dap_python.setup(command)
+	dap_python.test_runner = "pytest"
+end
