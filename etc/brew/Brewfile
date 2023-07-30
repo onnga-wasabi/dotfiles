@@ -66,6 +66,9 @@ brew "unar"
 brew "wget"
 brew "yasm"
 brew "btop"
+brew "mecab"
+brew "mecab-ipadic"
+brew "boost"
 
 if OS.mac?
   brew "coreutils"
