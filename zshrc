@@ -27,9 +27,26 @@ export PKG_CONFIG_PATH="${OPENSSL_PREFIX}/lib/pkgconfig:${PKG_CONFIG_PATH}"
 LLVM_PREFIX=$(brew --prefix llvm)
 export PATH="${LLVM_PREFIX}/bin:$PATH"
 export LDFLAGS="${LDFLAGS} -L${LLVM_PREFIX}/lib"
+export CFLAGS="${CFLAGS} -I${LLVM_PREFIX}/include -std=c++14"
 export CFLAGS="${CFLAGS} -I${LLVM_PREFIX}/include"
 export CPPFLAGS="${CPPFLAGS} -I${LLVM_PREFIX}/include"
 export LD_LIBRARY_PATH="${LLVM_PREFIX}/lib:${LD_LIBRARY_PATH}"
+
+# boost
+BOOST_PREFIX=$(brew --prefix boost)
+export PATH="${BOOST_PREFIX}/bin:$PATH"
+export LDFLAGS="${LDFLAGS} -L${BOOST_PREFIX}/lib"
+export CFLAGS="${CFLAGS} -I${BOOST_PREFIX}/include"
+export CPPFLAGS="${CPPFLAGS} -I${BOOST_PREFIX}/include"
+export LD_LIBRARY_PATH="${BOOST_PREFIX}/lib:${LD_LIBRARY_PATH}"
+
+# mecab
+MECAB_PREFIX=$(brew --prefix mecab)
+export PATH="${MECAB_PREFIX}/bin:${PATH}"
+export LDFLAGS="${LDFLAGS} -L${MECAB_PREFIX}/lib"
+export CFLAGS="${CFLAGS} -I${MECAB_PREFIX}/include"
+export CPPFLAGS="${CPPFLAGS} -I${MECAB_PREFIX}/include"
+export PKG_CONFIG_PATH="${MECAB_PREFIX}/lib/pkgconfig:${PKG_CONFIG_PATH}"
 
 # openssl
 OPENSSL_PREFIX=$(brew --prefix openssl@1.1)
