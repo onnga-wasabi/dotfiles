@@ -31,7 +31,9 @@ return require("packer").startup(function(use)
 	use({ "levouh/tint.nvim" })
 	use({ "ap/vim-css-color" })
 	use({ "brooth/far.vim" })
+	use({ "MunifTanjim/nui.nvim" })
 	use({ "rcarriga/nvim-notify" })
+	use({ "folke/noice.nvim"})
 
 	-- telescope
 	use({ "nvim-lua/plenary.nvim" })

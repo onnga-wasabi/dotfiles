@@ -95,4 +95,13 @@ set_keymap("n", "<leader>ZI", "<cmd>Telekasten insert_img_link<CR>", opts)
 --- Call insert link automatically when we start typing a link
 -- set_keymap("i", "[[", "<cmd>Telekasten insert_link<CR>", opts)
 
+-- Noice
+-- vim.keymap.set("n", "<leader>nl", function()
+--   require("noice").cmd("last")
+-- end)
+-- 
+-- vim.keymap.set("n", "<leader>nh", function()
+--   require("noice").cmd("history")
+-- end)
+
 -- }}} end of Mappings
