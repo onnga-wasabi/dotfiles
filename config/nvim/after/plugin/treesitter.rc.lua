@@ -5,7 +5,41 @@ end
 
 treesitter_configs.setup({
 	-- A list of parser names, or "all"
-	ensure_installed = "all",
+	-- refer to https://github.com/nvim-treesitter/nvim-treesitter#supported-languages
+	ensure_installed = {
+		"bash",
+		"bibtex",
+		"c",
+		"diff",
+		"git_config",
+		"git_rebase",
+		"gitattributes",
+		"gitcommit",
+		"gitignore",
+		"go",
+		"gomod",
+		"gosum",
+		"html",
+		"http",
+		"java",
+		"javascript",
+		"json",
+		"latex",
+		"llvm",
+		"lua",
+		"luadoc",
+		"prql",
+		"python",
+		"query",
+		"rust",
+		"scala",
+		"sql",
+		"vim",
+		"vimdoc",
+		"vue",
+		"yaml",
+    "kotolin",
+	},
 
 	-- Install parsers synchronously (only applied to `ensure_installed`)
 	sync_install = false,
