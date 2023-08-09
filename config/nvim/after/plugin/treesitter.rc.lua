@@ -38,7 +38,7 @@ treesitter_configs.setup({
 		"vimdoc",
 		"vue",
 		"yaml",
-    "kotolin",
+    "kotlin",
 	},
 
 	-- Install parsers synchronously (only applied to `ensure_installed`)
