@@ -23,13 +23,13 @@ local config = {
 			search_down = {
 				kind = "search",
 				pattern = "^/",
-				icon = "🔍 ",
+				icon = " ",
 				lang = "regex",
 			},
 			search_up = {
 				kind = "search",
 				pattern = "^%?",
-				icon = "🔍 ",
+				icon = " ",
 				lang = "regex",
 			},
 			filter = {
