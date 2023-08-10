@@ -33,7 +33,7 @@ return require("packer").startup(function(use)
 	use({ "brooth/far.vim" })
 	use({ "MunifTanjim/nui.nvim" })
 	use({ "rcarriga/nvim-notify" })
-	use({ "folke/noice.nvim"})
+	use({ "folke/noice.nvim" })
 
 	-- telescope
 	use({ "nvim-lua/plenary.nvim" })

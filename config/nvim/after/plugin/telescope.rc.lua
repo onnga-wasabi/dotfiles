@@ -52,7 +52,7 @@ local opts = { noremap = true, silent = true }
 local set_keymap = vim.api.nvim_set_keymap
 
 -- option を渡す場合にはマップしたキーが押下されたタイミングで実行される処理を渡すので require から書く
-set_keymap("n", "<leader>p", '<cmd>lua require("telescope.builtin").find_files({hidden=true})<cr>', opts)
+set_keymap("n", "<leader>p", '<cmd>lua require("telescope.builtin").find_files({ hidden = true })<cr>', opts)
 set_keymap(
 	"n",
 	"<leader>c",
@@ -65,7 +65,7 @@ set_keymap("n", "<leader>g", '<cmd>lua require("telescope.builtin").live_grep()<
 set_keymap(
 	"n",
 	"<leader>f",
-	'<Cmd>lua require("telescope").extensions.file_browser.file_browser({ files = false })<cr>',
+	'<Cmd>lua require("telescope").extensions.file_browser.file_browser({ files = true })<cr>',
 	opts
 )
 
