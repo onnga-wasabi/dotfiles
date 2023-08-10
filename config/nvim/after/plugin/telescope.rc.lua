@@ -65,7 +65,7 @@ set_keymap("n", "<leader>g", '<cmd>lua require("telescope.builtin").live_grep()<
 set_keymap(
 	"n",
 	"<leader>f",
-	'<Cmd>lua require("telescope").extensions.file_browser.file_browser({ files = true })<cr>',
+	'<Cmd>lua require("telescope").extensions.file_browser.file_browser({ files = false, hidden = true })<cr>',
 	opts
 )
 
