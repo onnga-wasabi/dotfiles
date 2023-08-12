@@ -4,20 +4,20 @@ if not ok then
 end
 
 dap.configurations.python = {
-  {
-    type = 'python';
-    request = 'launch';
-    name = "Launch file";
-    program = "${file}";
-    pythonPath = function()
-      return os.getenv("PWD") .. '/.venv/bin/python'
-    end;
-  },
+	{
+		type = "python",
+		request = "launch",
+		name = "Launch file",
+		program = "${file}",
+		pythonPath = function()
+			return os.getenv("PWD") .. "/.venv/bin/python"
+		end,
+	},
 }
 dap.adapters.python = {
-  type = 'executable';
-  command = os.getenv("PWD") .. '/.venv/bin/python';
-  args = { '-m', 'debugpy.adapter' };
+	type = "executable",
+	command = os.getenv("PWD") .. "/.venv/bin/python",
+	args = { "-m", "debugpy.adapter" },
 }
 
 local ok, dapui = pcall(require, "dapui")

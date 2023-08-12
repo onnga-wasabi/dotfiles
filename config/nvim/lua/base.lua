@@ -53,7 +53,7 @@ set_keymap("t", "<c-n>", "<c-\\><c-n>", opts)
 -- Open memo file
 vim.cmd("autocmd!")
 vim.api.nvim_create_user_command("Memo", function(_)
-  vim.cmd("e " .. "~/._/memo/memo.md")
+	vim.cmd("e " .. "~/._/memo/memo.md")
 end, {})
 -- }}} end of Util Functions
 

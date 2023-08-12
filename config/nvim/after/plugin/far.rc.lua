@@ -1,5 +1,5 @@
 local ok, far = pcall(require, "far")
 if not ok then
-  return
+	return
 end
 far.setup()
