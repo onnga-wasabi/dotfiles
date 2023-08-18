@@ -50,10 +50,6 @@ return require("packer").startup(function(use)
 	use({ "folke/trouble.nvim" })
 	use({ "jose-elias-alvarez/null-ls.nvim" })
 
-	-- db
-	use({ "tpope/vim-dadbod" })
-	use({ "kristijanhusak/vim-dadbod-ui", requires = { "tpope/vim-dadbod" } })
-
 	-- git
 	use({ "akinsho/git-conflict.nvim" })
 	use({ "iberianpig/tig-explorer.vim", requires = { "rbgrouleff/bclose.vim" } })
