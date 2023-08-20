@@ -88,3 +88,6 @@ function! EBufdelete()
 endfunction
 ]])
 set_keymap("n", ",", "<cmd>silent! w<cr><cmd>Ebd<cr>", opts)
+
+-- Preview PlantUML
+set_keymap("n", "<c-w>l", "<cmd>silent! w<cr><c-w>l", opts)
