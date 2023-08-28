@@ -69,6 +69,7 @@ lspconfig.volar.setup({
 lspconfig.bufls.setup({})
 
 lspconfig.html.setup({})
+lspconfig.marksman.setup({})
 
 lspconfig.jdtls.setup({})
 
@@ -112,6 +113,21 @@ lspconfig.ruby_ls.setup({
     },
 })
 
+lspconfig.emmet_ls.setup({
+    filetypes = {
+        "html",
+        "typescriptreact",
+        "javascriptreact",
+        "css",
+        "sass",
+        "scss",
+        "less",
+        "javascript",
+        "typescript",
+        "markdown",
+    },
+})
+
 local ok, mason_tool_installer = pcall(require, "mason-tool-installer")
 if not ok then
     return
@@ -121,31 +137,33 @@ mason_tool_installer.setup({
     -- a list of all tools you want to ensure are installed upon
     -- start; they should be the names Mason uses for each tool
     ensure_installed = {
-        "yamlfmt",
-        "texlab",
-        "robotframework-lsp",
-        "yaml-language-server",
-        "vim-language-server",
-        "taplo",
-        "pyright",
-        "lua-language-server",
-        "clangd",
         "black",
+        "clangd",
+        "emmet_ls",
         "dockerfile-language-server",
         "flake8",
         "gopls",
+        "groovy-language-server",
         "isort",
-        "ltex-ls",
-        "opencl-language-server",
-        "prettier",
-        "yamllint",
-        "terraform-ls",
-        "vue-language-server",
         "jdtls", -- java
         "kotlin-language-server",
-        "groovy-language-server",
+        "ltex-ls",
+        "lua-language-server",
         "luacheck",
+        "marksman",
+        "opencl-language-server",
+        "prettier",
+        "pyright",
+        "robotframework-lsp",
+        "taplo",
+        "terraform-ls",
+        "texlab",
         "typescript-language-server",
+        "vim-language-server",
+        "vue-language-server",
+        "yaml-language-server",
+        "yamlfmt",
+        "yamllint",
     },
     -- if set to true this will check each tool for updates. If updates
     -- are available the tool will be updated. This setting does not
