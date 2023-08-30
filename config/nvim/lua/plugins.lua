@@ -111,8 +111,8 @@ return require("packer").startup(function(use)
 		run = "cd app && npm install",
 	})
 
-	-- language specific
-	use({ "mattn/emmet-vim" })
+	-- comment
+	use({ "tomtom/tcomment_vim" })
 
 	-- packer restriction
 	if packer_bootstrap then

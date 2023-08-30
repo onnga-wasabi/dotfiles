@@ -100,7 +100,6 @@ let g:mkdp_filetypes = ['markdown', 'plantuml']
 let g:mkdp_theme = 'light'
 ]])
 
-
 local ok, markdown_preview = pcall(require, "markdown_preview")
 if not ok then
 	return
