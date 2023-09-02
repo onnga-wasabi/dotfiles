@@ -149,7 +149,6 @@ mason_tool_installer.setup({
 		"kotlin-language-server",
 		"ltex-ls",
 		"lua-language-server",
-		"luacheck",
 		"marksman",
 		"opencl-language-server",
 		"prettier",
