@@ -22,7 +22,6 @@ return {
 				"http",
 				"java",
 				"javascript",
-				"javascript",
 				"json",
 				"kotlin",
 				"latex",
