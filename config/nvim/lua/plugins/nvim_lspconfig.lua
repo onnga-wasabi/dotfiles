@@ -31,6 +31,8 @@ return {
 		end
 		local lsp_util = require("lspconfig/util")
 
+		lspconfig.bufls.setup({})
+
 		lspconfig.metals.setup({})
 
 		lspconfig.pyright.setup({})

@@ -27,10 +27,12 @@ export PKG_CONFIG_PATH="${OPENSSL_PREFIX}/lib/pkgconfig:${PKG_CONFIG_PATH}"
 LLVM_PREFIX=$(brew --prefix llvm)
 export PATH="${LLVM_PREFIX}/bin:$PATH"
 export LDFLAGS="${LDFLAGS} -L${LLVM_PREFIX}/lib"
-export CFLAGS="${CFLAGS} -I${LLVM_PREFIX}/include -std=c++14"
 export CFLAGS="${CFLAGS} -I${LLVM_PREFIX}/include"
 export CPPFLAGS="${CPPFLAGS} -I${LLVM_PREFIX}/include"
 export LD_LIBRARY_PATH="${LLVM_PREFIX}/lib:${LD_LIBRARY_PATH}"
+export CC="clang"
+export CXX="clang++"
+export CMAKE_CXX_FLAGS="${CMAKE_CXX_FLAG} -std=c++14"
 
 # boost
 BOOST_PREFIX=$(brew --prefix boost)

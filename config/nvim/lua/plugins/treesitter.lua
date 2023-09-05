@@ -39,8 +39,9 @@ return {
 				"vimdoc",
 				"vue",
 				"yaml",
-                "markdown",
-                "markdown_inline",
+				"markdown",
+				"markdown_inline",
+				"proto",
 			},
 
 			-- Install parsers synchronously (only applied to `ensure_installed`)

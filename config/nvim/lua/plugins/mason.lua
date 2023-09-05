@@ -4,6 +4,8 @@ return {
 	opts = {
 		ensure_installed = {
 			"black",
+			"buf",
+			"buf-language-server",
 			"clangd",
 			"dockerfile-language-server",
 			"emmet-ls",
@@ -20,6 +22,8 @@ return {
 			"prettier",
 			"pyright",
 			"robotframework-lsp",
+			"shfmt",
+			"stylua",
 			"taplo",
 			"terraform-ls",
 			"texlab",
@@ -29,8 +33,6 @@ return {
 			"yaml-language-server",
 			"yamlfmt",
 			"yamllint",
-			"stylua",
-			"shfmt",
 		},
 	},
 	build = ":MasonUpdate",
