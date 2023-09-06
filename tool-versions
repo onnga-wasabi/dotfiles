@@ -1,4 +1,4 @@
-python 3.11.2
+python 3.10.10
 gcloud 420.0.0
 terraform 1.5.1
 java corretto-18.0.0.35.1

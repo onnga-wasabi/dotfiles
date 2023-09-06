@@ -32,6 +32,7 @@ export CPPFLAGS="${CPPFLAGS} -I${LLVM_PREFIX}/include"
 export LD_LIBRARY_PATH="${LLVM_PREFIX}/lib:${LD_LIBRARY_PATH}"
 export CC="clang"
 export CXX="clang++"
+export CXX_STANDARD="14"
 export CMAKE_CXX_FLAGS="${CMAKE_CXX_FLAG} -std=c++14"
 
 # boost
