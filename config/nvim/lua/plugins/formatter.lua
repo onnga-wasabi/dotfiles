@@ -53,7 +53,7 @@ return {
 						args = {
 							util.escape_path(util.get_current_buffer_file_path()),
 						},
-						stdin = true,
+						stdin = false,
 					},
 				},
 				-- Use the special "*" filetype for defining formatter configurations on
