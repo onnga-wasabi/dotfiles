@@ -81,6 +81,7 @@ alias ks=k9s
 alias k=kubectl
 alias kc=kubectx
 alias kn=kubens
+alias ta="tmux a"
 
 # asdf
 export ASDF_HASHICORP_OVERWRITE_ARCH=amd64
