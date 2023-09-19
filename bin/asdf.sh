@@ -16,8 +16,6 @@ install_asdf_vms () {
 
     if [ "${plugin}" == "coursier" ]; then
       github_url="https://github.com/onnga-wasabi/asdf-coursier"
-    elif [ "${plugin}" == "lazydocker" ]; then
-      github_url="https://github.com/comdotlinux/asdf-lazydocker"
     fi
 
     echo "Plugin add ${plugin} ${github_url}"
