@@ -66,15 +66,16 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 export LS_COLORS="di=36"
 
 # Aliases
-alias ls='exa --icons --git -F'
-alias l='exa -lhF --no-user --no-permissions --git'
-alias la='l -a'
+ alias exa="eza"
+alias ls="exa --icons --git -F"
+alias l="exa -lhF --no-user --no-permissions --git"
+alias la="l -a"
 alias sed="gsed"
-alias realpath='(){ls --no-icons $1(:a)}'
-alias loadenv='(){set -a; source $1; set +a;}'
+alias realpath="(){ls --no-icons $1(:a)}"
+alias loadenv="(){set -a; source $1; set +a;}"
 alias vim='echo "vimなんかありませーん, use n instead of vim"'
 alias n=nvim
-alias vimdiff='nvim -d'
+alias vimdiff="nvim -d"
 export EDITOR=nvim
 alias go=richgo
 alias ks=k9s

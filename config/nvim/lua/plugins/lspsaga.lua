@@ -1,6 +1,7 @@
 return {
 	-- https://github.com/nvimdev/lspsaga.nvim
 	"nvimdev/lspsaga.nvim",
+	event = { "BufReadPre", "BufNewFile" },
 	opts = {
 		ui = {
 			theme = "round",

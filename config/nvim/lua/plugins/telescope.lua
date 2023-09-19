@@ -1,4 +1,5 @@
 return {
+	-- https://github.com/nvim-telescope/telescope.nvim
 	"nvim-telescope/telescope.nvim",
 	dependencies = {
 		"nvim-telescope/telescope-file-browser.nvim",
@@ -29,6 +30,7 @@ return {
 				"%.jar",
 				"%.csv",
 				"%mocks/",
+				"_mock.go",
 				"%.pb.go",
 				"%.pyi",
 				"%__pycache__/*",
@@ -57,32 +59,26 @@ return {
 		telescope.setup(opts)
 	end,
 	keys = {
-		{ "<leader>p", '<cmd>lua require("telescope.builtin").find_files({ hidden = true })<cr>' },
-		{
-			"<leader>c",
-			'<cmd>lua require("telescope.builtin").find_files({ hidden = true, cwd = vim.fn.expand("~/dotfiles") })<cr>',
-		},
-		{ "<leader>b", '<cmd>lua require("telescope.builtin").buffers()<cr>' },
-		{ "<leader>h", '<cmd>lua require("telescope.builtin").help_tags()<cr>' },
-		{ "<leader>g", '<cmd>lua require("telescope.builtin").live_grep()<cr>' },
-		{
-			"<leader>f",
-			'<Cmd>lua require("telescope").extensions.file_browser.file_browser({ files = false, hidden = true })<cr>',
-		},
+		{ "<leader>p", function() require("telescope.builtin").find_files({ hidden = true }) end },
+		{ "<leader>c", function() require("telescope.builtin").find_files({ hidden = true, cwd = vim.fn.expand("~/dotfiles") }) end },
+		{ "<leader>b", function() require("telescope.builtin").buffers() end },
+		{ "<leader>h", function() require("telescope.builtin").help_tags() end },
+		{ "<leader>g", function() require("telescope.builtin").live_grep() end },
+		{ "<leader>f", function() require("telescope").extensions.file_browser.file_browser({ files = false, hidden = true }) end },
 
 		-- Lsp
-		{ "<leader>s", '<cmd>lua require("telescope.builtin").lsp_document_symbols()<cr>' },
-		{ "gd", '<cmd>lua require("telescope.builtin").lsp_definitions()<cr>' },
-		{ "gi", '<cmd>lua require("telescope.builtin").lsp_implementations()<cr>' },
-		{ "gr", '<cmd>lua require("telescope.builtin").lsp_references()<cr>' },
+		{ "<leader>s", function() require("telescope.builtin").lsp_document_symbols() end },
+		{ "gd", function() require("telescope.builtin").lsp_definitions() end },
+		{ "gi", function() require("telescope.builtin").lsp_implementations() end },
+		{ "gr", function() require("telescope.builtin").lsp_references() end },
 
 		-- Trouble
-		{ "gxw", '<cmd>lua require("telescope.builtin").diagnostics()<cr>' },
+		{ "gxw", function() require("telescope.builtin").diagnostics() end },
 
 		-- Outlie
-		{ "<leader>o", '<cmd>lua require("telescope").extensions.aerial.aerial()<cr>' },
+		{ "<leader>o", function() require("telescope").extensions.aerial.aerial() end },
 
 		-- NeoClip
-		{ "<leader>y", "<cmd>Telescope neoclip<cr>" },
+		{ "<leader>y", function() require("telescope").extensions.neoclip.neoclip() end },
 	},
 }

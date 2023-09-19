@@ -3,6 +3,7 @@ local opts = { noremap = true, silent = true }
 local set_keymap = vim.api.nvim_set_keymap
 
 vim.g.mapleader = " " -- Set <Space> as <Leader>
+vim.g.omni_sql_no_default_maps = 1
 
 -- basic shortcuts
 set_keymap("n", "<c-w>n", "<nop>", opts)
