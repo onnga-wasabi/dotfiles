@@ -27,7 +27,6 @@ protoc 21.8
 python 3.10.10
 richgo 0.3.11
 ripgrep 13.0.0
-ruby 3.0.5
 rust 1.70.0
 saml2aws 2.34.0
 sbt 1.6.2
