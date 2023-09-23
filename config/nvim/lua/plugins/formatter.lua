@@ -56,20 +56,23 @@ return {
 						stdin = false,
 					},
 				},
-                sql = {
+				sql = {
 					{
 						exe = "sqlfluff",
 						args = {
-                            "fix",
-                            "--dialect",
-                            "postgres",
-                            "-q",
-                            "-f",
+							"fix",
+							"--dialect",
+							"postgres",
+							"-q",
+							"-f",
 							util.escape_path(util.get_current_buffer_file_path()),
 						},
 						stdin = false,
 					},
-                },
+				},
+				sh = {
+					require("formatter.filetypes.sh").shfmt,
+				},
 				-- Use the special "*" filetype for defining formatter configurations on
 				-- any filetype
 				-- ["*"] = {
