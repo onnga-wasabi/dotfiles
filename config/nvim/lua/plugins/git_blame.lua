@@ -6,6 +6,9 @@ return {
 	},
 	config = function(_, opts)
 		vim.g.gitblame_virtual_text_column = 130
+		vim.g.gitblame_ignored_filetypes = {
+			"octo",
+		}
 
 		local git_blame = require("gitblame")
 		git_blame.setup(opts)

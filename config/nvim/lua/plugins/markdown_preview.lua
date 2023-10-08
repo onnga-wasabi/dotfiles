@@ -100,7 +100,7 @@ return {
 
             " recognized filetypes
             " these filetypes will have MarkdownPreview... commands
-            let g:mkdp_filetypes = ['markdown', 'plantuml']
+            let g:mkdp_filetypes = ['markdown', 'plantuml', 'mermaid']
 
             " set default theme (dark or light)
             " By default the theme is define according to the preferences of the system
