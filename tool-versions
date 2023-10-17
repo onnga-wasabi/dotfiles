@@ -25,7 +25,7 @@ neovim 0.9.1
 nodejs 19.3.0
 protoc 21.8
 python 3.10.10
-richgo 0.3.11
+richgo 0.3.12
 ripgrep 13.0.0
 rust 1.70.0
 saml2aws 2.34.0
