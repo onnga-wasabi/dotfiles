@@ -1,6 +1,5 @@
 act 0.2.48
 awscli 2.5.2
-buf 1.25.0
 cmake 3.24.1
 coursier 2.1.0-M7
 deno 1.31.2
@@ -37,4 +36,3 @@ stylua 0.15.3
 terraform 1.5.1
 terragrunt 0.47.0
 yq 4.28.1
-mockery 2.33.1
