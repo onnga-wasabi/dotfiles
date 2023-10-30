@@ -91,6 +91,8 @@ export PATH="$PATH:${GOPATH}/bin"
 # https://note.sarisia.cc/entry/linuxbrew-go/#fnref:1:~:text=Go%20%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%A9%E3%81%AF%E3%80%81%E3%83%87%E3%83%95%E3%82%A9%E3%83%AB%E3%83%88%E3%81%A7%E3%82%B9%E3%82%BF%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E3%83%AA%E3%83%B3%E3%82%AF%E3%81%95%E3%82%8C%E3%81%9F%E3%83%90%E3%82%A4%E3%83%8A%E3%83%AA%E3%82%92%E5%90%90%E3%81%8D%E5%87%BA%E3%81%99%E3%81%8C%E3%80%81%20cgo%20%E3%82%92%E7%94%A8%E3%81%84%E3%81%9F%E3%82%B3%E3%83%BC%E3%83%89%E3%81%8C%E5%90%AB%E3%81%BE%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E3%81%A8%E3%83%80%E3%82%A4%E3%83%8A%E3%83%9F%E3%83%83%E3%82%AF%E3%83%AA%E3%83%B3%E3%82%AF%E3%81%95%E3%82%8C%E3%81%9F%E3%83%90%E3%82%A4%E3%83%8A%E3%83%AA%E3%82%92%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E3%82%89%E3%81%97%E3%81%841%E3%80%82
 export CGO_ENABLED=0
 
+## ffmpeg
+export ASDF_FFMPEG_ENABLE="libmp3lame"
 
 ## fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -140,6 +142,10 @@ if [ -f "$(asdf where gcloud)/path.zsh.inc" ]; then . "$(asdf where gcloud)/path
 # The next line enables shell command completion for gcloud.
 if [ -f "$(asdf where gcloud)/completion.zsh.inc" ]; then . "$(asdf where gcloud)/completion.zsh.inc"; fi
 
+# 一番最後に共有を追加
+export CFLAGS="$CFLAGS -I$(brew --prefix)/include"
+export LDFLAGS="$LDFLAGS -L$(brew --prefix)/lib"
+
 
 # load darwin files
 if [ $(uname) = "Darwin" ]; then
@@ -155,7 +161,7 @@ fi
 export PATH="$HOME/.local/bin:$PATH"
 
 # Aliases
- alias exa="eza"
+alias exa="eza"
 alias ls="exa --icons --git -F"
 alias l="exa -lhF --no-user --no-permissions --git"
 alias la="l -a"

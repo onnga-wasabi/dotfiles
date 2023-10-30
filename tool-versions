@@ -4,7 +4,7 @@ cmake 3.24.1
 coursier 2.1.0-M7
 deno 1.31.2
 fd 8.4.0
-ffmpeg 5.1.2
+ffmpeg 6.0
 firebase 11.24.1
 gcloud 420.0.0
 golang 1.21.3
