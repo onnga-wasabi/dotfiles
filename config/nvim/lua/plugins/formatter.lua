@@ -65,9 +65,10 @@ return {
 							"postgres",
 							"-q",
 							"-f",
-							util.escape_path(util.get_current_buffer_file_path()),
+							"-",
+							-- util.escape_path(util.get_current_buffer_file_path()),
 						},
-						stdin = false,
+						stdin = true,
 					},
 				},
 				sh = {
@@ -75,6 +76,23 @@ return {
 				},
 				python = {
 					require("formatter.filetypes.python").black,
+				},
+				proto = {
+					{
+						exe = "buf",
+						args = {
+							"format",
+                            "-w",
+							util.escape_path(util.get_current_buffer_file_path()),
+						},
+						stdin = false,
+					},
+				},
+				typescript = {
+					require("formatter.filetypes.typescript").prettier,
+				},
+				typescriptreact = {
+					require("formatter.filetypes.typescriptreact").prettier,
 				},
 				-- Use the special "*" filetype for defining formatter configurations on
 				-- any filetype

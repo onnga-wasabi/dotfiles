@@ -33,6 +33,6 @@ shellcheck 0.7.2
 shfmt 3.3.0
 stern 1.22.0
 stylua 0.15.3
-terraform 1.5.1
+terraform 0.12.20
 terragrunt 0.47.0
 yq 4.28.1

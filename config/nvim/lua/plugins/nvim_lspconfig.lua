@@ -3,8 +3,6 @@ return {
 	"neovim/nvim-lspconfig",
 	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
-		-- { "folke/neoconf.nvim", cmd = "Neoconf", config = false, dependencies = { "nvim-lspconfig" } },
-		-- { "folke/neodev.nvim", opts = {} },
 		"williamboman/mason.nvim",
 		"williamboman/mason-lspconfig.nvim",
 	},
@@ -60,7 +58,15 @@ return {
 			},
 		})
 
-		lspconfig.clangd.setup({})
+		lspconfig.clangd.setup({
+			filetypes = {
+				"c",
+				"cpp",
+				"objc",
+				"objcpp",
+				"cuda",
+			},
+		})
 
 		lspconfig.sqlls.setup({})
 
