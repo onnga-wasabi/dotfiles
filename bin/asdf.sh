@@ -32,7 +32,7 @@ install_asdf_vms() {
 }
 
 install_default_npm_packages() {
-    local packages_file="${ASDF_PYTHON_DEFAULT_PACKAGES_FILE:-$HOME/.default-npm-packages}"
+    local packages_file="${HOME}/.default-npm-packages"
 
     if [ -f "$packages_file" ]; then
         echo -ne "\nInstalling default npm packages..."
