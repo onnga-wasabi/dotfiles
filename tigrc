@@ -41,6 +41,7 @@ bind branch d !@?git branch -D %(branch)
 bind status D !@?rm %(file)
 bind status d !@?git checkout %(file)
 bind status S !@git stash save "%(prompt Enter stash name: )"
+bind status C !git cz
 
 # Diff
 bind diff    H ?git rebase -i %(commit)

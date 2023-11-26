@@ -6,7 +6,10 @@ return {
 		require("lint").linters_by_ft = {
 			go = {
 				"golangcilint",
-                "cspell",
+				"cspell",
+			},
+			javascript = {
+				"eslint_d",
 			},
 		}
 
