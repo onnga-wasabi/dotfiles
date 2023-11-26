@@ -36,6 +36,9 @@ install_default_npm_packages() {
 
     if [ -f "$packages_file" ]; then
         echo -ne "\nInstalling default npm packages..."
-        PATH="$ASDF_INSTALL_PATH/bin:$PATH" npm install -g "$packages_file"
+        while read line
+        do
+            PATH="$ASDF_INSTALL_PATH/bin:$PATH" npm install -g ${line}
+        done < ${packages_file}
     fi
 }
