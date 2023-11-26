@@ -24,21 +24,5 @@ install_asdf_vms() {
         asdf install ${plugin} ${version}
         asdf reshim ${plugin}
         echo ""
-
-        if [ "${plugin}" == "nodejs" ]; then
-            install_default_npm_packages
-        fi
     done
-}
-
-install_default_npm_packages() {
-    local packages_file="${HOME}/.default-npm-packages"
-
-    if [ -f "$packages_file" ]; then
-        echo -ne "\nInstalling default npm packages..."
-        while read line
-        do
-            PATH="$ASDF_INSTALL_PATH/bin:$PATH" npm install -g ${line}
-        done < ${packages_file}
-    fi
 }
