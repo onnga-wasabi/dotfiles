@@ -5,7 +5,7 @@ return {
 		enable = true,
 	},
 	config = function(_, opts)
-		vim.g.gitblame_virtual_text_column = 130
+		vim.g.gitblame_virtual_text_column = 100
 		vim.g.gitblame_ignored_filetypes = {
 			"octo",
 		}
